@@ -50511,6 +50511,8482 @@ var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.0.0')
 
 /***/ }),
 
+/***/ "./node_modules/@angular/router/fesm5/router.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@angular/router/fesm5/router.js ***!
+  \******************************************************/
+/*! exports provided: ɵangular_packages_router_router_a, ɵangular_packages_router_router_g, ɵangular_packages_router_router_h, ɵangular_packages_router_router_i, ɵangular_packages_router_router_d, ɵangular_packages_router_router_c, ɵangular_packages_router_router_j, ɵangular_packages_router_router_f, ɵangular_packages_router_router_b, ɵangular_packages_router_router_e, ɵangular_packages_router_router_k, ɵangular_packages_router_router_l, RouterLink, RouterLinkWithHref, RouterLinkActive, RouterOutlet, ActivationEnd, ActivationStart, ChildActivationEnd, ChildActivationStart, GuardsCheckEnd, GuardsCheckStart, NavigationCancel, NavigationEnd, NavigationError, NavigationStart, ResolveEnd, ResolveStart, RouteConfigLoadEnd, RouteConfigLoadStart, RouterEvent, RoutesRecognized, RouteReuseStrategy, Router, ROUTES, ROUTER_CONFIGURATION, ROUTER_INITIALIZER, RouterModule, provideRoutes, ChildrenOutletContexts, OutletContext, NoPreloading, PreloadAllModules, PreloadingStrategy, RouterPreloader, ActivatedRoute, ActivatedRouteSnapshot, RouterState, RouterStateSnapshot, PRIMARY_OUTLET, convertToParamMap, UrlHandlingStrategy, DefaultUrlSerializer, UrlSegment, UrlSegmentGroup, UrlSerializer, UrlTree, VERSION, ɵROUTER_PROVIDERS, ɵflatten */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_a", function() { return ROUTER_FORROOT_GUARD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_g", function() { return RouterInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_h", function() { return getAppInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_i", function() { return getBootstrapListener; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_d", function() { return provideForRootGuard; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_c", function() { return provideLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_j", function() { return provideRouterInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_f", function() { return rootRoute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_b", function() { return routerNgProbeToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_e", function() { return setupRouter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_k", function() { return Tree; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_router_router_l", function() { return TreeNode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLink", function() { return RouterLink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLinkWithHref", function() { return RouterLinkWithHref; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLinkActive", function() { return RouterLinkActive; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterOutlet", function() { return RouterOutlet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivationEnd", function() { return ActivationEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivationStart", function() { return ActivationStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChildActivationEnd", function() { return ChildActivationEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChildActivationStart", function() { return ChildActivationStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuardsCheckEnd", function() { return GuardsCheckEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuardsCheckStart", function() { return GuardsCheckStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationCancel", function() { return NavigationCancel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationEnd", function() { return NavigationEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationError", function() { return NavigationError; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationStart", function() { return NavigationStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResolveEnd", function() { return ResolveEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResolveStart", function() { return ResolveStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteConfigLoadEnd", function() { return RouteConfigLoadEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteConfigLoadStart", function() { return RouteConfigLoadStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterEvent", function() { return RouterEvent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RoutesRecognized", function() { return RoutesRecognized; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteReuseStrategy", function() { return RouteReuseStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return Router; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTES", function() { return ROUTES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTER_CONFIGURATION", function() { return ROUTER_CONFIGURATION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTER_INITIALIZER", function() { return ROUTER_INITIALIZER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterModule", function() { return RouterModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "provideRoutes", function() { return provideRoutes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChildrenOutletContexts", function() { return ChildrenOutletContexts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutletContext", function() { return OutletContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoPreloading", function() { return NoPreloading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreloadAllModules", function() { return PreloadAllModules; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreloadingStrategy", function() { return PreloadingStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterPreloader", function() { return RouterPreloader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivatedRoute", function() { return ActivatedRoute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivatedRouteSnapshot", function() { return ActivatedRouteSnapshot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterState", function() { return RouterState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterStateSnapshot", function() { return RouterStateSnapshot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PRIMARY_OUTLET", function() { return PRIMARY_OUTLET; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "convertToParamMap", function() { return convertToParamMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlHandlingStrategy", function() { return UrlHandlingStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultUrlSerializer", function() { return DefaultUrlSerializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSegment", function() { return UrlSegment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSegmentGroup", function() { return UrlSegmentGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSerializer", function() { return UrlSerializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlTree", function() { return UrlTree; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵROUTER_PROVIDERS", function() { return ROUTER_PROVIDERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵflatten", function() { return flatten; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/**
+ * @license Angular v6.0.0
+ * (c) 2010-2018 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+
+
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Base for events the Router goes through, as opposed to events tied to a specific
+ * Route. `RouterEvent`s will only be fired one time for any given navigation.
+ *
+ * Example:
+ *
+ * ```
+ * class MyService {
+ *   constructor(public router: Router, logger: Logger) {
+ *     router.events.filter(e => e instanceof RouterEvent).subscribe(e => {
+ *       logger.log(e.id, e.url);
+ *     });
+ *   }
+ * }
+ * ```
+ *
+ * @experimental
+ */
+var RouterEvent = /** @class */ (function () {
+    function RouterEvent(/** @docsNotRequired */
+    id, /** @docsNotRequired */
+    url) {
+        this.id = id;
+        this.url = url;
+    }
+    return RouterEvent;
+}());
+/**
+ * @description
+ *
+ * Represents an event triggered when a navigation starts.
+ *
+ *
+ */
+var NavigationStart = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(NavigationStart, _super);
+    function NavigationStart(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    /** @docsNotRequired */
+    navigationTrigger, /** @docsNotRequired */
+    /** @docsNotRequired */
+    restoredState) {
+        /** @docsNotRequired */
+        if (navigationTrigger === void 0) { navigationTrigger = 'imperative'; }
+        /** @docsNotRequired */
+        if (restoredState === void 0) { restoredState = null; }
+        var _this = _super.call(this, id, url) || this;
+        _this.navigationTrigger = navigationTrigger;
+        _this.restoredState = restoredState;
+        return _this;
+    }
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    NavigationStart.prototype.toString = /** @docsNotRequired */
+    function () { return "NavigationStart(id: " + this.id + ", url: '" + this.url + "')"; };
+    return NavigationStart;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents an event triggered when a navigation ends successfully.
+ *
+ *
+ */
+var NavigationEnd = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(NavigationEnd, _super);
+    function NavigationEnd(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        return _this;
+    }
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    NavigationEnd.prototype.toString = /** @docsNotRequired */
+    function () {
+        return "NavigationEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "')";
+    };
+    return NavigationEnd;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents an event triggered when a navigation is canceled.
+ *
+ *
+ */
+var NavigationCancel = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(NavigationCancel, _super);
+    function NavigationCancel(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    reason) {
+        var _this = _super.call(this, id, url) || this;
+        _this.reason = reason;
+        return _this;
+    }
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    NavigationCancel.prototype.toString = /** @docsNotRequired */
+    function () { return "NavigationCancel(id: " + this.id + ", url: '" + this.url + "')"; };
+    return NavigationCancel;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents an event triggered when a navigation fails due to an unexpected error.
+ *
+ *
+ */
+var NavigationError = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(NavigationError, _super);
+    function NavigationError(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    error) {
+        var _this = _super.call(this, id, url) || this;
+        _this.error = error;
+        return _this;
+    }
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    NavigationError.prototype.toString = /** @docsNotRequired */
+    function () {
+        return "NavigationError(id: " + this.id + ", url: '" + this.url + "', error: " + this.error + ")";
+    };
+    return NavigationError;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents an event triggered when routes are recognized.
+ *
+ *
+ */
+var RoutesRecognized = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(RoutesRecognized, _super);
+    function RoutesRecognized(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects, /** @docsNotRequired */
+    state) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        _this.state = state;
+        return _this;
+    }
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    RoutesRecognized.prototype.toString = /** @docsNotRequired */
+    function () {
+        return "RoutesRecognized(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return RoutesRecognized;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents the start of the Guard phase of routing.
+ *
+ * @experimental
+ */
+var GuardsCheckStart = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(GuardsCheckStart, _super);
+    function GuardsCheckStart(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects, /** @docsNotRequired */
+    state) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        _this.state = state;
+        return _this;
+    }
+    GuardsCheckStart.prototype.toString = function () {
+        return "GuardsCheckStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return GuardsCheckStart;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents the end of the Guard phase of routing.
+ *
+ * @experimental
+ */
+var GuardsCheckEnd = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(GuardsCheckEnd, _super);
+    function GuardsCheckEnd(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects, /** @docsNotRequired */
+    state, /** @docsNotRequired */
+    shouldActivate) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        _this.state = state;
+        _this.shouldActivate = shouldActivate;
+        return _this;
+    }
+    GuardsCheckEnd.prototype.toString = function () {
+        return "GuardsCheckEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ", shouldActivate: " + this.shouldActivate + ")";
+    };
+    return GuardsCheckEnd;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents the start of the Resolve phase of routing. The timing of this
+ * event may change, thus it's experimental. In the current iteration it will run
+ * in the "resolve" phase whether there's things to resolve or not. In the future this
+ * behavior may change to only run when there are things to be resolved.
+ *
+ * @experimental
+ */
+var ResolveStart = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(ResolveStart, _super);
+    function ResolveStart(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects, /** @docsNotRequired */
+    state) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        _this.state = state;
+        return _this;
+    }
+    ResolveStart.prototype.toString = function () {
+        return "ResolveStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return ResolveStart;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents the end of the Resolve phase of routing. See note on
+ * `ResolveStart` for use of this experimental API.
+ *
+ * @experimental
+ */
+var ResolveEnd = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(ResolveEnd, _super);
+    function ResolveEnd(/** @docsNotRequired */
+    /** @docsNotRequired */
+    id, /** @docsNotRequired */
+    /** @docsNotRequired */
+    url, /** @docsNotRequired */
+    urlAfterRedirects, /** @docsNotRequired */
+    state) {
+        var _this = _super.call(this, id, url) || this;
+        _this.urlAfterRedirects = urlAfterRedirects;
+        _this.state = state;
+        return _this;
+    }
+    ResolveEnd.prototype.toString = function () {
+        return "ResolveEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return ResolveEnd;
+}(RouterEvent));
+/**
+ * @description
+ *
+ * Represents an event triggered before lazy loading a route config.
+ *
+ * @experimental
+ */
+var RouteConfigLoadStart = /** @class */ (function () {
+    function RouteConfigLoadStart(/** @docsNotRequired */
+    route) {
+        this.route = route;
+    }
+    RouteConfigLoadStart.prototype.toString = function () { return "RouteConfigLoadStart(path: " + this.route.path + ")"; };
+    return RouteConfigLoadStart;
+}());
+/**
+ * @description
+ *
+ * Represents an event triggered when a route has been lazy loaded.
+ *
+ * @experimental
+ */
+var RouteConfigLoadEnd = /** @class */ (function () {
+    function RouteConfigLoadEnd(/** @docsNotRequired */
+    route) {
+        this.route = route;
+    }
+    RouteConfigLoadEnd.prototype.toString = function () { return "RouteConfigLoadEnd(path: " + this.route.path + ")"; };
+    return RouteConfigLoadEnd;
+}());
+/**
+ * @description
+ *
+ * Represents the start of end of the Resolve phase of routing. See note on
+ * `ChildActivationEnd` for use of this experimental API.
+ *
+ * @experimental
+ */
+var ChildActivationStart = /** @class */ (function () {
+    function ChildActivationStart(/** @docsNotRequired */
+    snapshot) {
+        this.snapshot = snapshot;
+    }
+    ChildActivationStart.prototype.toString = function () {
+        var path = this.snapshot.routeConfig && this.snapshot.routeConfig.path || '';
+        return "ChildActivationStart(path: '" + path + "')";
+    };
+    return ChildActivationStart;
+}());
+/**
+ * @description
+ *
+ * Represents the start of end of the Resolve phase of routing. See note on
+ * `ChildActivationStart` for use of this experimental API.
+ *
+ * @experimental
+ */
+var ChildActivationEnd = /** @class */ (function () {
+    function ChildActivationEnd(/** @docsNotRequired */
+    snapshot) {
+        this.snapshot = snapshot;
+    }
+    ChildActivationEnd.prototype.toString = function () {
+        var path = this.snapshot.routeConfig && this.snapshot.routeConfig.path || '';
+        return "ChildActivationEnd(path: '" + path + "')";
+    };
+    return ChildActivationEnd;
+}());
+/**
+ * @description
+ *
+ * Represents the start of end of the Resolve phase of routing. See note on
+ * `ActivationEnd` for use of this experimental API.
+ *
+ * @experimental
+ */
+var ActivationStart = /** @class */ (function () {
+    function ActivationStart(/** @docsNotRequired */
+    snapshot) {
+        this.snapshot = snapshot;
+    }
+    ActivationStart.prototype.toString = function () {
+        var path = this.snapshot.routeConfig && this.snapshot.routeConfig.path || '';
+        return "ActivationStart(path: '" + path + "')";
+    };
+    return ActivationStart;
+}());
+/**
+ * @description
+ *
+ * Represents the start of end of the Resolve phase of routing. See note on
+ * `ActivationStart` for use of this experimental API.
+ *
+ * @experimental
+ */
+var ActivationEnd = /** @class */ (function () {
+    function ActivationEnd(/** @docsNotRequired */
+    snapshot) {
+        this.snapshot = snapshot;
+    }
+    ActivationEnd.prototype.toString = function () {
+        var path = this.snapshot.routeConfig && this.snapshot.routeConfig.path || '';
+        return "ActivationEnd(path: '" + path + "')";
+    };
+    return ActivationEnd;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Name of the primary outlet.
+ *
+ *
+ */
+var PRIMARY_OUTLET = 'primary';
+var ParamsAsMap = /** @class */ (function () {
+    function ParamsAsMap(params) {
+        this.params = params || {};
+    }
+    ParamsAsMap.prototype.has = function (name) { return this.params.hasOwnProperty(name); };
+    ParamsAsMap.prototype.get = function (name) {
+        if (this.has(name)) {
+            var v = this.params[name];
+            return Array.isArray(v) ? v[0] : v;
+        }
+        return null;
+    };
+    ParamsAsMap.prototype.getAll = function (name) {
+        if (this.has(name)) {
+            var v = this.params[name];
+            return Array.isArray(v) ? v : [v];
+        }
+        return [];
+    };
+    Object.defineProperty(ParamsAsMap.prototype, "keys", {
+        get: function () { return Object.keys(this.params); },
+        enumerable: true,
+        configurable: true
+    });
+    return ParamsAsMap;
+}());
+/**
+ * Convert a `Params` instance to a `ParamMap`.
+ *
+ *
+ */
+function convertToParamMap(params) {
+    return new ParamsAsMap(params);
+}
+var NAVIGATION_CANCELING_ERROR = 'ngNavigationCancelingError';
+function navigationCancelingError(message) {
+    var error = Error('NavigationCancelingError: ' + message);
+    error[NAVIGATION_CANCELING_ERROR] = true;
+    return error;
+}
+function isNavigationCancelingError(error) {
+    return error && error[NAVIGATION_CANCELING_ERROR];
+}
+// Matches the route configuration (`route`) against the actual URL (`segments`).
+function defaultUrlMatcher(segments, segmentGroup, route) {
+    var parts = route.path.split('/');
+    if (parts.length > segments.length) {
+        // The actual URL is shorter than the config, no match
+        return null;
+    }
+    if (route.pathMatch === 'full' &&
+        (segmentGroup.hasChildren() || parts.length < segments.length)) {
+        // The config is longer than the actual URL but we are looking for a full match, return null
+        return null;
+    }
+    var posParams = {};
+    // Check each config part against the actual URL
+    for (var index = 0; index < parts.length; index++) {
+        var part = parts[index];
+        var segment = segments[index];
+        var isParameter = part.startsWith(':');
+        if (isParameter) {
+            posParams[part.substring(1)] = segment;
+        }
+        else if (part !== segment.path) {
+            // The actual URL part does not match the config, no match
+            return null;
+        }
+    }
+    return { consumed: segments.slice(0, parts.length), posParams: posParams };
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var LoadedRouterConfig = /** @class */ (function () {
+    function LoadedRouterConfig(routes, module) {
+        this.routes = routes;
+        this.module = module;
+    }
+    return LoadedRouterConfig;
+}());
+function validateConfig(config, parentPath) {
+    if (parentPath === void 0) { parentPath = ''; }
+    // forEach doesn't iterate undefined values
+    for (var i = 0; i < config.length; i++) {
+        var route = config[i];
+        var fullPath = getFullPath(parentPath, route);
+        validateNode(route, fullPath);
+    }
+}
+function validateNode(route, fullPath) {
+    if (!route) {
+        throw new Error("\n      Invalid configuration of route '" + fullPath + "': Encountered undefined route.\n      The reason might be an extra comma.\n\n      Example:\n      const routes: Routes = [\n        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },\n        { path: 'dashboard',  component: DashboardComponent },, << two commas\n        { path: 'detail/:id', component: HeroDetailComponent }\n      ];\n    ");
+    }
+    if (Array.isArray(route)) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': Array cannot be specified");
+    }
+    if (!route.component && (route.outlet && route.outlet !== PRIMARY_OUTLET)) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': a componentless route cannot have a named outlet set");
+    }
+    if (route.redirectTo && route.children) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and children cannot be used together");
+    }
+    if (route.redirectTo && route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and loadChildren cannot be used together");
+    }
+    if (route.children && route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': children and loadChildren cannot be used together");
+    }
+    if (route.redirectTo && route.component) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and component cannot be used together");
+    }
+    if (route.path && route.matcher) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': path and matcher cannot be used together");
+    }
+    if (route.redirectTo === void 0 && !route.component && !route.children && !route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "'. One of the following must be provided: component, redirectTo, children or loadChildren");
+    }
+    if (route.path === void 0 && route.matcher === void 0) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': routes must have either a path or a matcher specified");
+    }
+    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
+        throw new Error("Invalid configuration of route '" + fullPath + "': path cannot start with a slash");
+    }
+    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
+        var exp = "The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.";
+        throw new Error("Invalid configuration of route '{path: \"" + fullPath + "\", redirectTo: \"" + route.redirectTo + "\"}': please provide 'pathMatch'. " + exp);
+    }
+    if (route.pathMatch !== void 0 && route.pathMatch !== 'full' && route.pathMatch !== 'prefix') {
+        throw new Error("Invalid configuration of route '" + fullPath + "': pathMatch can only be set to 'prefix' or 'full'");
+    }
+    if (route.children) {
+        validateConfig(route.children, fullPath);
+    }
+}
+function getFullPath(parentPath, currentRoute) {
+    if (!currentRoute) {
+        return parentPath;
+    }
+    if (!parentPath && !currentRoute.path) {
+        return '';
+    }
+    else if (parentPath && !currentRoute.path) {
+        return parentPath + "/";
+    }
+    else if (!parentPath && currentRoute.path) {
+        return currentRoute.path;
+    }
+    else {
+        return parentPath + "/" + currentRoute.path;
+    }
+}
+function copyConfig(r) {
+    var children = r.children && r.children.map(copyConfig);
+    return children ? Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, r, { children: children }) : Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, r);
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function shallowEqualArrays(a, b) {
+    if (a.length !== b.length)
+        return false;
+    for (var i = 0; i < a.length; ++i) {
+        if (!shallowEqual(a[i], b[i]))
+            return false;
+    }
+    return true;
+}
+function shallowEqual(a, b) {
+    var k1 = Object.keys(a);
+    var k2 = Object.keys(b);
+    if (k1.length != k2.length) {
+        return false;
+    }
+    var key;
+    for (var i = 0; i < k1.length; i++) {
+        key = k1[i];
+        if (a[key] !== b[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * Flattens single-level nested arrays.
+ */
+function flatten(arr) {
+    return Array.prototype.concat.apply([], arr);
+}
+/**
+ * Return the last element of an array.
+ */
+function last$1(a) {
+    return a.length > 0 ? a[a.length - 1] : null;
+}
+/**
+ * Verifys all booleans in an array are `true`.
+ */
+
+function forEach(map$$1, callback) {
+    for (var prop in map$$1) {
+        if (map$$1.hasOwnProperty(prop)) {
+            callback(map$$1[prop], prop);
+        }
+    }
+}
+function waitForMap(obj, fn) {
+    if (Object.keys(obj).length === 0) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])({});
+    }
+    var waitHead = [];
+    var waitTail = [];
+    var res = {};
+    forEach(obj, function (a, k) {
+        var mapped = fn(k, a).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (r) { return res[k] = r; }));
+        if (k === PRIMARY_OUTLET) {
+            waitHead.push(mapped);
+        }
+        else {
+            waitTail.push(mapped);
+        }
+    });
+    // Closure compiler has problem with using spread operator here. So just using Array.concat.
+    return rxjs__WEBPACK_IMPORTED_MODULE_3__["of"].apply(null, waitHead.concat(waitTail)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatAll"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["last"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function () { return res; }));
+}
+/**
+ * ANDs Observables by merging all input observables, reducing to an Observable verifying all
+ * input Observables return `true`.
+ */
+function andObservables(observables) {
+    return observables.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeAll"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["every"])(function (result) { return result === true; }));
+}
+function wrapIntoObservable(value) {
+    if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisObservable"])(value)) {
+        return value;
+    }
+    if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisPromise"])(value)) {
+        // Use `Promise.resolve()` to wrap promise-like instances.
+        // Required ie when a Resolver returns a AngularJS `$q` promise to correctly trigger the
+        // change detection.
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(Promise.resolve(value));
+    }
+    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(value);
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function createEmptyUrlTree() {
+    return new UrlTree(new UrlSegmentGroup([], {}), {}, null);
+}
+function containsTree(container, containee, exact) {
+    if (exact) {
+        return equalQueryParams(container.queryParams, containee.queryParams) &&
+            equalSegmentGroups(container.root, containee.root);
+    }
+    return containsQueryParams(container.queryParams, containee.queryParams) &&
+        containsSegmentGroup(container.root, containee.root);
+}
+function equalQueryParams(container, containee) {
+    return shallowEqual(container, containee);
+}
+function equalSegmentGroups(container, containee) {
+    if (!equalPath(container.segments, containee.segments))
+        return false;
+    if (container.numberOfChildren !== containee.numberOfChildren)
+        return false;
+    for (var c in containee.children) {
+        if (!container.children[c])
+            return false;
+        if (!equalSegmentGroups(container.children[c], containee.children[c]))
+            return false;
+    }
+    return true;
+}
+function containsQueryParams(container, containee) {
+    return Object.keys(containee).length <= Object.keys(container).length &&
+        Object.keys(containee).every(function (key) { return containee[key] === container[key]; });
+}
+function containsSegmentGroup(container, containee) {
+    return containsSegmentGroupHelper(container, containee, containee.segments);
+}
+function containsSegmentGroupHelper(container, containee, containeePaths) {
+    if (container.segments.length > containeePaths.length) {
+        var current = container.segments.slice(0, containeePaths.length);
+        if (!equalPath(current, containeePaths))
+            return false;
+        if (containee.hasChildren())
+            return false;
+        return true;
+    }
+    else if (container.segments.length === containeePaths.length) {
+        if (!equalPath(container.segments, containeePaths))
+            return false;
+        for (var c in containee.children) {
+            if (!container.children[c])
+                return false;
+            if (!containsSegmentGroup(container.children[c], containee.children[c]))
+                return false;
+        }
+        return true;
+    }
+    else {
+        var current = containeePaths.slice(0, container.segments.length);
+        var next = containeePaths.slice(container.segments.length);
+        if (!equalPath(container.segments, current))
+            return false;
+        if (!container.children[PRIMARY_OUTLET])
+            return false;
+        return containsSegmentGroupHelper(container.children[PRIMARY_OUTLET], containee, next);
+    }
+}
+/**
+ * @description
+ *
+ * Represents the parsed URL.
+ *
+ * Since a router state is a tree, and the URL is nothing but a serialized state, the URL is a
+ * serialized tree.
+ * UrlTree is a data structure that provides a lot of affordances in dealing with URLs
+ *
+ * ### Example
+ *
+ * ```
+ * @Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const tree: UrlTree =
+ *       router.parseUrl('/team/33/(user/victor//support:help)?debug=true#fragment');
+ *     const f = tree.fragment; // return 'fragment'
+ *     const q = tree.queryParams; // returns {debug: 'true'}
+ *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+ *     const s: UrlSegment[] = g.segments; // returns 2 segments 'team' and '33'
+ *     g.children[PRIMARY_OUTLET].segments; // returns 2 segments 'user' and 'victor'
+ *     g.children['support'].segments; // return 1 segment 'help'
+ *   }
+ * }
+ * ```
+ *
+ *
+ */
+var UrlTree = /** @class */ (function () {
+    /** @internal */
+    function UrlTree(/** The root segment group of the URL tree */
+    root, /** The query params of the URL */
+    queryParams, /** The fragment of the URL */
+    fragment) {
+        this.root = root;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+    }
+    Object.defineProperty(UrlTree.prototype, "queryParamMap", {
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap = convertToParamMap(this.queryParams);
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    UrlTree.prototype.toString = /** @docsNotRequired */
+    function () { return DEFAULT_SERIALIZER.serialize(this); };
+    return UrlTree;
+}());
+/**
+ * @description
+ *
+ * Represents the parsed URL segment group.
+ *
+ * See `UrlTree` for more information.
+ *
+ *
+ */
+var UrlSegmentGroup = /** @class */ (function () {
+    function UrlSegmentGroup(/** The URL segments of this group. See `UrlSegment` for more information */
+    segments, /** The list of children of this group */
+    children) {
+        var _this = this;
+        this.segments = segments;
+        this.children = children;
+        /** The parent node in the url tree */
+        this.parent = null;
+        forEach(children, function (v, k) { return v.parent = _this; });
+    }
+    /** Whether the segment has child segments */
+    /** Whether the segment has child segments */
+    UrlSegmentGroup.prototype.hasChildren = /** Whether the segment has child segments */
+    function () { return this.numberOfChildren > 0; };
+    Object.defineProperty(UrlSegmentGroup.prototype, "numberOfChildren", {
+        /** Number of child segments */
+        get: /** Number of child segments */
+        function () { return Object.keys(this.children).length; },
+        enumerable: true,
+        configurable: true
+    });
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    UrlSegmentGroup.prototype.toString = /** @docsNotRequired */
+    function () { return serializePaths(this); };
+    return UrlSegmentGroup;
+}());
+/**
+ * @description
+ *
+ * Represents a single URL segment.
+ *
+ * A UrlSegment is a part of a URL between the two slashes. It contains a path and the matrix
+ * parameters associated with the segment.
+ *
+ * ## Example
+ *
+ * ```
+ * @Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const tree: UrlTree = router.parseUrl('/team;id=33');
+ *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+ *     const s: UrlSegment[] = g.segments;
+ *     s[0].path; // returns 'team'
+ *     s[0].parameters; // returns {id: 33}
+ *   }
+ * }
+ * ```
+ *
+ *
+ */
+var UrlSegment = /** @class */ (function () {
+    function UrlSegment(/** The path part of a URL segment */
+    path, /** The matrix parameters associated with a segment */
+    parameters) {
+        this.path = path;
+        this.parameters = parameters;
+    }
+    Object.defineProperty(UrlSegment.prototype, "parameterMap", {
+        get: function () {
+            if (!this._parameterMap) {
+                this._parameterMap = convertToParamMap(this.parameters);
+            }
+            return this._parameterMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    UrlSegment.prototype.toString = /** @docsNotRequired */
+    function () { return serializePath(this); };
+    return UrlSegment;
+}());
+function equalSegments(as, bs) {
+    return equalPath(as, bs) && as.every(function (a, i) { return shallowEqual(a.parameters, bs[i].parameters); });
+}
+function equalPath(as, bs) {
+    if (as.length !== bs.length)
+        return false;
+    return as.every(function (a, i) { return a.path === bs[i].path; });
+}
+function mapChildrenIntoArray(segment, fn) {
+    var res = [];
+    forEach(segment.children, function (child, childOutlet) {
+        if (childOutlet === PRIMARY_OUTLET) {
+            res = res.concat(fn(child, childOutlet));
+        }
+    });
+    forEach(segment.children, function (child, childOutlet) {
+        if (childOutlet !== PRIMARY_OUTLET) {
+            res = res.concat(fn(child, childOutlet));
+        }
+    });
+    return res;
+}
+/**
+ * @description
+ *
+ * Serializes and deserializes a URL string into a URL tree.
+ *
+ * The url serialization strategy is customizable. You can
+ * make all URLs case insensitive by providing a custom UrlSerializer.
+ *
+ * See `DefaultUrlSerializer` for an example of a URL serializer.
+ *
+ *
+ */
+var UrlSerializer = /** @class */ (function () {
+    function UrlSerializer() {
+    }
+    return UrlSerializer;
+}());
+/**
+ * @description
+ *
+ * A default implementation of the `UrlSerializer`.
+ *
+ * Example URLs:
+ *
+ * ```
+ * /inbox/33(popup:compose)
+ * /inbox/33;open=true/messages/44
+ * ```
+ *
+ * DefaultUrlSerializer uses parentheses to serialize secondary segments (e.g., popup:compose), the
+ * colon syntax to specify the outlet, and the ';parameter=value' syntax (e.g., open=true) to
+ * specify route specific parameters.
+ *
+ *
+ */
+var DefaultUrlSerializer = /** @class */ (function () {
+    function DefaultUrlSerializer() {
+    }
+    /** Parses a url into a `UrlTree` */
+    /** Parses a url into a `UrlTree` */
+    DefaultUrlSerializer.prototype.parse = /** Parses a url into a `UrlTree` */
+    function (url) {
+        var p = new UrlParser(url);
+        return new UrlTree(p.parseRootSegment(), p.parseQueryParams(), p.parseFragment());
+    };
+    /** Converts a `UrlTree` into a url */
+    /** Converts a `UrlTree` into a url */
+    DefaultUrlSerializer.prototype.serialize = /** Converts a `UrlTree` into a url */
+    function (tree) {
+        var segment = "/" + serializeSegment(tree.root, true);
+        var query = serializeQueryParams(tree.queryParams);
+        var fragment = typeof tree.fragment === "string" ? "#" + encodeUriFragment((tree.fragment)) : '';
+        return "" + segment + query + fragment;
+    };
+    return DefaultUrlSerializer;
+}());
+var DEFAULT_SERIALIZER = new DefaultUrlSerializer();
+function serializePaths(segment) {
+    return segment.segments.map(function (p) { return serializePath(p); }).join('/');
+}
+function serializeSegment(segment, root) {
+    if (!segment.hasChildren()) {
+        return serializePaths(segment);
+    }
+    if (root) {
+        var primary = segment.children[PRIMARY_OUTLET] ?
+            serializeSegment(segment.children[PRIMARY_OUTLET], false) :
+            '';
+        var children_1 = [];
+        forEach(segment.children, function (v, k) {
+            if (k !== PRIMARY_OUTLET) {
+                children_1.push(k + ":" + serializeSegment(v, false));
+            }
+        });
+        return children_1.length > 0 ? primary + "(" + children_1.join('//') + ")" : primary;
+    }
+    else {
+        var children = mapChildrenIntoArray(segment, function (v, k) {
+            if (k === PRIMARY_OUTLET) {
+                return [serializeSegment(segment.children[PRIMARY_OUTLET], false)];
+            }
+            return [k + ":" + serializeSegment(v, false)];
+        });
+        return serializePaths(segment) + "/(" + children.join('//') + ")";
+    }
+}
+/**
+ * Encodes a URI string with the default encoding. This function will only ever be called from
+ * `encodeUriQuery` or `encodeUriSegment` as it's the base set of encodings to be used. We need
+ * a custom encoding because encodeURIComponent is too aggressive and encodes stuff that doesn't
+ * have to be encoded per https://url.spec.whatwg.org.
+ */
+function encodeUriString(s) {
+    return encodeURIComponent(s)
+        .replace(/%40/g, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/g, '$')
+        .replace(/%2C/gi, ',');
+}
+/**
+ * This function should be used to encode both keys and values in a query string key/value. In
+ * the following URL, you need to call encodeUriQuery on "k" and "v":
+ *
+ * http://www.site.org/html;mk=mv?k=v#f
+ */
+function encodeUriQuery(s) {
+    return encodeUriString(s).replace(/%3B/gi, ';');
+}
+/**
+ * This function should be used to encode a URL fragment. In the following URL, you need to call
+ * encodeUriFragment on "f":
+ *
+ * http://www.site.org/html;mk=mv?k=v#f
+ */
+function encodeUriFragment(s) {
+    return encodeURI(s);
+}
+/**
+ * This function should be run on any URI segment as well as the key and value in a key/value
+ * pair for matrix params. In the following URL, you need to call encodeUriSegment on "html",
+ * "mk", and "mv":
+ *
+ * http://www.site.org/html;mk=mv?k=v#f
+ */
+function encodeUriSegment(s) {
+    return encodeUriString(s).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/%26/gi, '&');
+}
+function decode(s) {
+    return decodeURIComponent(s);
+}
+// Query keys/values should have the "+" replaced first, as "+" in a query string is " ".
+// decodeURIComponent function will not decode "+" as a space.
+function decodeQuery(s) {
+    return decode(s.replace(/\+/g, '%20'));
+}
+function serializePath(path) {
+    return "" + encodeUriSegment(path.path) + serializeMatrixParams(path.parameters);
+}
+function serializeMatrixParams(params) {
+    return Object.keys(params)
+        .map(function (key) { return ";" + encodeUriSegment(key) + "=" + encodeUriSegment(params[key]); })
+        .join('');
+}
+function serializeQueryParams(params) {
+    var strParams = Object.keys(params).map(function (name) {
+        var value = params[name];
+        return Array.isArray(value) ?
+            value.map(function (v) { return encodeUriQuery(name) + "=" + encodeUriQuery(v); }).join('&') :
+            encodeUriQuery(name) + "=" + encodeUriQuery(value);
+    });
+    return strParams.length ? "?" + strParams.join("&") : '';
+}
+var SEGMENT_RE = /^[^\/()?;=&#]+/;
+function matchSegments(str) {
+    var match = str.match(SEGMENT_RE);
+    return match ? match[0] : '';
+}
+var QUERY_PARAM_RE = /^[^=?&#]+/;
+// Return the name of the query param at the start of the string or an empty string
+function matchQueryParams(str) {
+    var match = str.match(QUERY_PARAM_RE);
+    return match ? match[0] : '';
+}
+var QUERY_PARAM_VALUE_RE = /^[^?&#]+/;
+// Return the value of the query param at the start of the string or an empty string
+function matchUrlQueryParamValue(str) {
+    var match = str.match(QUERY_PARAM_VALUE_RE);
+    return match ? match[0] : '';
+}
+var UrlParser = /** @class */ (function () {
+    function UrlParser(url) {
+        this.url = url;
+        this.remaining = url;
+    }
+    UrlParser.prototype.parseRootSegment = function () {
+        this.consumeOptional('/');
+        if (this.remaining === '' || this.peekStartsWith('?') || this.peekStartsWith('#')) {
+            return new UrlSegmentGroup([], {});
+        }
+        // The root segment group never has segments
+        return new UrlSegmentGroup([], this.parseChildren());
+    };
+    UrlParser.prototype.parseQueryParams = function () {
+        var params = {};
+        if (this.consumeOptional('?')) {
+            do {
+                this.parseQueryParam(params);
+            } while (this.consumeOptional('&'));
+        }
+        return params;
+    };
+    UrlParser.prototype.parseFragment = function () {
+        return this.consumeOptional('#') ? decodeURIComponent(this.remaining) : null;
+    };
+    UrlParser.prototype.parseChildren = function () {
+        if (this.remaining === '') {
+            return {};
+        }
+        this.consumeOptional('/');
+        var segments = [];
+        if (!this.peekStartsWith('(')) {
+            segments.push(this.parseSegment());
+        }
+        while (this.peekStartsWith('/') && !this.peekStartsWith('//') && !this.peekStartsWith('/(')) {
+            this.capture('/');
+            segments.push(this.parseSegment());
+        }
+        var children = {};
+        if (this.peekStartsWith('/(')) {
+            this.capture('/');
+            children = this.parseParens(true);
+        }
+        var res = {};
+        if (this.peekStartsWith('(')) {
+            res = this.parseParens(false);
+        }
+        if (segments.length > 0 || Object.keys(children).length > 0) {
+            res[PRIMARY_OUTLET] = new UrlSegmentGroup(segments, children);
+        }
+        return res;
+    };
+    // parse a segment with its matrix parameters
+    // ie `name;k1=v1;k2`
+    // parse a segment with its matrix parameters
+    // ie `name;k1=v1;k2`
+    UrlParser.prototype.parseSegment = 
+    // parse a segment with its matrix parameters
+    // ie `name;k1=v1;k2`
+    function () {
+        var path = matchSegments(this.remaining);
+        if (path === '' && this.peekStartsWith(';')) {
+            throw new Error("Empty path url segment cannot have parameters: '" + this.remaining + "'.");
+        }
+        this.capture(path);
+        return new UrlSegment(decode(path), this.parseMatrixParams());
+    };
+    UrlParser.prototype.parseMatrixParams = function () {
+        var params = {};
+        while (this.consumeOptional(';')) {
+            this.parseParam(params);
+        }
+        return params;
+    };
+    UrlParser.prototype.parseParam = function (params) {
+        var key = matchSegments(this.remaining);
+        if (!key) {
+            return;
+        }
+        this.capture(key);
+        var value = '';
+        if (this.consumeOptional('=')) {
+            var valueMatch = matchSegments(this.remaining);
+            if (valueMatch) {
+                value = valueMatch;
+                this.capture(value);
+            }
+        }
+        params[decode(key)] = decode(value);
+    };
+    // Parse a single query parameter `name[=value]`
+    // Parse a single query parameter `name[=value]`
+    UrlParser.prototype.parseQueryParam = 
+    // Parse a single query parameter `name[=value]`
+    function (params) {
+        var key = matchQueryParams(this.remaining);
+        if (!key) {
+            return;
+        }
+        this.capture(key);
+        var value = '';
+        if (this.consumeOptional('=')) {
+            var valueMatch = matchUrlQueryParamValue(this.remaining);
+            if (valueMatch) {
+                value = valueMatch;
+                this.capture(value);
+            }
+        }
+        var decodedKey = decodeQuery(key);
+        var decodedVal = decodeQuery(value);
+        if (params.hasOwnProperty(decodedKey)) {
+            // Append to existing values
+            var currentVal = params[decodedKey];
+            if (!Array.isArray(currentVal)) {
+                currentVal = [currentVal];
+                params[decodedKey] = currentVal;
+            }
+            currentVal.push(decodedVal);
+        }
+        else {
+            // Create a new value
+            params[decodedKey] = decodedVal;
+        }
+    };
+    // parse `(a/b//outlet_name:c/d)`
+    // parse `(a/b//outlet_name:c/d)`
+    UrlParser.prototype.parseParens = 
+    // parse `(a/b//outlet_name:c/d)`
+    function (allowPrimary) {
+        var segments = {};
+        this.capture('(');
+        while (!this.consumeOptional(')') && this.remaining.length > 0) {
+            var path = matchSegments(this.remaining);
+            var next = this.remaining[path.length];
+            // if is is not one of these characters, then the segment was unescaped
+            // or the group was not closed
+            if (next !== '/' && next !== ')' && next !== ';') {
+                throw new Error("Cannot parse url '" + this.url + "'");
+            }
+            var outletName = (undefined);
+            if (path.indexOf(':') > -1) {
+                outletName = path.substr(0, path.indexOf(':'));
+                this.capture(outletName);
+                this.capture(':');
+            }
+            else if (allowPrimary) {
+                outletName = PRIMARY_OUTLET;
+            }
+            var children = this.parseChildren();
+            segments[outletName] = Object.keys(children).length === 1 ? children[PRIMARY_OUTLET] :
+                new UrlSegmentGroup([], children);
+            this.consumeOptional('//');
+        }
+        return segments;
+    };
+    UrlParser.prototype.peekStartsWith = function (str) { return this.remaining.startsWith(str); };
+    // Consumes the prefix when it is present and returns whether it has been consumed
+    // Consumes the prefix when it is present and returns whether it has been consumed
+    UrlParser.prototype.consumeOptional = 
+    // Consumes the prefix when it is present and returns whether it has been consumed
+    function (str) {
+        if (this.peekStartsWith(str)) {
+            this.remaining = this.remaining.substring(str.length);
+            return true;
+        }
+        return false;
+    };
+    UrlParser.prototype.capture = function (str) {
+        if (!this.consumeOptional(str)) {
+            throw new Error("Expected \"" + str + "\".");
+        }
+    };
+    return UrlParser;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NoMatch = /** @class */ (function () {
+    function NoMatch(segmentGroup) {
+        this.segmentGroup = segmentGroup || null;
+    }
+    return NoMatch;
+}());
+var AbsoluteRedirect = /** @class */ (function () {
+    function AbsoluteRedirect(urlTree) {
+        this.urlTree = urlTree;
+    }
+    return AbsoluteRedirect;
+}());
+function noMatch(segmentGroup) {
+    return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (obs) { return obs.error(new NoMatch(segmentGroup)); });
+}
+function absoluteRedirect(newTree) {
+    return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (obs) { return obs.error(new AbsoluteRedirect(newTree)); });
+}
+function namedOutletsRedirect(redirectTo) {
+    return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (obs) {
+        return obs.error(new Error("Only absolute redirects can have named outlets. redirectTo: '" + redirectTo + "'"));
+    });
+}
+function canLoadFails(route) {
+    return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (obs) {
+        return obs.error(navigationCancelingError("Cannot load children because the guard of the route \"path: '" + route.path + "'\" returned false"));
+    });
+}
+/**
+ * Returns the `UrlTree` with the redirection applied.
+ *
+ * Lazy modules are loaded along the way.
+ */
+function applyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
+    return new ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config).apply();
+}
+var ApplyRedirects = /** @class */ (function () {
+    function ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
+        this.configLoader = configLoader;
+        this.urlSerializer = urlSerializer;
+        this.urlTree = urlTree;
+        this.config = config;
+        this.allowRedirects = true;
+        this.ngModule = moduleInjector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleRef"]);
+    }
+    ApplyRedirects.prototype.apply = function () {
+        var _this = this;
+        var expanded$ = this.expandSegmentGroup(this.ngModule, this.config, this.urlTree.root, PRIMARY_OUTLET);
+        var urlTrees$ = expanded$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (rootSegmentGroup) {
+            return _this.createUrlTree(rootSegmentGroup, _this.urlTree.queryParams, (_this.urlTree.fragment));
+        }));
+        return urlTrees$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (e) {
+            if (e instanceof AbsoluteRedirect) {
+                // after an absolute redirect we do not apply any more redirects!
+                // after an absolute redirect we do not apply any more redirects!
+                _this.allowRedirects = false;
+                // we need to run matching, so we can fetch all lazy-loaded modules
+                return _this.match(e.urlTree);
+            }
+            if (e instanceof NoMatch) {
+                throw _this.noMatchError(e);
+            }
+            throw e;
+        }));
+    };
+    ApplyRedirects.prototype.match = function (tree) {
+        var _this = this;
+        var expanded$ = this.expandSegmentGroup(this.ngModule, this.config, tree.root, PRIMARY_OUTLET);
+        var mapped$ = expanded$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (rootSegmentGroup) {
+            return _this.createUrlTree(rootSegmentGroup, tree.queryParams, (tree.fragment));
+        }));
+        return mapped$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (e) {
+            if (e instanceof NoMatch) {
+                throw _this.noMatchError(e);
+            }
+            throw e;
+        }));
+    };
+    ApplyRedirects.prototype.noMatchError = function (e) {
+        return new Error("Cannot match any routes. URL Segment: '" + e.segmentGroup + "'");
+    };
+    ApplyRedirects.prototype.createUrlTree = function (rootCandidate, queryParams, fragment) {
+        var root = rootCandidate.segments.length > 0 ?
+            new UrlSegmentGroup([], (_a = {}, _a[PRIMARY_OUTLET] = rootCandidate, _a)) :
+            rootCandidate;
+        return new UrlTree(root, queryParams, fragment);
+        var _a;
+    };
+    ApplyRedirects.prototype.expandSegmentGroup = function (ngModule, routes, segmentGroup, outlet) {
+        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+            return this.expandChildren(ngModule, routes, segmentGroup)
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (children) { return new UrlSegmentGroup([], children); }));
+        }
+        return this.expandSegment(ngModule, segmentGroup, routes, segmentGroup.segments, outlet, true);
+    };
+    // Recursively expand segment groups for all the child outlets
+    // Recursively expand segment groups for all the child outlets
+    ApplyRedirects.prototype.expandChildren = 
+    // Recursively expand segment groups for all the child outlets
+    function (ngModule, routes, segmentGroup) {
+        var _this = this;
+        return waitForMap(segmentGroup.children, function (childOutlet, child) { return _this.expandSegmentGroup(ngModule, routes, child, childOutlet); });
+    };
+    ApplyRedirects.prototype.expandSegment = function (ngModule, segmentGroup, routes, segments, outlet, allowRedirects) {
+        var _this = this;
+        return rxjs__WEBPACK_IMPORTED_MODULE_3__["of"].apply(void 0, Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__spread"])(routes)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (r) {
+            var expanded$ = _this.expandSegmentAgainstRoute(ngModule, segmentGroup, routes, r, segments, outlet, allowRedirects);
+            return expanded$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (e) {
+                if (e instanceof NoMatch) {
+                    // TODO(i): this return type doesn't match the declared Observable<UrlSegmentGroup> -
+                    // talk to Jason
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+                }
+                throw e;
+            }));
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatAll"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])(function (s) { return !!s; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (e, _) {
+            if (e instanceof rxjs__WEBPACK_IMPORTED_MODULE_3__["EmptyError"] || e.name === 'EmptyError') {
+                if (_this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(new UrlSegmentGroup([], {}));
+                }
+                throw new NoMatch(segmentGroup);
+            }
+            throw e;
+        }));
+    };
+    ApplyRedirects.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
+        return segments.length === 0 && !segmentGroup.children[outlet];
+    };
+    ApplyRedirects.prototype.expandSegmentAgainstRoute = function (ngModule, segmentGroup, routes, route, paths, outlet, allowRedirects) {
+        if (getOutlet(route) !== outlet) {
+            return noMatch(segmentGroup);
+        }
+        if (route.redirectTo === undefined) {
+            return this.matchSegmentAgainstRoute(ngModule, segmentGroup, route, paths);
+        }
+        if (allowRedirects && this.allowRedirects) {
+            return this.expandSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, paths, outlet);
+        }
+        return noMatch(segmentGroup);
+    };
+    ApplyRedirects.prototype.expandSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
+        if (route.path === '**') {
+            return this.expandWildCardWithParamsAgainstRouteUsingRedirect(ngModule, routes, route, outlet);
+        }
+        return this.expandRegularSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, segments, outlet);
+    };
+    ApplyRedirects.prototype.expandWildCardWithParamsAgainstRouteUsingRedirect = function (ngModule, routes, route, outlet) {
+        var _this = this;
+        var newTree = this.applyRedirectCommands([], (route.redirectTo), {});
+        if (route.redirectTo.startsWith('/')) {
+            return absoluteRedirect(newTree);
+        }
+        return this.lineralizeSegments(route, newTree).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (newSegments) {
+            var group = new UrlSegmentGroup(newSegments, {});
+            return _this.expandSegment(ngModule, group, routes, newSegments, outlet, false);
+        }));
+    };
+    ApplyRedirects.prototype.expandRegularSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
+        var _this = this;
+        var _a = match(segmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild, positionalParamSegments = _a.positionalParamSegments;
+        if (!matched)
+            return noMatch(segmentGroup);
+        var newTree = this.applyRedirectCommands(consumedSegments, (route.redirectTo), positionalParamSegments);
+        if (route.redirectTo.startsWith('/')) {
+            return absoluteRedirect(newTree);
+        }
+        return this.lineralizeSegments(route, newTree).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (newSegments) {
+            return _this.expandSegment(ngModule, segmentGroup, routes, newSegments.concat(segments.slice(lastChild)), outlet, false);
+        }));
+    };
+    ApplyRedirects.prototype.matchSegmentAgainstRoute = function (ngModule, rawSegmentGroup, route, segments) {
+        var _this = this;
+        if (route.path === '**') {
+            if (route.loadChildren) {
+                return this.configLoader.load(ngModule.injector, route)
+                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (cfg) {
+                    route._loadedConfig = cfg;
+                    return new UrlSegmentGroup(segments, {});
+                }));
+            }
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(new UrlSegmentGroup(segments, {}));
+        }
+        var _a = match(rawSegmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild;
+        if (!matched)
+            return noMatch(rawSegmentGroup);
+        var rawSlicedSegments = segments.slice(lastChild);
+        var childConfig$ = this.getChildConfig(ngModule, route);
+        return childConfig$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (routerConfig) {
+            var childModule = routerConfig.module;
+            var childConfig = routerConfig.routes;
+            var _a = split(rawSegmentGroup, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _a.segmentGroup, slicedSegments = _a.slicedSegments;
+            if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
+                var expanded$_1 = _this.expandChildren(childModule, childConfig, segmentGroup);
+                return expanded$_1.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (children) { return new UrlSegmentGroup(consumedSegments, children); }));
+            }
+            if (childConfig.length === 0 && slicedSegments.length === 0) {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(new UrlSegmentGroup(consumedSegments, {}));
+            }
+            var expanded$ = _this.expandSegment(childModule, segmentGroup, childConfig, slicedSegments, PRIMARY_OUTLET, true);
+            return expanded$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (cs) {
+                return new UrlSegmentGroup(consumedSegments.concat(cs.segments), cs.children);
+            }));
+        }));
+    };
+    ApplyRedirects.prototype.getChildConfig = function (ngModule, route) {
+        var _this = this;
+        if (route.children) {
+            // The children belong to the same module
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(new LoadedRouterConfig(route.children, ngModule));
+        }
+        if (route.loadChildren) {
+            // lazy children belong to the loaded module
+            if (route._loadedConfig !== undefined) {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(route._loadedConfig);
+            }
+            return runCanLoadGuard(ngModule.injector, route).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (shouldLoad) {
+                if (shouldLoad) {
+                    return _this.configLoader.load(ngModule.injector, route)
+                        .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (cfg) {
+                        route._loadedConfig = cfg;
+                        return cfg;
+                    }));
+                }
+                return canLoadFails(route);
+            }));
+        }
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(new LoadedRouterConfig([], ngModule));
+    };
+    ApplyRedirects.prototype.lineralizeSegments = function (route, urlTree) {
+        var res = [];
+        var c = urlTree.root;
+        while (true) {
+            res = res.concat(c.segments);
+            if (c.numberOfChildren === 0) {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(res);
+            }
+            if (c.numberOfChildren > 1 || !c.children[PRIMARY_OUTLET]) {
+                return namedOutletsRedirect((route.redirectTo));
+            }
+            c = c.children[PRIMARY_OUTLET];
+        }
+    };
+    ApplyRedirects.prototype.applyRedirectCommands = function (segments, redirectTo, posParams) {
+        return this.applyRedirectCreatreUrlTree(redirectTo, this.urlSerializer.parse(redirectTo), segments, posParams);
+    };
+    ApplyRedirects.prototype.applyRedirectCreatreUrlTree = function (redirectTo, urlTree, segments, posParams) {
+        var newRoot = this.createSegmentGroup(redirectTo, urlTree.root, segments, posParams);
+        return new UrlTree(newRoot, this.createQueryParams(urlTree.queryParams, this.urlTree.queryParams), urlTree.fragment);
+    };
+    ApplyRedirects.prototype.createQueryParams = function (redirectToParams, actualParams) {
+        var res = {};
+        forEach(redirectToParams, function (v, k) {
+            var copySourceValue = typeof v === 'string' && v.startsWith(':');
+            if (copySourceValue) {
+                var sourceName = v.substring(1);
+                res[k] = actualParams[sourceName];
+            }
+            else {
+                res[k] = v;
+            }
+        });
+        return res;
+    };
+    ApplyRedirects.prototype.createSegmentGroup = function (redirectTo, group, segments, posParams) {
+        var _this = this;
+        var updatedSegments = this.createSegments(redirectTo, group.segments, segments, posParams);
+        var children = {};
+        forEach(group.children, function (child, name) {
+            children[name] = _this.createSegmentGroup(redirectTo, child, segments, posParams);
+        });
+        return new UrlSegmentGroup(updatedSegments, children);
+    };
+    ApplyRedirects.prototype.createSegments = function (redirectTo, redirectToSegments, actualSegments, posParams) {
+        var _this = this;
+        return redirectToSegments.map(function (s) {
+            return s.path.startsWith(':') ? _this.findPosParam(redirectTo, s, posParams) :
+                _this.findOrReturn(s, actualSegments);
+        });
+    };
+    ApplyRedirects.prototype.findPosParam = function (redirectTo, redirectToUrlSegment, posParams) {
+        var pos = posParams[redirectToUrlSegment.path.substring(1)];
+        if (!pos)
+            throw new Error("Cannot redirect to '" + redirectTo + "'. Cannot find '" + redirectToUrlSegment.path + "'.");
+        return pos;
+    };
+    ApplyRedirects.prototype.findOrReturn = function (redirectToUrlSegment, actualSegments) {
+        var idx = 0;
+        try {
+            for (var actualSegments_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(actualSegments), actualSegments_1_1 = actualSegments_1.next(); !actualSegments_1_1.done; actualSegments_1_1 = actualSegments_1.next()) {
+                var s = actualSegments_1_1.value;
+                if (s.path === redirectToUrlSegment.path) {
+                    actualSegments.splice(idx);
+                    return s;
+                }
+                idx++;
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (actualSegments_1_1 && !actualSegments_1_1.done && (_a = actualSegments_1.return)) _a.call(actualSegments_1);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return redirectToUrlSegment;
+        var e_1, _a;
+    };
+    return ApplyRedirects;
+}());
+function runCanLoadGuard(moduleInjector, route) {
+    var canLoad = route.canLoad;
+    if (!canLoad || canLoad.length === 0)
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+    var obs = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(canLoad).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (injectionToken) {
+        var guard = moduleInjector.get(injectionToken);
+        return wrapIntoObservable(guard.canLoad ? guard.canLoad(route) : guard(route));
+    }));
+    return andObservables(obs);
+}
+function match(segmentGroup, route, segments) {
+    if (route.path === '') {
+        if ((route.pathMatch === 'full') && (segmentGroup.hasChildren() || segments.length > 0)) {
+            return { matched: false, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
+        }
+        return { matched: true, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
+    }
+    var matcher = route.matcher || defaultUrlMatcher;
+    var res = matcher(segments, segmentGroup, route);
+    if (!res) {
+        return {
+            matched: false,
+            consumedSegments: [],
+            lastChild: 0,
+            positionalParamSegments: {},
+        };
+    }
+    return {
+        matched: true,
+        consumedSegments: (res.consumed),
+        lastChild: (res.consumed.length),
+        positionalParamSegments: (res.posParams),
+    };
+}
+function split(segmentGroup, consumedSegments, slicedSegments, config) {
+    if (slicedSegments.length > 0 &&
+        containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, slicedSegments, config)) {
+        var s = new UrlSegmentGroup(consumedSegments, createChildrenForEmptySegments(config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
+        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: [] };
+    }
+    if (slicedSegments.length === 0 &&
+        containsEmptyPathRedirects(segmentGroup, slicedSegments, config)) {
+        var s = new UrlSegmentGroup(segmentGroup.segments, addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
+        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: slicedSegments };
+    }
+    return { segmentGroup: segmentGroup, slicedSegments: slicedSegments };
+}
+function mergeTrivialChildren(s) {
+    if (s.numberOfChildren === 1 && s.children[PRIMARY_OUTLET]) {
+        var c = s.children[PRIMARY_OUTLET];
+        return new UrlSegmentGroup(s.segments.concat(c.segments), c.children);
+    }
+    return s;
+}
+function addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
+    var res = {};
+    try {
+        for (var routes_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(routes), routes_1_1 = routes_1.next(); !routes_1_1.done; routes_1_1 = routes_1.next()) {
+            var r = routes_1_1.value;
+            if (isEmptyPathRedirect(segmentGroup, slicedSegments, r) && !children[getOutlet(r)]) {
+                res[getOutlet(r)] = new UrlSegmentGroup([], {});
+            }
+        }
+    }
+    catch (e_2_1) { e_2 = { error: e_2_1 }; }
+    finally {
+        try {
+            if (routes_1_1 && !routes_1_1.done && (_a = routes_1.return)) _a.call(routes_1);
+        }
+        finally { if (e_2) throw e_2.error; }
+    }
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, children, res);
+    var e_2, _a;
+}
+function createChildrenForEmptySegments(routes, primarySegmentGroup) {
+    var res = {};
+    res[PRIMARY_OUTLET] = primarySegmentGroup;
+    try {
+        for (var routes_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(routes), routes_2_1 = routes_2.next(); !routes_2_1.done; routes_2_1 = routes_2.next()) {
+            var r = routes_2_1.value;
+            if (r.path === '' && getOutlet(r) !== PRIMARY_OUTLET) {
+                res[getOutlet(r)] = new UrlSegmentGroup([], {});
+            }
+        }
+    }
+    catch (e_3_1) { e_3 = { error: e_3_1 }; }
+    finally {
+        try {
+            if (routes_2_1 && !routes_2_1.done && (_a = routes_2.return)) _a.call(routes_2);
+        }
+        finally { if (e_3) throw e_3.error; }
+    }
+    return res;
+    var e_3, _a;
+}
+function containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, segments, routes) {
+    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r) && getOutlet(r) !== PRIMARY_OUTLET; });
+}
+function containsEmptyPathRedirects(segmentGroup, segments, routes) {
+    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r); });
+}
+function isEmptyPathRedirect(segmentGroup, segments, r) {
+    if ((segmentGroup.hasChildren() || segments.length > 0) && r.pathMatch === 'full') {
+        return false;
+    }
+    return r.path === '' && r.redirectTo !== undefined;
+}
+function getOutlet(route) {
+    return route.outlet || PRIMARY_OUTLET;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var Tree = /** @class */ (function () {
+    function Tree(root) {
+        this._root = root;
+    }
+    Object.defineProperty(Tree.prototype, "root", {
+        get: function () { return this._root.value; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @internal
+     */
+    /**
+       * @internal
+       */
+    Tree.prototype.parent = /**
+       * @internal
+       */
+    function (t) {
+        var p = this.pathFromRoot(t);
+        return p.length > 1 ? p[p.length - 2] : null;
+    };
+    /**
+     * @internal
+     */
+    /**
+       * @internal
+       */
+    Tree.prototype.children = /**
+       * @internal
+       */
+    function (t) {
+        var n = findNode(t, this._root);
+        return n ? n.children.map(function (t) { return t.value; }) : [];
+    };
+    /**
+     * @internal
+     */
+    /**
+       * @internal
+       */
+    Tree.prototype.firstChild = /**
+       * @internal
+       */
+    function (t) {
+        var n = findNode(t, this._root);
+        return n && n.children.length > 0 ? n.children[0].value : null;
+    };
+    /**
+     * @internal
+     */
+    /**
+       * @internal
+       */
+    Tree.prototype.siblings = /**
+       * @internal
+       */
+    function (t) {
+        var p = findPath(t, this._root);
+        if (p.length < 2)
+            return [];
+        var c = p[p.length - 2].children.map(function (c) { return c.value; });
+        return c.filter(function (cc) { return cc !== t; });
+    };
+    /**
+     * @internal
+     */
+    /**
+       * @internal
+       */
+    Tree.prototype.pathFromRoot = /**
+       * @internal
+       */
+    function (t) { return findPath(t, this._root).map(function (s) { return s.value; }); };
+    return Tree;
+}());
+// DFS for the node matching the value
+function findNode(value, node) {
+    if (value === node.value)
+        return node;
+    try {
+        for (var _a = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(node.children), _b = _a.next(); !_b.done; _b = _a.next()) {
+            var child = _b.value;
+            var node_1 = findNode(value, child);
+            if (node_1)
+                return node_1;
+        }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+        }
+        finally { if (e_1) throw e_1.error; }
+    }
+    return null;
+    var e_1, _c;
+}
+// Return the path to the node with the given value using DFS
+function findPath(value, node) {
+    if (value === node.value)
+        return [node];
+    try {
+        for (var _a = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(node.children), _b = _a.next(); !_b.done; _b = _a.next()) {
+            var child = _b.value;
+            var path = findPath(value, child);
+            if (path.length) {
+                path.unshift(node);
+                return path;
+            }
+        }
+    }
+    catch (e_2_1) { e_2 = { error: e_2_1 }; }
+    finally {
+        try {
+            if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+        }
+        finally { if (e_2) throw e_2.error; }
+    }
+    return [];
+    var e_2, _c;
+}
+var TreeNode = /** @class */ (function () {
+    function TreeNode(value, children) {
+        this.value = value;
+        this.children = children;
+    }
+    TreeNode.prototype.toString = function () { return "TreeNode(" + this.value + ")"; };
+    return TreeNode;
+}());
+// Return the list of T indexed by outlet name
+function nodeChildrenAsMap(node) {
+    var map$$1 = {};
+    if (node) {
+        node.children.forEach(function (child) { return map$$1[child.value.outlet] = child; });
+    }
+    return map$$1;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Represents the state of the router.
+ *
+ * RouterState is a tree of activated routes. Every node in this tree knows about the "consumed" URL
+ * segments, the extracted parameters, and the resolved data.
+ *
+ * ### Example
+ *
+ * ```
+ * @Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const state: RouterState = router.routerState;
+ *     const root: ActivatedRoute = state.root;
+ *     const child = root.firstChild;
+ *     const id: Observable<string> = child.params.map(p => p.id);
+ *     //...
+ *   }
+ * }
+ * ```
+ *
+ * See `ActivatedRoute` for more information.
+ *
+ *
+ */
+var RouterState = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(RouterState, _super);
+    /** @internal */
+    function RouterState(root, /** The current snapshot of the router state */
+    snapshot) {
+        var _this = _super.call(this, root) || this;
+        _this.snapshot = snapshot;
+        setRouterState(_this, root);
+        return _this;
+    }
+    RouterState.prototype.toString = function () { return this.snapshot.toString(); };
+    return RouterState;
+}(Tree));
+function createEmptyState(urlTree, rootComponent) {
+    var snapshot = createEmptyStateSnapshot(urlTree, rootComponent);
+    var emptyUrl = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]([new UrlSegment('', {})]);
+    var emptyParams = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]({});
+    var emptyData = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]({});
+    var emptyQueryParams = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]({});
+    var fragment = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]('');
+    var activated = new ActivatedRoute(emptyUrl, emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, snapshot.root);
+    activated.snapshot = snapshot.root;
+    return new RouterState(new TreeNode(activated, []), snapshot);
+}
+function createEmptyStateSnapshot(urlTree, rootComponent) {
+    var emptyParams = {};
+    var emptyData = {};
+    var emptyQueryParams = {};
+    var fragment = '';
+    var activated = new ActivatedRouteSnapshot([], emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, null, urlTree.root, -1, {});
+    return new RouterStateSnapshot('', new TreeNode(activated, []));
+}
+/**
+ * @description
+ *
+ * Contains the information about a route associated with a component loaded in an
+ * outlet.  An `ActivatedRoute` can also be used to traverse the router state tree.
+ *
+ * ```
+ * @Component({...})
+ * class MyComponent {
+ *   constructor(route: ActivatedRoute) {
+ *     const id: Observable<string> = route.params.map(p => p.id);
+ *     const url: Observable<string> = route.url.map(segments => segments.join(''));
+ *     // route.data includes both `data` and `resolve`
+ *     const user = route.data.map(d => d.user);
+ *   }
+ * }
+ * ```
+ *
+ *
+ */
+var ActivatedRoute = /** @class */ (function () {
+    /** @internal */
+    function ActivatedRoute(/** An observable of the URL segments matched by this route */
+    url, /** An observable of the matrix parameters scoped to this route */
+    params, /** An observable of the query parameters shared by all the routes */
+    queryParams, /** An observable of the URL fragment shared by all the routes */
+    fragment, /** An observable of the static and resolved data of this route. */
+    data, /** The outlet name of the route. It's a constant */
+    outlet, /** The component of the route. It's a constant */
+    // TODO(vsavkin): remove |string
+    component, futureSnapshot) {
+        this.url = url;
+        this.params = params;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+        this.data = data;
+        this.outlet = outlet;
+        this.component = component;
+        this._futureSnapshot = futureSnapshot;
+    }
+    Object.defineProperty(ActivatedRoute.prototype, "routeConfig", {
+        /** The configuration used to match this route */
+        get: /** The configuration used to match this route */
+        function () { return this._futureSnapshot.routeConfig; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "root", {
+        /** The root of the router state */
+        get: /** The root of the router state */
+        function () { return this._routerState.root; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "parent", {
+        /** The parent of this route in the router state tree */
+        get: /** The parent of this route in the router state tree */
+        function () { return this._routerState.parent(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "firstChild", {
+        /** The first child of this route in the router state tree */
+        get: /** The first child of this route in the router state tree */
+        function () { return this._routerState.firstChild(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "children", {
+        /** The children of this route in the router state tree */
+        get: /** The children of this route in the router state tree */
+        function () { return this._routerState.children(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "pathFromRoot", {
+        /** The path from the root of the router state tree to this route */
+        get: /** The path from the root of the router state tree to this route */
+        function () { return this._routerState.pathFromRoot(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "paramMap", {
+        get: function () {
+            if (!this._paramMap) {
+                this._paramMap = this.params.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (p) { return convertToParamMap(p); }));
+            }
+            return this._paramMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "queryParamMap", {
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap =
+                    this.queryParams.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (p) { return convertToParamMap(p); }));
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ActivatedRoute.prototype.toString = function () {
+        return this.snapshot ? this.snapshot.toString() : "Future(" + this._futureSnapshot + ")";
+    };
+    return ActivatedRoute;
+}());
+/**
+ * Returns the inherited params, data, and resolve for a given route.
+ * By default, this only inherits values up to the nearest path-less or component-less route.
+ * @internal
+ */
+function inheritedParamsDataResolve(route, paramsInheritanceStrategy) {
+    if (paramsInheritanceStrategy === void 0) { paramsInheritanceStrategy = 'emptyOnly'; }
+    var pathFromRoot = route.pathFromRoot;
+    var inheritingStartingFrom = 0;
+    if (paramsInheritanceStrategy !== 'always') {
+        inheritingStartingFrom = pathFromRoot.length - 1;
+        while (inheritingStartingFrom >= 1) {
+            var current = pathFromRoot[inheritingStartingFrom];
+            var parent_1 = pathFromRoot[inheritingStartingFrom - 1];
+            // current route is an empty path => inherits its parent's params and data
+            if (current.routeConfig && current.routeConfig.path === '') {
+                inheritingStartingFrom--;
+                // parent is componentless => current route should inherit its params and data
+            }
+            else if (!parent_1.component) {
+                inheritingStartingFrom--;
+            }
+            else {
+                break;
+            }
+        }
+    }
+    return flattenInherited(pathFromRoot.slice(inheritingStartingFrom));
+}
+/** @internal */
+function flattenInherited(pathFromRoot) {
+    return pathFromRoot.reduce(function (res, curr) {
+        var params = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, res.params, curr.params);
+        var data = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, res.data, curr.data);
+        var resolve = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, res.resolve, curr._resolvedData);
+        return { params: params, data: data, resolve: resolve };
+    }, { params: {}, data: {}, resolve: {} });
+}
+/**
+ * @description
+ *
+ * Contains the information about a route associated with a component loaded in an
+ * outlet at a particular moment in time. ActivatedRouteSnapshot can also be used to
+ * traverse the router state tree.
+ *
+ * ```
+ * @Component({templateUrl:'./my-component.html'})
+ * class MyComponent {
+ *   constructor(route: ActivatedRoute) {
+ *     const id: string = route.snapshot.params.id;
+ *     const url: string = route.snapshot.url.join('');
+ *     const user = route.snapshot.data.user;
+ *   }
+ * }
+ * ```
+ *
+ *
+ */
+var ActivatedRouteSnapshot = /** @class */ (function () {
+    /** @internal */
+    function ActivatedRouteSnapshot(/** The URL segments matched by this route */
+    url, /** The matrix parameters scoped to this route */
+    params, /** The query parameters shared by all the routes */
+    queryParams, /** The URL fragment shared by all the routes */
+    fragment, /** The static and resolved data of this route */
+    data, /** The outlet name of the route */
+    outlet, /** The component of the route */
+    component, routeConfig, urlSegment, lastPathIndex, resolve) {
+        this.url = url;
+        this.params = params;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+        this.data = data;
+        this.outlet = outlet;
+        this.component = component;
+        this.routeConfig = routeConfig;
+        this._urlSegment = urlSegment;
+        this._lastPathIndex = lastPathIndex;
+        this._resolve = resolve;
+    }
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "root", {
+        /** The root of the router state */
+        get: /** The root of the router state */
+        function () { return this._routerState.root; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "parent", {
+        /** The parent of this route in the router state tree */
+        get: /** The parent of this route in the router state tree */
+        function () { return this._routerState.parent(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "firstChild", {
+        /** The first child of this route in the router state tree */
+        get: /** The first child of this route in the router state tree */
+        function () { return this._routerState.firstChild(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "children", {
+        /** The children of this route in the router state tree */
+        get: /** The children of this route in the router state tree */
+        function () { return this._routerState.children(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "pathFromRoot", {
+        /** The path from the root of the router state tree to this route */
+        get: /** The path from the root of the router state tree to this route */
+        function () { return this._routerState.pathFromRoot(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "paramMap", {
+        get: function () {
+            if (!this._paramMap) {
+                this._paramMap = convertToParamMap(this.params);
+            }
+            return this._paramMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "queryParamMap", {
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap = convertToParamMap(this.queryParams);
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ActivatedRouteSnapshot.prototype.toString = function () {
+        var url = this.url.map(function (segment) { return segment.toString(); }).join('/');
+        var matched = this.routeConfig ? this.routeConfig.path : '';
+        return "Route(url:'" + url + "', path:'" + matched + "')";
+    };
+    return ActivatedRouteSnapshot;
+}());
+/**
+ * @description
+ *
+ * Represents the state of the router at a moment in time.
+ *
+ * This is a tree of activated route snapshots. Every node in this tree knows about
+ * the "consumed" URL segments, the extracted parameters, and the resolved data.
+ *
+ * ### Example
+ *
+ * ```
+ * @Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const state: RouterState = router.routerState;
+ *     const snapshot: RouterStateSnapshot = state.snapshot;
+ *     const root: ActivatedRouteSnapshot = snapshot.root;
+ *     const child = root.firstChild;
+ *     const id: Observable<string> = child.params.map(p => p.id);
+ *     //...
+ *   }
+ * }
+ * ```
+ *
+ *
+ */
+var RouterStateSnapshot = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__extends"])(RouterStateSnapshot, _super);
+    /** @internal */
+    function RouterStateSnapshot(/** The url from which this snapshot was created */
+    url, root) {
+        var _this = _super.call(this, root) || this;
+        _this.url = url;
+        setRouterState(_this, root);
+        return _this;
+    }
+    RouterStateSnapshot.prototype.toString = function () { return serializeNode(this._root); };
+    return RouterStateSnapshot;
+}(Tree));
+function setRouterState(state, node) {
+    node.value._routerState = state;
+    node.children.forEach(function (c) { return setRouterState(state, c); });
+}
+function serializeNode(node) {
+    var c = node.children.length > 0 ? " { " + node.children.map(serializeNode).join(', ') + " } " : '';
+    return "" + node.value + c;
+}
+/**
+ * The expectation is that the activate route is created with the right set of parameters.
+ * So we push new values into the observables only when they are not the initial values.
+ * And we detect that by checking if the snapshot field is set.
+ */
+function advanceActivatedRoute(route) {
+    if (route.snapshot) {
+        var currentSnapshot = route.snapshot;
+        var nextSnapshot = route._futureSnapshot;
+        route.snapshot = nextSnapshot;
+        if (!shallowEqual(currentSnapshot.queryParams, nextSnapshot.queryParams)) {
+            route.queryParams.next(nextSnapshot.queryParams);
+        }
+        if (currentSnapshot.fragment !== nextSnapshot.fragment) {
+            route.fragment.next(nextSnapshot.fragment);
+        }
+        if (!shallowEqual(currentSnapshot.params, nextSnapshot.params)) {
+            route.params.next(nextSnapshot.params);
+        }
+        if (!shallowEqualArrays(currentSnapshot.url, nextSnapshot.url)) {
+            route.url.next(nextSnapshot.url);
+        }
+        if (!shallowEqual(currentSnapshot.data, nextSnapshot.data)) {
+            route.data.next(nextSnapshot.data);
+        }
+    }
+    else {
+        route.snapshot = route._futureSnapshot;
+        // this is for resolved data
+        // this is for resolved data
+        route.data.next(route._futureSnapshot.data);
+    }
+}
+function equalParamsAndUrlSegments(a, b) {
+    var equalUrlParams = shallowEqual(a.params, b.params) && equalSegments(a.url, b.url);
+    var parentsMismatch = !a.parent !== !b.parent;
+    return equalUrlParams && !parentsMismatch &&
+        (!a.parent || equalParamsAndUrlSegments(a.parent, (b.parent)));
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function createRouterState(routeReuseStrategy, curr, prevState) {
+    var root = createNode(routeReuseStrategy, curr._root, prevState ? prevState._root : undefined);
+    return new RouterState(root, curr);
+}
+function createNode(routeReuseStrategy, curr, prevState) {
+    // reuse an activated route that is currently displayed on the screen
+    if (prevState && routeReuseStrategy.shouldReuseRoute(curr.value, prevState.value.snapshot)) {
+        var value = prevState.value;
+        value._futureSnapshot = curr.value;
+        var children = createOrReuseChildren(routeReuseStrategy, curr, prevState);
+        return new TreeNode(value, children);
+        // retrieve an activated route that is used to be displayed, but is not currently displayed
+    }
+    else {
+        var detachedRouteHandle = routeReuseStrategy.retrieve(curr.value);
+        if (detachedRouteHandle) {
+            var tree = detachedRouteHandle.route;
+            setFutureSnapshotsOfActivatedRoutes(curr, tree);
+            return tree;
+        }
+        else {
+            var value = createActivatedRoute(curr.value);
+            var children = curr.children.map(function (c) { return createNode(routeReuseStrategy, c); });
+            return new TreeNode(value, children);
+        }
+    }
+}
+function setFutureSnapshotsOfActivatedRoutes(curr, result) {
+    if (curr.value.routeConfig !== result.value.routeConfig) {
+        throw new Error('Cannot reattach ActivatedRouteSnapshot created from a different route');
+    }
+    if (curr.children.length !== result.children.length) {
+        throw new Error('Cannot reattach ActivatedRouteSnapshot with a different number of children');
+    }
+    result.value._futureSnapshot = curr.value;
+    for (var i = 0; i < curr.children.length; ++i) {
+        setFutureSnapshotsOfActivatedRoutes(curr.children[i], result.children[i]);
+    }
+}
+function createOrReuseChildren(routeReuseStrategy, curr, prevState) {
+    return curr.children.map(function (child) {
+        try {
+            for (var _a = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(prevState.children), _b = _a.next(); !_b.done; _b = _a.next()) {
+                var p = _b.value;
+                if (routeReuseStrategy.shouldReuseRoute(p.value.snapshot, child.value)) {
+                    return createNode(routeReuseStrategy, child, p);
+                }
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return createNode(routeReuseStrategy, child);
+        var e_1, _c;
+    });
+}
+function createActivatedRoute(c) {
+    return new ActivatedRoute(new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](c.url), new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](c.params), new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](c.queryParams), new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](c.fragment), new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](c.data), c.outlet, c.component, c);
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function createUrlTree(route, urlTree, commands, queryParams, fragment) {
+    if (commands.length === 0) {
+        return tree(urlTree.root, urlTree.root, urlTree, queryParams, fragment);
+    }
+    var nav = computeNavigation(commands);
+    if (nav.toRoot()) {
+        return tree(urlTree.root, new UrlSegmentGroup([], {}), urlTree, queryParams, fragment);
+    }
+    var startingPosition = findStartingPosition(nav, urlTree, route);
+    var segmentGroup = startingPosition.processChildren ?
+        updateSegmentGroupChildren(startingPosition.segmentGroup, startingPosition.index, nav.commands) :
+        updateSegmentGroup(startingPosition.segmentGroup, startingPosition.index, nav.commands);
+    return tree(startingPosition.segmentGroup, segmentGroup, urlTree, queryParams, fragment);
+}
+function isMatrixParams(command) {
+    return typeof command === 'object' && command != null && !command.outlets && !command.segmentPath;
+}
+function tree(oldSegmentGroup, newSegmentGroup, urlTree, queryParams, fragment) {
+    var qp = {};
+    if (queryParams) {
+        forEach(queryParams, function (value, name) {
+            qp[name] = Array.isArray(value) ? value.map(function (v) { return "" + v; }) : "" + value;
+        });
+    }
+    if (urlTree.root === oldSegmentGroup) {
+        return new UrlTree(newSegmentGroup, qp, fragment);
+    }
+    return new UrlTree(replaceSegment(urlTree.root, oldSegmentGroup, newSegmentGroup), qp, fragment);
+}
+function replaceSegment(current, oldSegment, newSegment) {
+    var children = {};
+    forEach(current.children, function (c, outletName) {
+        if (c === oldSegment) {
+            children[outletName] = newSegment;
+        }
+        else {
+            children[outletName] = replaceSegment(c, oldSegment, newSegment);
+        }
+    });
+    return new UrlSegmentGroup(current.segments, children);
+}
+var Navigation = /** @class */ (function () {
+    function Navigation(isAbsolute, numberOfDoubleDots, commands) {
+        this.isAbsolute = isAbsolute;
+        this.numberOfDoubleDots = numberOfDoubleDots;
+        this.commands = commands;
+        if (isAbsolute && commands.length > 0 && isMatrixParams(commands[0])) {
+            throw new Error('Root segment cannot have matrix parameters');
+        }
+        var cmdWithOutlet = commands.find(function (c) { return typeof c === 'object' && c != null && c.outlets; });
+        if (cmdWithOutlet && cmdWithOutlet !== last$1(commands)) {
+            throw new Error('{outlets:{}} has to be the last command');
+        }
+    }
+    Navigation.prototype.toRoot = function () {
+        return this.isAbsolute && this.commands.length === 1 && this.commands[0] == '/';
+    };
+    return Navigation;
+}());
+/** Transforms commands to a normalized `Navigation` */
+function computeNavigation(commands) {
+    if ((typeof commands[0] === 'string') && commands.length === 1 && commands[0] === '/') {
+        return new Navigation(true, 0, commands);
+    }
+    var numberOfDoubleDots = 0;
+    var isAbsolute = false;
+    var res = commands.reduce(function (res, cmd, cmdIdx) {
+        if (typeof cmd === 'object' && cmd != null) {
+            if (cmd.outlets) {
+                var outlets_1 = {};
+                forEach(cmd.outlets, function (commands, name) {
+                    outlets_1[name] = typeof commands === 'string' ? commands.split('/') : commands;
+                });
+                return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__spread"])(res, [{ outlets: outlets_1 }]);
+            }
+            if (cmd.segmentPath) {
+                return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__spread"])(res, [cmd.segmentPath]);
+            }
+        }
+        if (!(typeof cmd === 'string')) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__spread"])(res, [cmd]);
+        }
+        if (cmdIdx === 0) {
+            cmd.split('/').forEach(function (urlPart, partIndex) {
+                if (partIndex == 0 && urlPart === '.') {
+                    // skip './a'
+                }
+                else if (partIndex == 0 && urlPart === '') {
+                    //  '/a'
+                    isAbsolute = true;
+                }
+                else if (urlPart === '..') {
+                    //  '../a'
+                    numberOfDoubleDots++;
+                }
+                else if (urlPart != '') {
+                    res.push(urlPart);
+                }
+            });
+            return res;
+        }
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__spread"])(res, [cmd]);
+    }, []);
+    return new Navigation(isAbsolute, numberOfDoubleDots, res);
+}
+var Position = /** @class */ (function () {
+    function Position(segmentGroup, processChildren, index) {
+        this.segmentGroup = segmentGroup;
+        this.processChildren = processChildren;
+        this.index = index;
+    }
+    return Position;
+}());
+function findStartingPosition(nav, tree, route) {
+    if (nav.isAbsolute) {
+        return new Position(tree.root, true, 0);
+    }
+    if (route.snapshot._lastPathIndex === -1) {
+        return new Position(route.snapshot._urlSegment, true, 0);
+    }
+    var modifier = isMatrixParams(nav.commands[0]) ? 0 : 1;
+    var index = route.snapshot._lastPathIndex + modifier;
+    return createPositionApplyingDoubleDots(route.snapshot._urlSegment, index, nav.numberOfDoubleDots);
+}
+function createPositionApplyingDoubleDots(group, index, numberOfDoubleDots) {
+    var g = group;
+    var ci = index;
+    var dd = numberOfDoubleDots;
+    while (dd > ci) {
+        dd -= ci;
+        g = (g.parent);
+        if (!g) {
+            throw new Error('Invalid number of \'../\'');
+        }
+        ci = g.segments.length;
+    }
+    return new Position(g, false, ci - dd);
+}
+function getPath(command) {
+    if (typeof command === 'object' && command != null && command.outlets) {
+        return command.outlets[PRIMARY_OUTLET];
+    }
+    return "" + command;
+}
+function getOutlets(commands) {
+    if (!(typeof commands[0] === 'object'))
+        return _a = {}, _a[PRIMARY_OUTLET] = commands, _a;
+    if (commands[0].outlets === undefined)
+        return _b = {}, _b[PRIMARY_OUTLET] = commands, _b;
+    return commands[0].outlets;
+    var _a, _b;
+}
+function updateSegmentGroup(segmentGroup, startIndex, commands) {
+    if (!segmentGroup) {
+        segmentGroup = new UrlSegmentGroup([], {});
+    }
+    if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+        return updateSegmentGroupChildren(segmentGroup, startIndex, commands);
+    }
+    var m = prefixedWith(segmentGroup, startIndex, commands);
+    var slicedCommands = commands.slice(m.commandIndex);
+    if (m.match && m.pathIndex < segmentGroup.segments.length) {
+        var g = new UrlSegmentGroup(segmentGroup.segments.slice(0, m.pathIndex), {});
+        g.children[PRIMARY_OUTLET] =
+            new UrlSegmentGroup(segmentGroup.segments.slice(m.pathIndex), segmentGroup.children);
+        return updateSegmentGroupChildren(g, 0, slicedCommands);
+    }
+    else if (m.match && slicedCommands.length === 0) {
+        return new UrlSegmentGroup(segmentGroup.segments, {});
+    }
+    else if (m.match && !segmentGroup.hasChildren()) {
+        return createNewSegmentGroup(segmentGroup, startIndex, commands);
+    }
+    else if (m.match) {
+        return updateSegmentGroupChildren(segmentGroup, 0, slicedCommands);
+    }
+    else {
+        return createNewSegmentGroup(segmentGroup, startIndex, commands);
+    }
+}
+function updateSegmentGroupChildren(segmentGroup, startIndex, commands) {
+    if (commands.length === 0) {
+        return new UrlSegmentGroup(segmentGroup.segments, {});
+    }
+    else {
+        var outlets_2 = getOutlets(commands);
+        var children_1 = {};
+        forEach(outlets_2, function (commands, outlet) {
+            if (commands !== null) {
+                children_1[outlet] = updateSegmentGroup(segmentGroup.children[outlet], startIndex, commands);
+            }
+        });
+        forEach(segmentGroup.children, function (child, childOutlet) {
+            if (outlets_2[childOutlet] === undefined) {
+                children_1[childOutlet] = child;
+            }
+        });
+        return new UrlSegmentGroup(segmentGroup.segments, children_1);
+    }
+}
+function prefixedWith(segmentGroup, startIndex, commands) {
+    var currentCommandIndex = 0;
+    var currentPathIndex = startIndex;
+    var noMatch = { match: false, pathIndex: 0, commandIndex: 0 };
+    while (currentPathIndex < segmentGroup.segments.length) {
+        if (currentCommandIndex >= commands.length)
+            return noMatch;
+        var path = segmentGroup.segments[currentPathIndex];
+        var curr = getPath(commands[currentCommandIndex]);
+        var next = currentCommandIndex < commands.length - 1 ? commands[currentCommandIndex + 1] : null;
+        if (currentPathIndex > 0 && curr === undefined)
+            break;
+        if (curr && next && (typeof next === 'object') && next.outlets === undefined) {
+            if (!compare(curr, next, path))
+                return noMatch;
+            currentCommandIndex += 2;
+        }
+        else {
+            if (!compare(curr, {}, path))
+                return noMatch;
+            currentCommandIndex++;
+        }
+        currentPathIndex++;
+    }
+    return { match: true, pathIndex: currentPathIndex, commandIndex: currentCommandIndex };
+}
+function createNewSegmentGroup(segmentGroup, startIndex, commands) {
+    var paths = segmentGroup.segments.slice(0, startIndex);
+    var i = 0;
+    while (i < commands.length) {
+        if (typeof commands[i] === 'object' && commands[i].outlets !== undefined) {
+            var children = createNewSegmentChildren(commands[i].outlets);
+            return new UrlSegmentGroup(paths, children);
+        }
+        // if we start with an object literal, we need to reuse the path part from the segment
+        if (i === 0 && isMatrixParams(commands[0])) {
+            var p = segmentGroup.segments[startIndex];
+            paths.push(new UrlSegment(p.path, commands[0]));
+            i++;
+            continue;
+        }
+        var curr = getPath(commands[i]);
+        var next = (i < commands.length - 1) ? commands[i + 1] : null;
+        if (curr && next && isMatrixParams(next)) {
+            paths.push(new UrlSegment(curr, stringify(next)));
+            i += 2;
+        }
+        else {
+            paths.push(new UrlSegment(curr, {}));
+            i++;
+        }
+    }
+    return new UrlSegmentGroup(paths, {});
+}
+function createNewSegmentChildren(outlets) {
+    var children = {};
+    forEach(outlets, function (commands, outlet) {
+        if (commands !== null) {
+            children[outlet] = createNewSegmentGroup(new UrlSegmentGroup([], {}), 0, commands);
+        }
+    });
+    return children;
+}
+function stringify(params) {
+    var res = {};
+    forEach(params, function (v, k) { return res[k] = "" + v; });
+    return res;
+}
+function compare(path, params, segment) {
+    return path == segment.path && shallowEqual(params, segment.parameters);
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var CanActivate = /** @class */ (function () {
+    function CanActivate(path) {
+        this.path = path;
+        this.route = this.path[this.path.length - 1];
+    }
+    return CanActivate;
+}());
+var CanDeactivate = /** @class */ (function () {
+    function CanDeactivate(component, route) {
+        this.component = component;
+        this.route = route;
+    }
+    return CanDeactivate;
+}());
+/**
+ * This class bundles the actions involved in preactivation of a route.
+ */
+var PreActivation = /** @class */ (function () {
+    function PreActivation(future, curr, moduleInjector, forwardEvent) {
+        this.future = future;
+        this.curr = curr;
+        this.moduleInjector = moduleInjector;
+        this.forwardEvent = forwardEvent;
+        this.canActivateChecks = [];
+        this.canDeactivateChecks = [];
+    }
+    PreActivation.prototype.initialize = function (parentContexts) {
+        var futureRoot = this.future._root;
+        var currRoot = this.curr ? this.curr._root : null;
+        this.setupChildRouteGuards(futureRoot, currRoot, parentContexts, [futureRoot.value]);
+    };
+    PreActivation.prototype.checkGuards = function () {
+        var _this = this;
+        if (!this.isDeactivating() && !this.isActivating()) {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+        }
+        var canDeactivate$ = this.runCanDeactivateChecks();
+        return canDeactivate$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (canDeactivate) { return canDeactivate ? _this.runCanActivateChecks() : Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(false); }));
+    };
+    PreActivation.prototype.resolveData = function (paramsInheritanceStrategy) {
+        var _this = this;
+        if (!this.isActivating())
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(this.canActivateChecks)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (check) { return _this.runResolve(check.route, paramsInheritanceStrategy); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["reduce"])(function (_, __) { return _; }));
+    };
+    PreActivation.prototype.isDeactivating = function () { return this.canDeactivateChecks.length !== 0; };
+    PreActivation.prototype.isActivating = function () { return this.canActivateChecks.length !== 0; };
+    /**
+     * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+     * proper state to run `checkGuards()` method.
+     */
+    /**
+       * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+       * proper state to run `checkGuards()` method.
+       */
+    PreActivation.prototype.setupChildRouteGuards = /**
+       * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+       * proper state to run `checkGuards()` method.
+       */
+    function (futureNode, currNode, contexts, futurePath) {
+        var _this = this;
+        var prevChildren = nodeChildrenAsMap(currNode);
+        // Process the children of the future route
+        futureNode.children.forEach(function (c) {
+            _this.setupRouteGuards(c, prevChildren[c.value.outlet], contexts, futurePath.concat([c.value]));
+            delete prevChildren[c.value.outlet];
+        });
+        // Process any children left from the current route (not active for the future route)
+        forEach(prevChildren, function (v, k) {
+            return _this.deactivateRouteAndItsChildren(v, contexts.getContext(k));
+        });
+    };
+    /**
+     * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+     * proper state to run `checkGuards()` method.
+     */
+    /**
+       * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+       * proper state to run `checkGuards()` method.
+       */
+    PreActivation.prototype.setupRouteGuards = /**
+       * Iterates over child routes and calls recursive `setupRouteGuards` to get `this` instance in
+       * proper state to run `checkGuards()` method.
+       */
+    function (futureNode, currNode, parentContexts, futurePath) {
+        var future = futureNode.value;
+        var curr = currNode ? currNode.value : null;
+        var context = parentContexts ? parentContexts.getContext(futureNode.value.outlet) : null;
+        // reusing the node
+        if (curr && future.routeConfig === curr.routeConfig) {
+            var shouldRunGuardsAndResolvers = this.shouldRunGuardsAndResolvers(curr, future, future.routeConfig.runGuardsAndResolvers);
+            if (shouldRunGuardsAndResolvers) {
+                this.canActivateChecks.push(new CanActivate(futurePath));
+            }
+            else {
+                // we need to set the data
+                future.data = curr.data;
+                future._resolvedData = curr._resolvedData;
+            }
+            // If we have a component, we need to go through an outlet.
+            if (future.component) {
+                this.setupChildRouteGuards(futureNode, currNode, context ? context.children : null, futurePath);
+                // if we have a componentless route, we recurse but keep the same outlet map.
+            }
+            else {
+                this.setupChildRouteGuards(futureNode, currNode, parentContexts, futurePath);
+            }
+            if (shouldRunGuardsAndResolvers) {
+                var outlet = (context.outlet);
+                this.canDeactivateChecks.push(new CanDeactivate(outlet.component, curr));
+            }
+        }
+        else {
+            if (curr) {
+                this.deactivateRouteAndItsChildren(currNode, context);
+            }
+            this.canActivateChecks.push(new CanActivate(futurePath));
+            // If we have a component, we need to go through an outlet.
+            if (future.component) {
+                this.setupChildRouteGuards(futureNode, null, context ? context.children : null, futurePath);
+                // if we have a componentless route, we recurse but keep the same outlet map.
+            }
+            else {
+                this.setupChildRouteGuards(futureNode, null, parentContexts, futurePath);
+            }
+        }
+    };
+    PreActivation.prototype.shouldRunGuardsAndResolvers = function (curr, future, mode) {
+        switch (mode) {
+            case 'always':
+                return true;
+            case 'paramsOrQueryParamsChange':
+                return !equalParamsAndUrlSegments(curr, future) ||
+                    !shallowEqual(curr.queryParams, future.queryParams);
+            case 'paramsChange':
+            default:
+                return !equalParamsAndUrlSegments(curr, future);
+        }
+    };
+    PreActivation.prototype.deactivateRouteAndItsChildren = function (route, context) {
+        var _this = this;
+        var children = nodeChildrenAsMap(route);
+        var r = route.value;
+        forEach(children, function (node, childName) {
+            if (!r.component) {
+                _this.deactivateRouteAndItsChildren(node, context);
+            }
+            else if (context) {
+                _this.deactivateRouteAndItsChildren(node, context.children.getContext(childName));
+            }
+            else {
+                _this.deactivateRouteAndItsChildren(node, null);
+            }
+        });
+        if (!r.component) {
+            this.canDeactivateChecks.push(new CanDeactivate(null, r));
+        }
+        else if (context && context.outlet && context.outlet.isActivated) {
+            this.canDeactivateChecks.push(new CanDeactivate(context.outlet.component, r));
+        }
+        else {
+            this.canDeactivateChecks.push(new CanDeactivate(null, r));
+        }
+    };
+    PreActivation.prototype.runCanDeactivateChecks = function () {
+        var _this = this;
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(this.canDeactivateChecks)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (check) { return _this.runCanDeactivate(check.component, check.route); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["every"])(function (result) { return result === true; }));
+    };
+    PreActivation.prototype.runCanActivateChecks = function () {
+        var _this = this;
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(this.canActivateChecks)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (check) {
+            return andObservables(Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])([
+                _this.fireChildActivationStart(check.route.parent),
+                _this.fireActivationStart(check.route), _this.runCanActivateChild(check.path),
+                _this.runCanActivate(check.route)
+            ]));
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["every"])(function (result) { return result === true; }));
+        // this.fireChildActivationStart(check.path),
+    };
+    /**
+     * This should fire off `ActivationStart` events for each route being activated at this
+     * level.
+     * In other words, if you're activating `a` and `b` below, `path` will contain the
+     * `ActivatedRouteSnapshot`s for both and we will fire `ActivationStart` for both. Always
+     * return
+     * `true` so checks continue to run.
+     */
+    /**
+       * This should fire off `ActivationStart` events for each route being activated at this
+       * level.
+       * In other words, if you're activating `a` and `b` below, `path` will contain the
+       * `ActivatedRouteSnapshot`s for both and we will fire `ActivationStart` for both. Always
+       * return
+       * `true` so checks continue to run.
+       */
+    PreActivation.prototype.fireActivationStart = /**
+       * This should fire off `ActivationStart` events for each route being activated at this
+       * level.
+       * In other words, if you're activating `a` and `b` below, `path` will contain the
+       * `ActivatedRouteSnapshot`s for both and we will fire `ActivationStart` for both. Always
+       * return
+       * `true` so checks continue to run.
+       */
+    function (snapshot) {
+        if (snapshot !== null && this.forwardEvent) {
+            this.forwardEvent(new ActivationStart(snapshot));
+        }
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+    };
+    /**
+     * This should fire off `ChildActivationStart` events for each route being activated at this
+     * level.
+     * In other words, if you're activating `a` and `b` below, `path` will contain the
+     * `ActivatedRouteSnapshot`s for both and we will fire `ChildActivationStart` for both. Always
+     * return
+     * `true` so checks continue to run.
+     */
+    /**
+       * This should fire off `ChildActivationStart` events for each route being activated at this
+       * level.
+       * In other words, if you're activating `a` and `b` below, `path` will contain the
+       * `ActivatedRouteSnapshot`s for both and we will fire `ChildActivationStart` for both. Always
+       * return
+       * `true` so checks continue to run.
+       */
+    PreActivation.prototype.fireChildActivationStart = /**
+       * This should fire off `ChildActivationStart` events for each route being activated at this
+       * level.
+       * In other words, if you're activating `a` and `b` below, `path` will contain the
+       * `ActivatedRouteSnapshot`s for both and we will fire `ChildActivationStart` for both. Always
+       * return
+       * `true` so checks continue to run.
+       */
+    function (snapshot) {
+        if (snapshot !== null && this.forwardEvent) {
+            this.forwardEvent(new ChildActivationStart(snapshot));
+        }
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+    };
+    PreActivation.prototype.runCanActivate = function (future) {
+        var _this = this;
+        var canActivate = future.routeConfig ? future.routeConfig.canActivate : null;
+        if (!canActivate || canActivate.length === 0)
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+        var obs = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(canActivate).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (c) {
+            var guard = _this.getToken(c, future);
+            var observable;
+            if (guard.canActivate) {
+                observable = wrapIntoObservable(guard.canActivate(future, _this.future));
+            }
+            else {
+                observable = wrapIntoObservable(guard(future, _this.future));
+            }
+            return observable.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])());
+        }));
+        return andObservables(obs);
+    };
+    PreActivation.prototype.runCanActivateChild = function (path) {
+        var _this = this;
+        var future = path[path.length - 1];
+        var canActivateChildGuards = path.slice(0, path.length - 1)
+            .reverse()
+            .map(function (p) { return _this.extractCanActivateChild(p); })
+            .filter(function (_) { return _ !== null; });
+        return andObservables(Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(canActivateChildGuards).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (d) {
+            var obs = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(d.guards).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (c) {
+                var guard = _this.getToken(c, d.node);
+                var observable;
+                if (guard.canActivateChild) {
+                    observable = wrapIntoObservable(guard.canActivateChild(future, _this.future));
+                }
+                else {
+                    observable = wrapIntoObservable(guard(future, _this.future));
+                }
+                return observable.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])());
+            }));
+            return andObservables(obs);
+        })));
+    };
+    PreActivation.prototype.extractCanActivateChild = function (p) {
+        var canActivateChild = p.routeConfig ? p.routeConfig.canActivateChild : null;
+        if (!canActivateChild || canActivateChild.length === 0)
+            return null;
+        return { node: p, guards: canActivateChild };
+    };
+    PreActivation.prototype.runCanDeactivate = function (component, curr) {
+        var _this = this;
+        var canDeactivate = curr && curr.routeConfig ? curr.routeConfig.canDeactivate : null;
+        if (!canDeactivate || canDeactivate.length === 0)
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(true);
+        var canDeactivate$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(canDeactivate).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (c) {
+            var guard = _this.getToken(c, curr);
+            var observable;
+            if (guard.canDeactivate) {
+                observable =
+                    wrapIntoObservable(guard.canDeactivate(component, curr, _this.curr, _this.future));
+            }
+            else {
+                observable = wrapIntoObservable(guard(component, curr, _this.curr, _this.future));
+            }
+            return observable.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])());
+        }));
+        return canDeactivate$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["every"])(function (result) { return result === true; }));
+    };
+    PreActivation.prototype.runResolve = function (future, paramsInheritanceStrategy) {
+        var resolve = future._resolve;
+        return this.resolveNode(resolve, future).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (resolvedData) {
+            future._resolvedData = resolvedData;
+            future.data = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, future.data, inheritedParamsDataResolve(future, paramsInheritanceStrategy).resolve);
+            return null;
+        }));
+    };
+    PreActivation.prototype.resolveNode = function (resolve, future) {
+        var _this = this;
+        var keys = Object.keys(resolve);
+        if (keys.length === 0) {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])({});
+        }
+        if (keys.length === 1) {
+            var key_1 = keys[0];
+            return this.getResolver(resolve[key_1], future).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
+                return _a = {}, _a[key_1] = value, _a;
+                var _a;
+            }));
+        }
+        var data = {};
+        var runningResolvers$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(keys).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (key) {
+            return _this.getResolver(resolve[key], future).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) {
+                data[key] = value;
+                return value;
+            }));
+        }));
+        return runningResolvers$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["last"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function () { return data; }));
+    };
+    PreActivation.prototype.getResolver = function (injectionToken, future) {
+        var resolver = this.getToken(injectionToken, future);
+        return resolver.resolve ? wrapIntoObservable(resolver.resolve(future, this.future)) :
+            wrapIntoObservable(resolver(future, this.future));
+    };
+    PreActivation.prototype.getToken = function (token, snapshot) {
+        var config = closestLoadedConfig(snapshot);
+        var injector = config ? config.module.injector : this.moduleInjector;
+        return injector.get(token);
+    };
+    return PreActivation;
+}());
+function closestLoadedConfig(snapshot) {
+    if (!snapshot)
+        return null;
+    for (var s = snapshot.parent; s; s = s.parent) {
+        var route = s.routeConfig;
+        if (route && route._loadedConfig)
+            return route._loadedConfig;
+    }
+    return null;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NoMatch$1 = /** @class */ (function () {
+    function NoMatch() {
+    }
+    return NoMatch;
+}());
+function recognize(rootComponentType, config, urlTree, url, paramsInheritanceStrategy) {
+    if (paramsInheritanceStrategy === void 0) { paramsInheritanceStrategy = 'emptyOnly'; }
+    return new Recognizer(rootComponentType, config, urlTree, url, paramsInheritanceStrategy)
+        .recognize();
+}
+var Recognizer = /** @class */ (function () {
+    function Recognizer(rootComponentType, config, urlTree, url, paramsInheritanceStrategy) {
+        this.rootComponentType = rootComponentType;
+        this.config = config;
+        this.urlTree = urlTree;
+        this.url = url;
+        this.paramsInheritanceStrategy = paramsInheritanceStrategy;
+    }
+    Recognizer.prototype.recognize = function () {
+        try {
+            var rootSegmentGroup = split$1(this.urlTree.root, [], [], this.config).segmentGroup;
+            var children = this.processSegmentGroup(this.config, rootSegmentGroup, PRIMARY_OUTLET);
+            var root = new ActivatedRouteSnapshot([], Object.freeze({}), Object.freeze(this.urlTree.queryParams), (this.urlTree.fragment), {}, PRIMARY_OUTLET, this.rootComponentType, null, this.urlTree.root, -1, {});
+            var rootNode = new TreeNode(root, children);
+            var routeState = new RouterStateSnapshot(this.url, rootNode);
+            this.inheritParamsAndData(routeState._root);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(routeState);
+        }
+        catch (e) {
+            return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (obs) { return obs.error(e); });
+        }
+    };
+    Recognizer.prototype.inheritParamsAndData = function (routeNode) {
+        var _this = this;
+        var route = routeNode.value;
+        var i = inheritedParamsDataResolve(route, this.paramsInheritanceStrategy);
+        route.params = Object.freeze(i.params);
+        route.data = Object.freeze(i.data);
+        routeNode.children.forEach(function (n) { return _this.inheritParamsAndData(n); });
+    };
+    Recognizer.prototype.processSegmentGroup = function (config, segmentGroup, outlet) {
+        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+            return this.processChildren(config, segmentGroup);
+        }
+        return this.processSegment(config, segmentGroup, segmentGroup.segments, outlet);
+    };
+    Recognizer.prototype.processChildren = function (config, segmentGroup) {
+        var _this = this;
+        var children = mapChildrenIntoArray(segmentGroup, function (child, childOutlet) { return _this.processSegmentGroup(config, child, childOutlet); });
+        checkOutletNameUniqueness(children);
+        sortActivatedRouteSnapshots(children);
+        return children;
+    };
+    Recognizer.prototype.processSegment = function (config, segmentGroup, segments, outlet) {
+        try {
+            for (var config_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(config), config_1_1 = config_1.next(); !config_1_1.done; config_1_1 = config_1.next()) {
+                var r = config_1_1.value;
+                try {
+                    return this.processSegmentAgainstRoute(r, segmentGroup, segments, outlet);
+                }
+                catch (e) {
+                    if (!(e instanceof NoMatch$1))
+                        throw e;
+                }
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (config_1_1 && !config_1_1.done && (_a = config_1.return)) _a.call(config_1);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        if (this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
+            return [];
+        }
+        throw new NoMatch$1();
+        var e_1, _a;
+    };
+    Recognizer.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
+        return segments.length === 0 && !segmentGroup.children[outlet];
+    };
+    Recognizer.prototype.processSegmentAgainstRoute = function (route, rawSegment, segments, outlet) {
+        if (route.redirectTo)
+            throw new NoMatch$1();
+        if ((route.outlet || PRIMARY_OUTLET) !== outlet)
+            throw new NoMatch$1();
+        var snapshot;
+        var consumedSegments = [];
+        var rawSlicedSegments = [];
+        if (route.path === '**') {
+            var params = segments.length > 0 ? last$1(segments).parameters : {};
+            snapshot = new ActivatedRouteSnapshot(segments, params, Object.freeze(this.urlTree.queryParams), (this.urlTree.fragment), getData(route), outlet, (route.component), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + segments.length, getResolve(route));
+        }
+        else {
+            var result = match$1(rawSegment, route, segments);
+            consumedSegments = result.consumedSegments;
+            rawSlicedSegments = segments.slice(result.lastChild);
+            snapshot = new ActivatedRouteSnapshot(consumedSegments, result.parameters, Object.freeze(this.urlTree.queryParams), (this.urlTree.fragment), getData(route), outlet, (route.component), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + consumedSegments.length, getResolve(route));
+        }
+        var childConfig = getChildConfig(route);
+        var _a = split$1(rawSegment, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _a.segmentGroup, slicedSegments = _a.slicedSegments;
+        if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
+            var children_1 = this.processChildren(childConfig, segmentGroup);
+            return [new TreeNode(snapshot, children_1)];
+        }
+        if (childConfig.length === 0 && slicedSegments.length === 0) {
+            return [new TreeNode(snapshot, [])];
+        }
+        var children = this.processSegment(childConfig, segmentGroup, slicedSegments, PRIMARY_OUTLET);
+        return [new TreeNode(snapshot, children)];
+    };
+    return Recognizer;
+}());
+function sortActivatedRouteSnapshots(nodes) {
+    nodes.sort(function (a, b) {
+        if (a.value.outlet === PRIMARY_OUTLET)
+            return -1;
+        if (b.value.outlet === PRIMARY_OUTLET)
+            return 1;
+        return a.value.outlet.localeCompare(b.value.outlet);
+    });
+}
+function getChildConfig(route) {
+    if (route.children) {
+        return route.children;
+    }
+    if (route.loadChildren) {
+        return route._loadedConfig.routes;
+    }
+    return [];
+}
+function match$1(segmentGroup, route, segments) {
+    if (route.path === '') {
+        if (route.pathMatch === 'full' && (segmentGroup.hasChildren() || segments.length > 0)) {
+            throw new NoMatch$1();
+        }
+        return { consumedSegments: [], lastChild: 0, parameters: {} };
+    }
+    var matcher = route.matcher || defaultUrlMatcher;
+    var res = matcher(segments, segmentGroup, route);
+    if (!res)
+        throw new NoMatch$1();
+    var posParams = {};
+    forEach((res.posParams), function (v, k) { posParams[k] = v.path; });
+    var parameters = res.consumed.length > 0 ? Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, posParams, res.consumed[res.consumed.length - 1].parameters) :
+        posParams;
+    return { consumedSegments: res.consumed, lastChild: res.consumed.length, parameters: parameters };
+}
+function checkOutletNameUniqueness(nodes) {
+    var names = {};
+    nodes.forEach(function (n) {
+        var routeWithSameOutletName = names[n.value.outlet];
+        if (routeWithSameOutletName) {
+            var p = routeWithSameOutletName.url.map(function (s) { return s.toString(); }).join('/');
+            var c = n.value.url.map(function (s) { return s.toString(); }).join('/');
+            throw new Error("Two segments cannot have the same outlet name: '" + p + "' and '" + c + "'.");
+        }
+        names[n.value.outlet] = n.value;
+    });
+}
+function getSourceSegmentGroup(segmentGroup) {
+    var s = segmentGroup;
+    while (s._sourceSegment) {
+        s = s._sourceSegment;
+    }
+    return s;
+}
+function getPathIndexShift(segmentGroup) {
+    var s = segmentGroup;
+    var res = (s._segmentIndexShift ? s._segmentIndexShift : 0);
+    while (s._sourceSegment) {
+        s = s._sourceSegment;
+        res += (s._segmentIndexShift ? s._segmentIndexShift : 0);
+    }
+    return res - 1;
+}
+function split$1(segmentGroup, consumedSegments, slicedSegments, config) {
+    if (slicedSegments.length > 0 &&
+        containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, config)) {
+        var s_1 = new UrlSegmentGroup(consumedSegments, createChildrenForEmptyPaths(segmentGroup, consumedSegments, config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
+        s_1._sourceSegment = segmentGroup;
+        s_1._segmentIndexShift = consumedSegments.length;
+        return { segmentGroup: s_1, slicedSegments: [] };
+    }
+    if (slicedSegments.length === 0 &&
+        containsEmptyPathMatches(segmentGroup, slicedSegments, config)) {
+        var s_2 = new UrlSegmentGroup(segmentGroup.segments, addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
+        s_2._sourceSegment = segmentGroup;
+        s_2._segmentIndexShift = consumedSegments.length;
+        return { segmentGroup: s_2, slicedSegments: slicedSegments };
+    }
+    var s = new UrlSegmentGroup(segmentGroup.segments, segmentGroup.children);
+    s._sourceSegment = segmentGroup;
+    s._segmentIndexShift = consumedSegments.length;
+    return { segmentGroup: s, slicedSegments: slicedSegments };
+}
+function addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
+    var res = {};
+    try {
+        for (var routes_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(routes), routes_1_1 = routes_1.next(); !routes_1_1.done; routes_1_1 = routes_1.next()) {
+            var r = routes_1_1.value;
+            if (emptyPathMatch(segmentGroup, slicedSegments, r) && !children[getOutlet$1(r)]) {
+                var s = new UrlSegmentGroup([], {});
+                s._sourceSegment = segmentGroup;
+                s._segmentIndexShift = segmentGroup.segments.length;
+                res[getOutlet$1(r)] = s;
+            }
+        }
+    }
+    catch (e_2_1) { e_2 = { error: e_2_1 }; }
+    finally {
+        try {
+            if (routes_1_1 && !routes_1_1.done && (_a = routes_1.return)) _a.call(routes_1);
+        }
+        finally { if (e_2) throw e_2.error; }
+    }
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, children, res);
+    var e_2, _a;
+}
+function createChildrenForEmptyPaths(segmentGroup, consumedSegments, routes, primarySegment) {
+    var res = {};
+    res[PRIMARY_OUTLET] = primarySegment;
+    primarySegment._sourceSegment = segmentGroup;
+    primarySegment._segmentIndexShift = consumedSegments.length;
+    try {
+        for (var routes_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(routes), routes_2_1 = routes_2.next(); !routes_2_1.done; routes_2_1 = routes_2.next()) {
+            var r = routes_2_1.value;
+            if (r.path === '' && getOutlet$1(r) !== PRIMARY_OUTLET) {
+                var s = new UrlSegmentGroup([], {});
+                s._sourceSegment = segmentGroup;
+                s._segmentIndexShift = consumedSegments.length;
+                res[getOutlet$1(r)] = s;
+            }
+        }
+    }
+    catch (e_3_1) { e_3 = { error: e_3_1 }; }
+    finally {
+        try {
+            if (routes_2_1 && !routes_2_1.done && (_a = routes_2.return)) _a.call(routes_2);
+        }
+        finally { if (e_3) throw e_3.error; }
+    }
+    return res;
+    var e_3, _a;
+}
+function containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, routes) {
+    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r) && getOutlet$1(r) !== PRIMARY_OUTLET; });
+}
+function containsEmptyPathMatches(segmentGroup, slicedSegments, routes) {
+    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r); });
+}
+function emptyPathMatch(segmentGroup, slicedSegments, r) {
+    if ((segmentGroup.hasChildren() || slicedSegments.length > 0) && r.pathMatch === 'full') {
+        return false;
+    }
+    return r.path === '' && r.redirectTo === undefined;
+}
+function getOutlet$1(route) {
+    return route.outlet || PRIMARY_OUTLET;
+}
+function getData(route) {
+    return route.data || {};
+}
+function getResolve(route) {
+    return route.resolve || {};
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Provides a way to customize when activated routes get reused.
+ *
+ * @experimental
+ */
+var RouteReuseStrategy = /** @class */ (function () {
+    function RouteReuseStrategy() {
+    }
+    return RouteReuseStrategy;
+}());
+/**
+ * Does not detach any subtrees. Reuses routes as long as their route config is the same.
+ */
+var DefaultRouteReuseStrategy = /** @class */ (function () {
+    function DefaultRouteReuseStrategy() {
+    }
+    DefaultRouteReuseStrategy.prototype.shouldDetach = function (route) { return false; };
+    DefaultRouteReuseStrategy.prototype.store = function (route, detachedTree) { };
+    DefaultRouteReuseStrategy.prototype.shouldAttach = function (route) { return false; };
+    DefaultRouteReuseStrategy.prototype.retrieve = function (route) { return null; };
+    DefaultRouteReuseStrategy.prototype.shouldReuseRoute = function (future, curr) {
+        return future.routeConfig === curr.routeConfig;
+    };
+    return DefaultRouteReuseStrategy;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @docsNotRequired
+ * @experimental
+ */
+var ROUTES = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('ROUTES');
+var RouterConfigLoader = /** @class */ (function () {
+    function RouterConfigLoader(loader, compiler, onLoadStartListener, onLoadEndListener) {
+        this.loader = loader;
+        this.compiler = compiler;
+        this.onLoadStartListener = onLoadStartListener;
+        this.onLoadEndListener = onLoadEndListener;
+    }
+    RouterConfigLoader.prototype.load = function (parentInjector, route) {
+        var _this = this;
+        if (this.onLoadStartListener) {
+            this.onLoadStartListener(route);
+        }
+        var moduleFactory$ = this.loadModuleFactory((route.loadChildren));
+        return moduleFactory$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (factory) {
+            if (_this.onLoadEndListener) {
+                _this.onLoadEndListener(route);
+            }
+            var module = factory.create(parentInjector);
+            return new LoadedRouterConfig(flatten(module.injector.get(ROUTES)).map(copyConfig), module);
+        }));
+    };
+    RouterConfigLoader.prototype.loadModuleFactory = function (loadChildren) {
+        var _this = this;
+        if (typeof loadChildren === 'string') {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(this.loader.load(loadChildren));
+        }
+        else {
+            return wrapIntoObservable(loadChildren()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (t) {
+                if (t instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleFactory"]) {
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(t);
+                }
+                else {
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(_this.compiler.compileModuleAsync(t));
+                }
+            }));
+        }
+    };
+    return RouterConfigLoader;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Provides a way to migrate AngularJS applications to Angular.
+ *
+ * @experimental
+ */
+var UrlHandlingStrategy = /** @class */ (function () {
+    function UrlHandlingStrategy() {
+    }
+    return UrlHandlingStrategy;
+}());
+/**
+ * @experimental
+ */
+var DefaultUrlHandlingStrategy = /** @class */ (function () {
+    function DefaultUrlHandlingStrategy() {
+    }
+    DefaultUrlHandlingStrategy.prototype.shouldProcessUrl = function (url) { return true; };
+    DefaultUrlHandlingStrategy.prototype.extract = function (url) { return url; };
+    DefaultUrlHandlingStrategy.prototype.merge = function (newUrlPart, wholeUrl) { return newUrlPart; };
+    return DefaultUrlHandlingStrategy;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function defaultErrorHandler(error) {
+    throw error;
+}
+/**
+ * @internal
+ */
+function defaultRouterHook(snapshot) {
+    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+}
+/**
+ * @description
+ *
+ * Provides the navigation and url manipulation capabilities.
+ *
+ * See `Routes` for more details and examples.
+ *
+ * @ngModule RouterModule
+ *
+ *
+ */
+var Router = /** @class */ (function () {
+    /**
+     * Creates the router service.
+     */
+    // TODO: vsavkin make internal after the final is out.
+    function Router(rootComponentType, urlSerializer, rootContexts, location, injector, loader, compiler, config) {
+        var _this = this;
+        this.rootComponentType = rootComponentType;
+        this.urlSerializer = urlSerializer;
+        this.rootContexts = rootContexts;
+        this.location = location;
+        this.config = config;
+        this.navigations = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]((null));
+        this.navigationId = 0;
+        this.events = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
+        /**
+           * Error handler that is invoked when a navigation errors.
+           *
+           * See `ErrorHandler` for more information.
+           */
+        this.errorHandler = defaultErrorHandler;
+        /**
+           * Indicates if at least one navigation happened.
+           */
+        this.navigated = false;
+        this.lastSuccessfulId = -1;
+        /**
+           * Used by RouterModule. This allows us to
+           * pause the navigation either before preactivation or after it.
+           * @internal
+           */
+        this.hooks = {
+            beforePreactivation: defaultRouterHook,
+            afterPreactivation: defaultRouterHook
+        };
+        /**
+           * Extracts and merges URLs. Used for AngularJS to Angular migrations.
+           */
+        this.urlHandlingStrategy = new DefaultUrlHandlingStrategy();
+        this.routeReuseStrategy = new DefaultRouteReuseStrategy();
+        /**
+           * Define what the router should do if it receives a navigation request to the current URL.
+           * By default, the router will ignore this navigation. However, this prevents features such
+           * as a "refresh" button. Use this option to configure the behavior when navigating to the
+           * current URL. Default is 'ignore'.
+           */
+        this.onSameUrlNavigation = 'ignore';
+        /**
+           * Defines how the router merges params, data and resolved data from parent to child
+           * routes. Available options are:
+           *
+           * - `'emptyOnly'`, the default, only inherits parent params for path-less or component-less
+           *   routes.
+           * - `'always'`, enables unconditional inheritance of parent params.
+           */
+        this.paramsInheritanceStrategy = 'emptyOnly';
+        var onLoadStart = function (r) { return _this.triggerEvent(new RouteConfigLoadStart(r)); };
+        var onLoadEnd = function (r) { return _this.triggerEvent(new RouteConfigLoadEnd(r)); };
+        this.ngModule = injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleRef"]);
+        this.resetConfig(config);
+        this.currentUrlTree = createEmptyUrlTree();
+        this.rawUrlTree = this.currentUrlTree;
+        this.configLoader = new RouterConfigLoader(loader, compiler, onLoadStart, onLoadEnd);
+        this.routerState = createEmptyState(this.currentUrlTree, this.rootComponentType);
+        this.processNavigations();
+    }
+    /**
+     * @internal
+     * TODO: this should be removed once the constructor of the router made internal
+     */
+    /**
+       * @internal
+       * TODO: this should be removed once the constructor of the router made internal
+       */
+    Router.prototype.resetRootComponentType = /**
+       * @internal
+       * TODO: this should be removed once the constructor of the router made internal
+       */
+    function (rootComponentType) {
+        this.rootComponentType = rootComponentType;
+        // TODO: vsavkin router 4.0 should make the root component set to null
+        // this will simplify the lifecycle of the router.
+        this.routerState.root.component = this.rootComponentType;
+    };
+    /**
+     * Sets up the location change listener and performs the initial navigation.
+     */
+    /**
+       * Sets up the location change listener and performs the initial navigation.
+       */
+    Router.prototype.initialNavigation = /**
+       * Sets up the location change listener and performs the initial navigation.
+       */
+    function () {
+        this.setUpLocationChangeListener();
+        if (this.navigationId === 0) {
+            this.navigateByUrl(this.location.path(true), { replaceUrl: true });
+        }
+    };
+    /**
+     * Sets up the location change listener.
+     */
+    /**
+       * Sets up the location change listener.
+       */
+    Router.prototype.setUpLocationChangeListener = /**
+       * Sets up the location change listener.
+       */
+    function () {
+        var _this = this;
+        // Don't need to use Zone.wrap any more, because zone.js
+        // already patch onPopState, so location change callback will
+        // run into ngZone
+        if (!this.locationSubscription) {
+            this.locationSubscription = this.location.subscribe(function (change) {
+                var rawUrlTree = _this.urlSerializer.parse(change['url']);
+                var source = change['type'] === 'popstate' ? 'popstate' : 'hashchange';
+                var state = change.state && change.state.navigationId ?
+                    { navigationId: change.state.navigationId } :
+                    null;
+                setTimeout(function () { _this.scheduleNavigation(rawUrlTree, source, state, { replaceUrl: true }); }, 0);
+            });
+        }
+    };
+    Object.defineProperty(Router.prototype, "url", {
+        /** The current url */
+        get: /** The current url */
+        function () { return this.serializeUrl(this.currentUrlTree); },
+        enumerable: true,
+        configurable: true
+    });
+    /** @internal */
+    /** @internal */
+    Router.prototype.triggerEvent = /** @internal */
+    function (e) { this.events.next(e); };
+    /**
+     * Resets the configuration used for navigation and generating links.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.resetConfig([
+     *  { path: 'team/:id', component: TeamCmp, children: [
+     *    { path: 'simple', component: SimpleCmp },
+     *    { path: 'user/:name', component: UserCmp }
+     *  ]}
+     * ]);
+     * ```
+     */
+    /**
+       * Resets the configuration used for navigation and generating links.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.resetConfig([
+       *  { path: 'team/:id', component: TeamCmp, children: [
+       *    { path: 'simple', component: SimpleCmp },
+       *    { path: 'user/:name', component: UserCmp }
+       *  ]}
+       * ]);
+       * ```
+       */
+    Router.prototype.resetConfig = /**
+       * Resets the configuration used for navigation and generating links.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.resetConfig([
+       *  { path: 'team/:id', component: TeamCmp, children: [
+       *    { path: 'simple', component: SimpleCmp },
+       *    { path: 'user/:name', component: UserCmp }
+       *  ]}
+       * ]);
+       * ```
+       */
+    function (config) {
+        validateConfig(config);
+        this.config = config.map(copyConfig);
+        this.navigated = false;
+        this.lastSuccessfulId = -1;
+    };
+    /** @docsNotRequired */
+    /** @docsNotRequired */
+    Router.prototype.ngOnDestroy = /** @docsNotRequired */
+    function () { this.dispose(); };
+    /** Disposes of the router */
+    /** Disposes of the router */
+    Router.prototype.dispose = /** Disposes of the router */
+    function () {
+        if (this.locationSubscription) {
+            this.locationSubscription.unsubscribe();
+            this.locationSubscription = (null);
+        }
+    };
+    /**
+     * Applies an array of commands to the current url tree and creates a new url tree.
+     *
+     * When given an activate route, applies the given commands starting from the route.
+     * When not given a route, applies the given command starting from the root.
+     *
+     * ### Usage
+     *
+     * ```
+     * // create /team/33/user/11
+     * router.createUrlTree(['/team', 33, 'user', 11]);
+     *
+     * // create /team/33;expand=true/user/11
+     * router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
+     *
+     * // you can collapse static segments like this (this works only with the first passed-in value):
+     * router.createUrlTree(['/team/33/user', userId]);
+     *
+     * // If the first segment can contain slashes, and you do not want the router to split it, you
+     * // can do the following:
+     *
+     * router.createUrlTree([{segmentPath: '/one/two'}]);
+     *
+     * // create /team/33/(user/11//right:chat)
+     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
+     *
+     * // remove the right secondary node
+     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
+     *
+     * // assuming the current url is `/team/33/user/11` and the route points to `user/11`
+     *
+     * // navigate to /team/33/user/11/details
+     * router.createUrlTree(['details'], {relativeTo: route});
+     *
+     * // navigate to /team/33/user/22
+     * router.createUrlTree(['../22'], {relativeTo: route});
+     *
+     * // navigate to /team/44/user/22
+     * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
+     * ```
+     */
+    /**
+       * Applies an array of commands to the current url tree and creates a new url tree.
+       *
+       * When given an activate route, applies the given commands starting from the route.
+       * When not given a route, applies the given command starting from the root.
+       *
+       * ### Usage
+       *
+       * ```
+       * // create /team/33/user/11
+       * router.createUrlTree(['/team', 33, 'user', 11]);
+       *
+       * // create /team/33;expand=true/user/11
+       * router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
+       *
+       * // you can collapse static segments like this (this works only with the first passed-in value):
+       * router.createUrlTree(['/team/33/user', userId]);
+       *
+       * // If the first segment can contain slashes, and you do not want the router to split it, you
+       * // can do the following:
+       *
+       * router.createUrlTree([{segmentPath: '/one/two'}]);
+       *
+       * // create /team/33/(user/11//right:chat)
+       * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
+       *
+       * // remove the right secondary node
+       * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
+       *
+       * // assuming the current url is `/team/33/user/11` and the route points to `user/11`
+       *
+       * // navigate to /team/33/user/11/details
+       * router.createUrlTree(['details'], {relativeTo: route});
+       *
+       * // navigate to /team/33/user/22
+       * router.createUrlTree(['../22'], {relativeTo: route});
+       *
+       * // navigate to /team/44/user/22
+       * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
+       * ```
+       */
+    Router.prototype.createUrlTree = /**
+       * Applies an array of commands to the current url tree and creates a new url tree.
+       *
+       * When given an activate route, applies the given commands starting from the route.
+       * When not given a route, applies the given command starting from the root.
+       *
+       * ### Usage
+       *
+       * ```
+       * // create /team/33/user/11
+       * router.createUrlTree(['/team', 33, 'user', 11]);
+       *
+       * // create /team/33;expand=true/user/11
+       * router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
+       *
+       * // you can collapse static segments like this (this works only with the first passed-in value):
+       * router.createUrlTree(['/team/33/user', userId]);
+       *
+       * // If the first segment can contain slashes, and you do not want the router to split it, you
+       * // can do the following:
+       *
+       * router.createUrlTree([{segmentPath: '/one/two'}]);
+       *
+       * // create /team/33/(user/11//right:chat)
+       * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
+       *
+       * // remove the right secondary node
+       * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
+       *
+       * // assuming the current url is `/team/33/user/11` and the route points to `user/11`
+       *
+       * // navigate to /team/33/user/11/details
+       * router.createUrlTree(['details'], {relativeTo: route});
+       *
+       * // navigate to /team/33/user/22
+       * router.createUrlTree(['../22'], {relativeTo: route});
+       *
+       * // navigate to /team/44/user/22
+       * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
+       * ```
+       */
+    function (commands, navigationExtras) {
+        if (navigationExtras === void 0) { navigationExtras = {}; }
+        var relativeTo = navigationExtras.relativeTo, queryParams = navigationExtras.queryParams, fragment = navigationExtras.fragment, preserveQueryParams = navigationExtras.preserveQueryParams, queryParamsHandling = navigationExtras.queryParamsHandling, preserveFragment = navigationExtras.preserveFragment;
+        if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() && preserveQueryParams && console && console.warn) {
+            console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
+        }
+        var a = relativeTo || this.routerState.root;
+        var f = preserveFragment ? this.currentUrlTree.fragment : fragment;
+        var q = null;
+        if (queryParamsHandling) {
+            switch (queryParamsHandling) {
+                case 'merge':
+                    q = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__assign"])({}, this.currentUrlTree.queryParams, queryParams);
+                    break;
+                case 'preserve':
+                    q = this.currentUrlTree.queryParams;
+                    break;
+                default:
+                    q = queryParams || null;
+            }
+        }
+        else {
+            q = preserveQueryParams ? this.currentUrlTree.queryParams : queryParams || null;
+        }
+        if (q !== null) {
+            q = this.removeEmptyProps(q);
+        }
+        return createUrlTree(a, this.currentUrlTree, commands, (q), (f));
+    };
+    /**
+     * Navigate based on the provided url. This navigation is always absolute.
+     *
+     * Returns a promise that:
+     * - resolves to 'true' when navigation succeeds,
+     * - resolves to 'false' when navigation fails,
+     * - is rejected when an error happens.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.navigateByUrl("/team/33/user/11");
+     *
+     * // Navigate without updating the URL
+     * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+     * ```
+     *
+     * In opposite to `navigate`, `navigateByUrl` takes a whole URL
+     * and does not apply any delta to the current one.
+     */
+    /**
+       * Navigate based on the provided url. This navigation is always absolute.
+       *
+       * Returns a promise that:
+       * - resolves to 'true' when navigation succeeds,
+       * - resolves to 'false' when navigation fails,
+       * - is rejected when an error happens.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.navigateByUrl("/team/33/user/11");
+       *
+       * // Navigate without updating the URL
+       * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+       * ```
+       *
+       * In opposite to `navigate`, `navigateByUrl` takes a whole URL
+       * and does not apply any delta to the current one.
+       */
+    Router.prototype.navigateByUrl = /**
+       * Navigate based on the provided url. This navigation is always absolute.
+       *
+       * Returns a promise that:
+       * - resolves to 'true' when navigation succeeds,
+       * - resolves to 'false' when navigation fails,
+       * - is rejected when an error happens.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.navigateByUrl("/team/33/user/11");
+       *
+       * // Navigate without updating the URL
+       * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+       * ```
+       *
+       * In opposite to `navigate`, `navigateByUrl` takes a whole URL
+       * and does not apply any delta to the current one.
+       */
+    function (url, extras) {
+        if (extras === void 0) { extras = { skipLocationChange: false }; }
+        var urlTree = url instanceof UrlTree ? url : this.parseUrl(url);
+        var mergedTree = this.urlHandlingStrategy.merge(urlTree, this.rawUrlTree);
+        return this.scheduleNavigation(mergedTree, 'imperative', null, extras);
+    };
+    /**
+     * Navigate based on the provided array of commands and a starting point.
+     * If no starting route is provided, the navigation is absolute.
+     *
+     * Returns a promise that:
+     * - resolves to 'true' when navigation succeeds,
+     * - resolves to 'false' when navigation fails,
+     * - is rejected when an error happens.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+     *
+     * // Navigate without updating the URL
+     * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+     * ```
+     *
+     * In opposite to `navigateByUrl`, `navigate` always takes a delta that is applied to the current
+     * URL.
+     */
+    /**
+       * Navigate based on the provided array of commands and a starting point.
+       * If no starting route is provided, the navigation is absolute.
+       *
+       * Returns a promise that:
+       * - resolves to 'true' when navigation succeeds,
+       * - resolves to 'false' when navigation fails,
+       * - is rejected when an error happens.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+       *
+       * // Navigate without updating the URL
+       * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+       * ```
+       *
+       * In opposite to `navigateByUrl`, `navigate` always takes a delta that is applied to the current
+       * URL.
+       */
+    Router.prototype.navigate = /**
+       * Navigate based on the provided array of commands and a starting point.
+       * If no starting route is provided, the navigation is absolute.
+       *
+       * Returns a promise that:
+       * - resolves to 'true' when navigation succeeds,
+       * - resolves to 'false' when navigation fails,
+       * - is rejected when an error happens.
+       *
+       * ### Usage
+       *
+       * ```
+       * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+       *
+       * // Navigate without updating the URL
+       * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+       * ```
+       *
+       * In opposite to `navigateByUrl`, `navigate` always takes a delta that is applied to the current
+       * URL.
+       */
+    function (commands, extras) {
+        if (extras === void 0) { extras = { skipLocationChange: false }; }
+        validateCommands(commands);
+        return this.navigateByUrl(this.createUrlTree(commands, extras), extras);
+    };
+    /** Serializes a `UrlTree` into a string */
+    /** Serializes a `UrlTree` into a string */
+    Router.prototype.serializeUrl = /** Serializes a `UrlTree` into a string */
+    function (url) { return this.urlSerializer.serialize(url); };
+    /** Parses a string into a `UrlTree` */
+    /** Parses a string into a `UrlTree` */
+    Router.prototype.parseUrl = /** Parses a string into a `UrlTree` */
+    function (url) { return this.urlSerializer.parse(url); };
+    /** Returns whether the url is activated */
+    /** Returns whether the url is activated */
+    Router.prototype.isActive = /** Returns whether the url is activated */
+    function (url, exact) {
+        if (url instanceof UrlTree) {
+            return containsTree(this.currentUrlTree, url, exact);
+        }
+        var urlTree = this.urlSerializer.parse(url);
+        return containsTree(this.currentUrlTree, urlTree, exact);
+    };
+    Router.prototype.removeEmptyProps = function (params) {
+        return Object.keys(params).reduce(function (result, key) {
+            var value = params[key];
+            if (value !== null && value !== undefined) {
+                result[key] = value;
+            }
+            return result;
+        }, {});
+    };
+    Router.prototype.processNavigations = function () {
+        var _this = this;
+        this.navigations
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (nav) {
+            if (nav) {
+                _this.executeScheduledNavigation(nav);
+                // a failed navigation should not stop the router from processing
+                // further navigations => the catch
+                return nav.promise.catch(function () { });
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+            }
+        }))
+            .subscribe(function () { });
+    };
+    Router.prototype.scheduleNavigation = function (rawUrl, source, state, extras) {
+        var lastNavigation = this.navigations.value;
+        // If the user triggers a navigation imperatively (e.g., by using navigateByUrl),
+        // and that navigation results in 'replaceState' that leads to the same URL,
+        // we should skip those.
+        if (lastNavigation && source !== 'imperative' && lastNavigation.source === 'imperative' &&
+            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
+            return Promise.resolve(true); // return value is not used
+        }
+        // Because of a bug in IE and Edge, the location class fires two events (popstate and
+        // hashchange) every single time. The second one should be ignored. Otherwise, the URL will
+        // flicker. Handles the case when a popstate was emitted first.
+        if (lastNavigation && source == 'hashchange' && lastNavigation.source === 'popstate' &&
+            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
+            return Promise.resolve(true); // return value is not used
+        }
+        // Because of a bug in IE and Edge, the location class fires two events (popstate and
+        // hashchange) every single time. The second one should be ignored. Otherwise, the URL will
+        // flicker. Handles the case when a hashchange was emitted first.
+        if (lastNavigation && source == 'popstate' && lastNavigation.source === 'hashchange' &&
+            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
+            return Promise.resolve(true); // return value is not used
+        }
+        var resolve = null;
+        var reject = null;
+        var promise = new Promise(function (res, rej) {
+            resolve = res;
+            reject = rej;
+        });
+        var id = ++this.navigationId;
+        this.navigations.next({ id: id, source: source, state: state, rawUrl: rawUrl, extras: extras, resolve: resolve, reject: reject, promise: promise });
+        // Make sure that the error is propagated even though `processNavigations` catch
+        // handler does not rethrow
+        return promise.catch(function (e) { return Promise.reject(e); });
+    };
+    Router.prototype.executeScheduledNavigation = function (_a) {
+        var _this = this;
+        var id = _a.id, rawUrl = _a.rawUrl, extras = _a.extras, resolve = _a.resolve, reject = _a.reject, source = _a.source, state = _a.state;
+        var url = this.urlHandlingStrategy.extract(rawUrl);
+        var urlTransition = !this.navigated || url.toString() !== this.currentUrlTree.toString();
+        if ((this.onSameUrlNavigation === 'reload' ? true : urlTransition) &&
+            this.urlHandlingStrategy.shouldProcessUrl(rawUrl)) {
+            this.events
+                .next(new NavigationStart(id, this.serializeUrl(url), source, state));
+            Promise.resolve()
+                .then(function (_) {
+                return _this.runNavigate(url, rawUrl, !!extras.skipLocationChange, !!extras.replaceUrl, id, null);
+            })
+                .then(resolve, reject);
+            // we cannot process the current URL, but we could process the previous one =>
+            // we need to do some cleanup
+        }
+        else if (urlTransition && this.rawUrlTree &&
+            this.urlHandlingStrategy.shouldProcessUrl(this.rawUrlTree)) {
+            this.events
+                .next(new NavigationStart(id, this.serializeUrl(url), source, state));
+            Promise.resolve()
+                .then(function (_) {
+                return _this.runNavigate(url, rawUrl, false, false, id, createEmptyState(url, _this.rootComponentType).snapshot);
+            })
+                .then(resolve, reject);
+        }
+        else {
+            this.rawUrlTree = rawUrl;
+            resolve(null);
+        }
+    };
+    Router.prototype.runNavigate = function (url, rawUrl, skipLocationChange, replaceUrl, id, precreatedState) {
+        var _this = this;
+        if (id !== this.navigationId) {
+            this.events
+                .next(new NavigationCancel(id, this.serializeUrl(url), "Navigation ID " + id + " is not equal to the current navigation id " + this.navigationId));
+            return Promise.resolve(false);
+        }
+        return new Promise(function (resolvePromise, rejectPromise) {
+            // create an observable of the url and route state snapshot
+            // this operation do not result in any side effects
+            var urlAndSnapshot$;
+            if (!precreatedState) {
+                var moduleInjector = _this.ngModule.injector;
+                var redirectsApplied$ = applyRedirects(moduleInjector, _this.configLoader, _this.urlSerializer, url, _this.config);
+                urlAndSnapshot$ = redirectsApplied$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (appliedUrl) {
+                    return recognize(_this.rootComponentType, _this.config, appliedUrl, _this.serializeUrl(appliedUrl), _this.paramsInheritanceStrategy)
+                        .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (snapshot) {
+                        _this.events
+                            .next(new RoutesRecognized(id, _this.serializeUrl(url), _this.serializeUrl(appliedUrl), snapshot));
+                        return { appliedUrl: appliedUrl, snapshot: snapshot };
+                    }));
+                }));
+            }
+            else {
+                urlAndSnapshot$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])({ appliedUrl: url, snapshot: precreatedState });
+            }
+            var beforePreactivationDone$ = urlAndSnapshot$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (p) {
+                if (typeof p === 'boolean')
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(p);
+                return _this.hooks.beforePreactivation(p.snapshot).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function () { return p; }));
+            }));
+            // run preactivation: guards and data resolvers
+            var preActivation;
+            var preactivationSetup$ = beforePreactivationDone$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (p) {
+                if (typeof p === 'boolean')
+                    return p;
+                var appliedUrl = p.appliedUrl, snapshot = p.snapshot;
+                var moduleInjector = _this.ngModule.injector;
+                preActivation = new PreActivation(snapshot, _this.routerState.snapshot, moduleInjector, function (evt) { return _this.triggerEvent(evt); });
+                preActivation.initialize(_this.rootContexts);
+                return { appliedUrl: appliedUrl, snapshot: snapshot };
+            }));
+            var preactivationCheckGuards$ = preactivationSetup$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (p) {
+                if (typeof p === 'boolean' || _this.navigationId !== id)
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(false);
+                var appliedUrl = p.appliedUrl, snapshot = p.snapshot;
+                _this.triggerEvent(new GuardsCheckStart(id, _this.serializeUrl(url), _this.serializeUrl(appliedUrl), snapshot));
+                return preActivation.checkGuards().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (shouldActivate) {
+                    _this.triggerEvent(new GuardsCheckEnd(id, _this.serializeUrl(url), _this.serializeUrl(appliedUrl), snapshot, shouldActivate));
+                    return { appliedUrl: appliedUrl, snapshot: snapshot, shouldActivate: shouldActivate };
+                }));
+            }));
+            var preactivationResolveData$ = preactivationCheckGuards$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (p) {
+                if (typeof p === 'boolean' || _this.navigationId !== id)
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(false);
+                if (p.shouldActivate && preActivation.isActivating()) {
+                    _this.triggerEvent(new ResolveStart(id, _this.serializeUrl(url), _this.serializeUrl(p.appliedUrl), p.snapshot));
+                    return preActivation.resolveData(_this.paramsInheritanceStrategy).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function () {
+                        _this.triggerEvent(new ResolveEnd(id, _this.serializeUrl(url), _this.serializeUrl(p.appliedUrl), p.snapshot));
+                        return p;
+                    }));
+                }
+                else {
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(p);
+                }
+            }));
+            var preactivationDone$ = preactivationResolveData$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (p) {
+                if (typeof p === 'boolean' || _this.navigationId !== id)
+                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(false);
+                return _this.hooks.afterPreactivation(p.snapshot).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function () { return p; }));
+            }));
+            // create router state
+            // this operation has side effects => route state is being affected
+            var routerState$ = preactivationDone$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (p) {
+                if (typeof p === 'boolean' || _this.navigationId !== id)
+                    return false;
+                var appliedUrl = p.appliedUrl, snapshot = p.snapshot, shouldActivate = p.shouldActivate;
+                if (shouldActivate) {
+                    var state = createRouterState(_this.routeReuseStrategy, snapshot, _this.routerState);
+                    return { appliedUrl: appliedUrl, state: state, shouldActivate: shouldActivate };
+                }
+                else {
+                    return { appliedUrl: appliedUrl, state: null, shouldActivate: shouldActivate };
+                }
+            }));
+            _this.activateRoutes(routerState$, _this.routerState, _this.currentUrlTree, id, url, rawUrl, skipLocationChange, replaceUrl, resolvePromise, rejectPromise);
+        });
+    };
+    /**
+     * Performs the logic of activating routes. This is a synchronous process by default. While this
+     * is a private method, it could be overridden to make activation asynchronous.
+     */
+    /**
+       * Performs the logic of activating routes. This is a synchronous process by default. While this
+       * is a private method, it could be overridden to make activation asynchronous.
+       */
+    Router.prototype.activateRoutes = /**
+       * Performs the logic of activating routes. This is a synchronous process by default. While this
+       * is a private method, it could be overridden to make activation asynchronous.
+       */
+    function (state, storedState, storedUrl, id, url, rawUrl, skipLocationChange, replaceUrl, resolvePromise, rejectPromise) {
+        var _this = this;
+        // applied the new router state
+        // this operation has side effects
+        var navigationIsSuccessful;
+        state
+            .forEach(function (p) {
+            if (typeof p === 'boolean' || !p.shouldActivate || id !== _this.navigationId || !p.state) {
+                navigationIsSuccessful = false;
+                return;
+            }
+            var appliedUrl = p.appliedUrl, state = p.state;
+            _this.currentUrlTree = appliedUrl;
+            _this.rawUrlTree = _this.urlHandlingStrategy.merge(_this.currentUrlTree, rawUrl);
+            _this.routerState = state;
+            if (!skipLocationChange) {
+                var path = _this.urlSerializer.serialize(_this.rawUrlTree);
+                if (_this.location.isCurrentPathEqualTo(path) || replaceUrl) {
+                    _this.location.replaceState(path, '', { navigationId: id });
+                }
+                else {
+                    _this.location.go(path, '', { navigationId: id });
+                }
+            }
+            new ActivateRoutes(_this.routeReuseStrategy, state, storedState, function (evt) { return _this.triggerEvent(evt); })
+                .activate(_this.rootContexts);
+            navigationIsSuccessful = true;
+        })
+            .then(function () {
+            if (navigationIsSuccessful) {
+                _this.navigated = true;
+                _this.lastSuccessfulId = id;
+                _this.events
+                    .next(new NavigationEnd(id, _this.serializeUrl(url), _this.serializeUrl(_this.currentUrlTree)));
+                resolvePromise(true);
+            }
+            else {
+                _this.resetUrlToCurrentUrlTree();
+                _this.events
+                    .next(new NavigationCancel(id, _this.serializeUrl(url), ''));
+                resolvePromise(false);
+            }
+        }, function (e) {
+            if (isNavigationCancelingError(e)) {
+                _this.navigated = true;
+                _this.resetStateAndUrl(storedState, storedUrl, rawUrl);
+                _this.events
+                    .next(new NavigationCancel(id, _this.serializeUrl(url), e.message));
+                resolvePromise(false);
+            }
+            else {
+                _this.resetStateAndUrl(storedState, storedUrl, rawUrl);
+                _this.events
+                    .next(new NavigationError(id, _this.serializeUrl(url), e));
+                try {
+                    resolvePromise(_this.errorHandler(e));
+                }
+                catch (ee) {
+                    rejectPromise(ee);
+                }
+            }
+        });
+    };
+    Router.prototype.resetStateAndUrl = function (storedState, storedUrl, rawUrl) {
+        this.routerState = storedState;
+        this.currentUrlTree = storedUrl;
+        this.rawUrlTree = this.urlHandlingStrategy.merge(this.currentUrlTree, rawUrl);
+        this.resetUrlToCurrentUrlTree();
+    };
+    Router.prototype.resetUrlToCurrentUrlTree = function () {
+        this.location.replaceState(this.urlSerializer.serialize(this.rawUrlTree), '', { navigationId: this.lastSuccessfulId });
+    };
+    return Router;
+}());
+var ActivateRoutes = /** @class */ (function () {
+    function ActivateRoutes(routeReuseStrategy, futureState, currState, forwardEvent) {
+        this.routeReuseStrategy = routeReuseStrategy;
+        this.futureState = futureState;
+        this.currState = currState;
+        this.forwardEvent = forwardEvent;
+    }
+    ActivateRoutes.prototype.activate = function (parentContexts) {
+        var futureRoot = this.futureState._root;
+        var currRoot = this.currState ? this.currState._root : null;
+        this.deactivateChildRoutes(futureRoot, currRoot, parentContexts);
+        advanceActivatedRoute(this.futureState.root);
+        this.activateChildRoutes(futureRoot, currRoot, parentContexts);
+    };
+    // De-activate the child route that are not re-used for the future state
+    // De-activate the child route that are not re-used for the future state
+    ActivateRoutes.prototype.deactivateChildRoutes = 
+    // De-activate the child route that are not re-used for the future state
+    function (futureNode, currNode, contexts) {
+        var _this = this;
+        var children = nodeChildrenAsMap(currNode);
+        // Recurse on the routes active in the future state to de-activate deeper children
+        futureNode.children.forEach(function (futureChild) {
+            var childOutletName = futureChild.value.outlet;
+            _this.deactivateRoutes(futureChild, children[childOutletName], contexts);
+            delete children[childOutletName];
+        });
+        // De-activate the routes that will not be re-used
+        forEach(children, function (v, childName) {
+            _this.deactivateRouteAndItsChildren(v, contexts);
+        });
+    };
+    ActivateRoutes.prototype.deactivateRoutes = function (futureNode, currNode, parentContext) {
+        var future = futureNode.value;
+        var curr = currNode ? currNode.value : null;
+        if (future === curr) {
+            // Reusing the node, check to see if the children need to be de-activated
+            if (future.component) {
+                // If we have a normal route, we need to go through an outlet.
+                var context = parentContext.getContext(future.outlet);
+                if (context) {
+                    this.deactivateChildRoutes(futureNode, currNode, context.children);
+                }
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.deactivateChildRoutes(futureNode, currNode, parentContext);
+            }
+        }
+        else {
+            if (curr) {
+                // Deactivate the current route which will not be re-used
+                this.deactivateRouteAndItsChildren(currNode, parentContext);
+            }
+        }
+    };
+    ActivateRoutes.prototype.deactivateRouteAndItsChildren = function (route, parentContexts) {
+        if (this.routeReuseStrategy.shouldDetach(route.value.snapshot)) {
+            this.detachAndStoreRouteSubtree(route, parentContexts);
+        }
+        else {
+            this.deactivateRouteAndOutlet(route, parentContexts);
+        }
+    };
+    ActivateRoutes.prototype.detachAndStoreRouteSubtree = function (route, parentContexts) {
+        var context = parentContexts.getContext(route.value.outlet);
+        if (context && context.outlet) {
+            var componentRef = context.outlet.detach();
+            var contexts = context.children.onOutletDeactivated();
+            this.routeReuseStrategy.store(route.value.snapshot, { componentRef: componentRef, route: route, contexts: contexts });
+        }
+    };
+    ActivateRoutes.prototype.deactivateRouteAndOutlet = function (route, parentContexts) {
+        var _this = this;
+        var context = parentContexts.getContext(route.value.outlet);
+        if (context) {
+            var children = nodeChildrenAsMap(route);
+            var contexts_1 = route.value.component ? context.children : parentContexts;
+            forEach(children, function (v, k) { return _this.deactivateRouteAndItsChildren(v, contexts_1); });
+            if (context.outlet) {
+                // Destroy the component
+                context.outlet.deactivate();
+                // Destroy the contexts for all the outlets that were in the component
+                context.children.onOutletDeactivated();
+            }
+        }
+    };
+    ActivateRoutes.prototype.activateChildRoutes = function (futureNode, currNode, contexts) {
+        var _this = this;
+        var children = nodeChildrenAsMap(currNode);
+        futureNode.children.forEach(function (c) {
+            _this.activateRoutes(c, children[c.value.outlet], contexts);
+            _this.forwardEvent(new ActivationEnd(c.value.snapshot));
+        });
+        if (futureNode.children.length) {
+            this.forwardEvent(new ChildActivationEnd(futureNode.value.snapshot));
+        }
+    };
+    ActivateRoutes.prototype.activateRoutes = function (futureNode, currNode, parentContexts) {
+        var future = futureNode.value;
+        var curr = currNode ? currNode.value : null;
+        advanceActivatedRoute(future);
+        // reusing the node
+        if (future === curr) {
+            if (future.component) {
+                // If we have a normal route, we need to go through an outlet.
+                var context = parentContexts.getOrCreateContext(future.outlet);
+                this.activateChildRoutes(futureNode, currNode, context.children);
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.activateChildRoutes(futureNode, currNode, parentContexts);
+            }
+        }
+        else {
+            if (future.component) {
+                // if we have a normal route, we need to place the component into the outlet and recurse.
+                var context = parentContexts.getOrCreateContext(future.outlet);
+                if (this.routeReuseStrategy.shouldAttach(future.snapshot)) {
+                    var stored = this.routeReuseStrategy.retrieve(future.snapshot);
+                    this.routeReuseStrategy.store(future.snapshot, null);
+                    context.children.onOutletReAttached(stored.contexts);
+                    context.attachRef = stored.componentRef;
+                    context.route = stored.route.value;
+                    if (context.outlet) {
+                        // Attach right away when the outlet has already been instantiated
+                        // Otherwise attach from `RouterOutlet.ngOnInit` when it is instantiated
+                        context.outlet.attach(stored.componentRef, stored.route.value);
+                    }
+                    advanceActivatedRouteNodeAndItsChildren(stored.route);
+                }
+                else {
+                    var config = parentLoadedConfig(future.snapshot);
+                    var cmpFactoryResolver = config ? config.module.componentFactoryResolver : null;
+                    context.route = future;
+                    context.resolver = cmpFactoryResolver;
+                    if (context.outlet) {
+                        // Activate the outlet when it has already been instantiated
+                        // Otherwise it will get activated from its `ngOnInit` when instantiated
+                        context.outlet.activateWith(future, cmpFactoryResolver);
+                    }
+                    this.activateChildRoutes(futureNode, null, context.children);
+                }
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.activateChildRoutes(futureNode, null, parentContexts);
+            }
+        }
+    };
+    return ActivateRoutes;
+}());
+function advanceActivatedRouteNodeAndItsChildren(node) {
+    advanceActivatedRoute(node.value);
+    node.children.forEach(advanceActivatedRouteNodeAndItsChildren);
+}
+function parentLoadedConfig(snapshot) {
+    for (var s = snapshot.parent; s; s = s.parent) {
+        var route = s.routeConfig;
+        if (route && route._loadedConfig)
+            return route._loadedConfig;
+        if (route && route.component)
+            return null;
+    }
+    return null;
+}
+function validateCommands(commands) {
+    for (var i = 0; i < commands.length; i++) {
+        var cmd = commands[i];
+        if (cmd == null) {
+            throw new Error("The requested path contains " + cmd + " segment at index " + i);
+        }
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Lets you link to specific routes in your app.
+ *
+ * Consider the following route configuration:
+ * `[{ path: 'user/:name', component: UserCmp }]`.
+ * When linking to this `user/:name` route, you use the `RouterLink` directive.
+ *
+ * If the link is static, you can use the directive as follows:
+ * `<a routerLink="/user/bob">link to user component</a>`
+ *
+ * If you use dynamic values to generate the link, you can pass an array of path
+ * segments, followed by the params for each segment.
+ *
+ * For instance `['/team', teamId, 'user', userName, {details: true}]`
+ * means that we want to generate a link to `/team/11/user/bob;details=true`.
+ *
+ * Multiple static segments can be merged into one
+ * (e.g., `['/team/11/user', userName, {details: true}]`).
+ *
+ * The first segment name can be prepended with `/`, `./`, or `../`:
+ * * If the first segment begins with `/`, the router will look up the route from the root of the
+ *   app.
+ * * If the first segment begins with `./`, or doesn't begin with a slash, the router will
+ *   instead look in the children of the current activated route.
+ * * And if the first segment begins with `../`, the router will go up one level.
+ *
+ * You can set query params and fragment as follows:
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+ *   link to user component
+ * </a>
+ * ```
+ * RouterLink will use these to generate this link: `/user/bob#education?debug=true`.
+ *
+ * (Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the
+ * directive to preserve the current query params and fragment:
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" preserveQueryParams preserveFragment>
+ *   link to user component
+ * </a>
+ * ```
+ *
+ * You can tell the directive to how to handle queryParams, available options are:
+ *  - `'merge'`: merge the queryParams into the current queryParams
+ *  - `'preserve'`: preserve the current queryParams
+ *  - default/`''`: use the queryParams only
+ *
+ * Same options for {@link NavigationExtras#queryParamsHandling
+ * NavigationExtras#queryParamsHandling}.
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" queryParamsHandling="merge">
+ *   link to user component
+ * </a>
+ * ```
+ *
+ * The router link directive always treats the provided input as a delta to the current url.
+ *
+ * For instance, if the current url is `/user/(box//aux:team)`.
+ *
+ * Then the following link `<a [routerLink]="['/user/jim']">Jim</a>` will generate the link
+ * `/user/(jim//aux:team)`.
+ *
+ * See {@link Router#createUrlTree createUrlTree} for more information.
+ *
+ * @ngModule RouterModule
+ *
+ *
+ */
+var RouterLink = /** @class */ (function () {
+    function RouterLink(router, route, tabIndex, renderer, el) {
+        this.router = router;
+        this.route = route;
+        this.commands = [];
+        if (tabIndex == null) {
+            renderer.setAttribute(el.nativeElement, 'tabindex', '0');
+        }
+    }
+    Object.defineProperty(RouterLink.prototype, "routerLink", {
+        set: function (commands) {
+            if (commands != null) {
+                this.commands = Array.isArray(commands) ? commands : [commands];
+            }
+            else {
+                this.commands = [];
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterLink.prototype, "preserveQueryParams", {
+        set: /**
+           * @deprecated 4.0.0 use `queryParamsHandling` instead.
+           */
+        function (value) {
+            if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() && console && console.warn) {
+                console.warn('preserveQueryParams is deprecated!, use queryParamsHandling instead.');
+            }
+            this.preserve = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RouterLink.prototype.onClick = function () {
+        var extras = {
+            skipLocationChange: attrBoolValue(this.skipLocationChange),
+            replaceUrl: attrBoolValue(this.replaceUrl),
+        };
+        this.router.navigateByUrl(this.urlTree, extras);
+        return true;
+    };
+    Object.defineProperty(RouterLink.prototype, "urlTree", {
+        get: function () {
+            return this.router.createUrlTree(this.commands, {
+                relativeTo: this.route,
+                queryParams: this.queryParams,
+                fragment: this.fragment,
+                preserveQueryParams: attrBoolValue(this.preserve),
+                queryParamsHandling: this.queryParamsHandling,
+                preserveFragment: attrBoolValue(this.preserveFragment),
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RouterLink.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: ':not(a)[routerLink]' },] }
+    ];
+    /** @nocollapse */
+    RouterLink.ctorParameters = function () { return [
+        { type: Router, },
+        { type: ActivatedRoute, },
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Attribute"], args: ['tabindex',] },] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], },
+    ]; };
+    RouterLink.propDecorators = {
+        "queryParams": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "fragment": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "queryParamsHandling": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "preserveFragment": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "skipLocationChange": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "replaceUrl": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "routerLink": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "preserveQueryParams": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "onClick": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"], args: ['click',] },],
+    };
+    return RouterLink;
+}());
+/**
+ * @description
+ *
+ * Lets you link to specific routes in your app.
+ *
+ * See `RouterLink` for more information.
+ *
+ * @ngModule RouterModule
+ *
+ *
+ */
+var RouterLinkWithHref = /** @class */ (function () {
+    function RouterLinkWithHref(router, route, locationStrategy) {
+        var _this = this;
+        this.router = router;
+        this.route = route;
+        this.locationStrategy = locationStrategy;
+        this.commands = [];
+        this.subscription = router.events.subscribe(function (s) {
+            if (s instanceof NavigationEnd) {
+                _this.updateTargetUrlAndHref();
+            }
+        });
+    }
+    Object.defineProperty(RouterLinkWithHref.prototype, "routerLink", {
+        set: function (commands) {
+            if (commands != null) {
+                this.commands = Array.isArray(commands) ? commands : [commands];
+            }
+            else {
+                this.commands = [];
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterLinkWithHref.prototype, "preserveQueryParams", {
+        set: function (value) {
+            if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() && console && console.warn) {
+                console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
+            }
+            this.preserve = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RouterLinkWithHref.prototype.ngOnChanges = function (changes) { this.updateTargetUrlAndHref(); };
+    RouterLinkWithHref.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+    RouterLinkWithHref.prototype.onClick = function (button, ctrlKey, metaKey, shiftKey) {
+        if (button !== 0 || ctrlKey || metaKey || shiftKey) {
+            return true;
+        }
+        if (typeof this.target === 'string' && this.target != '_self') {
+            return true;
+        }
+        var extras = {
+            skipLocationChange: attrBoolValue(this.skipLocationChange),
+            replaceUrl: attrBoolValue(this.replaceUrl),
+        };
+        this.router.navigateByUrl(this.urlTree, extras);
+        return false;
+    };
+    RouterLinkWithHref.prototype.updateTargetUrlAndHref = function () {
+        this.href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.urlTree));
+    };
+    Object.defineProperty(RouterLinkWithHref.prototype, "urlTree", {
+        get: function () {
+            return this.router.createUrlTree(this.commands, {
+                relativeTo: this.route,
+                queryParams: this.queryParams,
+                fragment: this.fragment,
+                preserveQueryParams: attrBoolValue(this.preserve),
+                queryParamsHandling: this.queryParamsHandling,
+                preserveFragment: attrBoolValue(this.preserveFragment),
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RouterLinkWithHref.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: 'a[routerLink]' },] }
+    ];
+    /** @nocollapse */
+    RouterLinkWithHref.ctorParameters = function () { return [
+        { type: Router, },
+        { type: ActivatedRoute, },
+        { type: _angular_common__WEBPACK_IMPORTED_MODULE_0__["LocationStrategy"], },
+    ]; };
+    RouterLinkWithHref.propDecorators = {
+        "target": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['attr.target',] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "queryParams": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "fragment": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "queryParamsHandling": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "preserveFragment": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "skipLocationChange": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "replaceUrl": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "href": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"] },],
+        "routerLink": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "preserveQueryParams": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "onClick": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"], args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey', '$event.shiftKey'],] },],
+    };
+    return RouterLinkWithHref;
+}());
+function attrBoolValue(s) {
+    return s === '' || !!s;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ *
+ * @description
+ *
+ * Lets you add a CSS class to an element when the link's route becomes active.
+ *
+ * This directive lets you add a CSS class to an element when the link's route
+ * becomes active.
+ *
+ * Consider the following example:
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
+ * ```
+ *
+ * When the url is either '/user' or '/user/bob', the active-link class will
+ * be added to the `a` tag. If the url changes, the class will be removed.
+ *
+ * You can set more than one class, as follows:
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
+ * <a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
+ * ```
+ *
+ * You can configure RouterLinkActive by passing `exact: true`. This will add the classes
+ * only when the url matches the link exactly.
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+ * true}">Bob</a>
+ * ```
+ *
+ * You can assign the RouterLinkActive instance to a template variable and directly check
+ * the `isActive` status.
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive #rla="routerLinkActive">
+ *   Bob {{ rla.isActive ? '(already open)' : ''}}
+ * </a>
+ * ```
+ *
+ * Finally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.
+ *
+ * ```
+ * <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+ *   <a routerLink="/user/jim">Jim</a>
+ *   <a routerLink="/user/bob">Bob</a>
+ * </div>
+ * ```
+ *
+ * This will set the active-link class on the div tag if the url is either '/user/jim' or
+ * '/user/bob'.
+ *
+ * @ngModule RouterModule
+ *
+ *
+ */
+var RouterLinkActive = /** @class */ (function () {
+    function RouterLinkActive(router, element, renderer, cdr) {
+        var _this = this;
+        this.router = router;
+        this.element = element;
+        this.renderer = renderer;
+        this.cdr = cdr;
+        this.classes = [];
+        this.isActive = false;
+        this.routerLinkActiveOptions = { exact: false };
+        this.subscription = router.events.subscribe(function (s) {
+            if (s instanceof NavigationEnd) {
+                _this.update();
+            }
+        });
+    }
+    RouterLinkActive.prototype.ngAfterContentInit = function () {
+        var _this = this;
+        this.links.changes.subscribe(function (_) { return _this.update(); });
+        this.linksWithHrefs.changes.subscribe(function (_) { return _this.update(); });
+        this.update();
+    };
+    Object.defineProperty(RouterLinkActive.prototype, "routerLinkActive", {
+        set: function (data) {
+            var classes = Array.isArray(data) ? data : data.split(' ');
+            this.classes = classes.filter(function (c) { return !!c; });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RouterLinkActive.prototype.ngOnChanges = function (changes) { this.update(); };
+    RouterLinkActive.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+    RouterLinkActive.prototype.update = function () {
+        var _this = this;
+        if (!this.links || !this.linksWithHrefs || !this.router.navigated)
+            return;
+        Promise.resolve().then(function () {
+            var hasActiveLinks = _this.hasActiveLinks();
+            if (_this.isActive !== hasActiveLinks) {
+                _this.isActive = hasActiveLinks;
+                _this.classes.forEach(function (c) {
+                    if (hasActiveLinks) {
+                        _this.renderer.addClass(_this.element.nativeElement, c);
+                    }
+                    else {
+                        _this.renderer.removeClass(_this.element.nativeElement, c);
+                    }
+                });
+            }
+        });
+    };
+    RouterLinkActive.prototype.isLinkActive = function (router) {
+        var _this = this;
+        return function (link) {
+            return router.isActive(link.urlTree, _this.routerLinkActiveOptions.exact);
+        };
+    };
+    RouterLinkActive.prototype.hasActiveLinks = function () {
+        return this.links.some(this.isLinkActive(this.router)) ||
+            this.linksWithHrefs.some(this.isLinkActive(this.router));
+    };
+    RouterLinkActive.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[routerLinkActive]',
+                    exportAs: 'routerLinkActive',
+                },] }
+    ];
+    /** @nocollapse */
+    RouterLinkActive.ctorParameters = function () { return [
+        { type: Router, },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], },
+    ]; };
+    RouterLinkActive.propDecorators = {
+        "links": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"], args: [RouterLink, { descendants: true },] },],
+        "linksWithHrefs": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"], args: [RouterLinkWithHref, { descendants: true },] },],
+        "routerLinkActiveOptions": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+        "routerLinkActive": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+    };
+    return RouterLinkActive;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Store contextual information about a `RouterOutlet`
+ *
+ *
+ */
+var OutletContext = /** @class */ (function () {
+    function OutletContext() {
+        this.outlet = null;
+        this.route = null;
+        this.resolver = null;
+        this.children = new ChildrenOutletContexts();
+        this.attachRef = null;
+    }
+    return OutletContext;
+}());
+/**
+ * Store contextual information about the children (= nested) `RouterOutlet`
+ *
+ *
+ */
+var ChildrenOutletContexts = /** @class */ (function () {
+    function ChildrenOutletContexts() {
+        // contexts for child outlets, by name.
+        this.contexts = new Map();
+    }
+    /** Called when a `RouterOutlet` directive is instantiated */
+    /** Called when a `RouterOutlet` directive is instantiated */
+    ChildrenOutletContexts.prototype.onChildOutletCreated = /** Called when a `RouterOutlet` directive is instantiated */
+    function (childName, outlet) {
+        var context = this.getOrCreateContext(childName);
+        context.outlet = outlet;
+        this.contexts.set(childName, context);
+    };
+    /**
+     * Called when a `RouterOutlet` directive is destroyed.
+     * We need to keep the context as the outlet could be destroyed inside a NgIf and might be
+     * re-created later.
+     */
+    /**
+       * Called when a `RouterOutlet` directive is destroyed.
+       * We need to keep the context as the outlet could be destroyed inside a NgIf and might be
+       * re-created later.
+       */
+    ChildrenOutletContexts.prototype.onChildOutletDestroyed = /**
+       * Called when a `RouterOutlet` directive is destroyed.
+       * We need to keep the context as the outlet could be destroyed inside a NgIf and might be
+       * re-created later.
+       */
+    function (childName) {
+        var context = this.getContext(childName);
+        if (context) {
+            context.outlet = null;
+        }
+    };
+    /**
+     * Called when the corresponding route is deactivated during navigation.
+     * Because the component get destroyed, all children outlet are destroyed.
+     */
+    /**
+       * Called when the corresponding route is deactivated during navigation.
+       * Because the component get destroyed, all children outlet are destroyed.
+       */
+    ChildrenOutletContexts.prototype.onOutletDeactivated = /**
+       * Called when the corresponding route is deactivated during navigation.
+       * Because the component get destroyed, all children outlet are destroyed.
+       */
+    function () {
+        var contexts = this.contexts;
+        this.contexts = new Map();
+        return contexts;
+    };
+    ChildrenOutletContexts.prototype.onOutletReAttached = function (contexts) { this.contexts = contexts; };
+    ChildrenOutletContexts.prototype.getOrCreateContext = function (childName) {
+        var context = this.getContext(childName);
+        if (!context) {
+            context = new OutletContext();
+            this.contexts.set(childName, context);
+        }
+        return context;
+    };
+    ChildrenOutletContexts.prototype.getContext = function (childName) { return this.contexts.get(childName) || null; };
+    return ChildrenOutletContexts;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Acts as a placeholder that Angular dynamically fills based on the current router state.
+ *
+ * ```
+ * <router-outlet></router-outlet>
+ * <router-outlet name='left'></router-outlet>
+ * <router-outlet name='right'></router-outlet>
+ * ```
+ *
+ * A router outlet will emit an activate event any time a new component is being instantiated,
+ * and a deactivate event when it is being destroyed.
+ *
+ * ```
+ * <router-outlet
+ *   (activate)='onActivate($event)'
+ *   (deactivate)='onDeactivate($event)'></router-outlet>
+ * ```
+ * @ngModule RouterModule
+ *
+ *
+ */
+var RouterOutlet = /** @class */ (function () {
+    function RouterOutlet(parentContexts, location, resolver, name, changeDetector) {
+        this.parentContexts = parentContexts;
+        this.location = location;
+        this.resolver = resolver;
+        this.changeDetector = changeDetector;
+        this.activated = null;
+        this._activatedRoute = null;
+        this.activateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.deactivateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.name = name || PRIMARY_OUTLET;
+        parentContexts.onChildOutletCreated(this.name, this);
+    }
+    RouterOutlet.prototype.ngOnDestroy = function () { this.parentContexts.onChildOutletDestroyed(this.name); };
+    RouterOutlet.prototype.ngOnInit = function () {
+        if (!this.activated) {
+            // If the outlet was not instantiated at the time the route got activated we need to populate
+            // the outlet when it is initialized (ie inside a NgIf)
+            var context = this.parentContexts.getContext(this.name);
+            if (context && context.route) {
+                if (context.attachRef) {
+                    // `attachRef` is populated when there is an existing component to mount
+                    this.attach(context.attachRef, context.route);
+                }
+                else {
+                    // otherwise the component defined in the configuration is created
+                    this.activateWith(context.route, context.resolver || null);
+                }
+            }
+        }
+    };
+    Object.defineProperty(RouterOutlet.prototype, "isActivated", {
+        get: function () { return !!this.activated; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "component", {
+        get: function () {
+            if (!this.activated)
+                throw new Error('Outlet is not activated');
+            return this.activated.instance;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "activatedRoute", {
+        get: function () {
+            if (!this.activated)
+                throw new Error('Outlet is not activated');
+            return this._activatedRoute;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "activatedRouteData", {
+        get: function () {
+            if (this._activatedRoute) {
+                return this._activatedRoute.snapshot.data;
+            }
+            return {};
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Called when the `RouteReuseStrategy` instructs to detach the subtree
+     */
+    /**
+       * Called when the `RouteReuseStrategy` instructs to detach the subtree
+       */
+    RouterOutlet.prototype.detach = /**
+       * Called when the `RouteReuseStrategy` instructs to detach the subtree
+       */
+    function () {
+        if (!this.activated)
+            throw new Error('Outlet is not activated');
+        this.location.detach();
+        var cmp = this.activated;
+        this.activated = null;
+        this._activatedRoute = null;
+        return cmp;
+    };
+    /**
+     * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
+     */
+    /**
+       * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
+       */
+    RouterOutlet.prototype.attach = /**
+       * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
+       */
+    function (ref, activatedRoute) {
+        this.activated = ref;
+        this._activatedRoute = activatedRoute;
+        this.location.insert(ref.hostView);
+    };
+    RouterOutlet.prototype.deactivate = function () {
+        if (this.activated) {
+            var c = this.component;
+            this.activated.destroy();
+            this.activated = null;
+            this._activatedRoute = null;
+            this.deactivateEvents.emit(c);
+        }
+    };
+    RouterOutlet.prototype.activateWith = function (activatedRoute, resolver) {
+        if (this.isActivated) {
+            throw new Error('Cannot activate an already activated outlet');
+        }
+        this._activatedRoute = activatedRoute;
+        var snapshot = activatedRoute._futureSnapshot;
+        var component = snapshot.routeConfig.component;
+        resolver = resolver || this.resolver;
+        var factory = resolver.resolveComponentFactory(component);
+        var childContexts = this.parentContexts.getOrCreateContext(this.name).children;
+        var injector = new OutletInjector(activatedRoute, childContexts, this.location.injector);
+        this.activated = this.location.createComponent(factory, this.location.length, injector);
+        // Calling `markForCheck` to make sure we will run the change detection when the
+        // `RouterOutlet` is inside a `ChangeDetectionStrategy.OnPush` component.
+        this.changeDetector.markForCheck();
+        this.activateEvents.emit(this.activated.instance);
+    };
+    RouterOutlet.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: 'router-outlet', exportAs: 'outlet' },] }
+    ];
+    /** @nocollapse */
+    RouterOutlet.ctorParameters = function () { return [
+        { type: ChildrenOutletContexts, },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"], },
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Attribute"], args: ['name',] },] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], },
+    ]; };
+    RouterOutlet.propDecorators = {
+        "activateEvents": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['activate',] },],
+        "deactivateEvents": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['deactivate',] },],
+    };
+    return RouterOutlet;
+}());
+var OutletInjector = /** @class */ (function () {
+    function OutletInjector(route, childContexts, parent) {
+        this.route = route;
+        this.childContexts = childContexts;
+        this.parent = parent;
+    }
+    OutletInjector.prototype.get = function (token, notFoundValue) {
+        if (token === ActivatedRoute) {
+            return this.route;
+        }
+        if (token === ChildrenOutletContexts) {
+            return this.childContexts;
+        }
+        return this.parent.get(token, notFoundValue);
+    };
+    return OutletInjector;
+}());
+
+/**
+*@license
+*Copyright Google Inc. All Rights Reserved.
+*
+*Use of this source code is governed by an MIT-style license that can be
+*found in the LICENSE file at https://angular.io/license
+*/
+/**
+ * @description
+ *
+ * Provides a preloading strategy.
+ *
+ * @experimental
+ */
+var PreloadingStrategy = /** @class */ (function () {
+    function PreloadingStrategy() {
+    }
+    return PreloadingStrategy;
+}());
+/**
+ * @description
+ *
+ * Provides a preloading strategy that preloads all modules as quickly as possible.
+ *
+ * ```
+ * RouteModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
+ * ```
+ *
+ * @experimental
+ */
+var PreloadAllModules = /** @class */ (function () {
+    function PreloadAllModules() {
+    }
+    PreloadAllModules.prototype.preload = function (route, fn) {
+        return fn().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function () { return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null); }));
+    };
+    return PreloadAllModules;
+}());
+/**
+ * @description
+ *
+ * Provides a preloading strategy that does not preload any modules.
+ *
+ * This strategy is enabled by default.
+ *
+ * @experimental
+ */
+var NoPreloading = /** @class */ (function () {
+    function NoPreloading() {
+    }
+    NoPreloading.prototype.preload = function (route, fn) { return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null); };
+    return NoPreloading;
+}());
+/**
+ * The preloader optimistically loads all router configurations to
+ * make navigations into lazily-loaded sections of the application faster.
+ *
+ * The preloader runs in the background. When the router bootstraps, the preloader
+ * starts listening to all navigation events. After every such event, the preloader
+ * will check if any configurations can be loaded lazily.
+ *
+ * If a route is protected by `canLoad` guards, the preloaded will not load it.
+ *
+ *
+ */
+var RouterPreloader = /** @class */ (function () {
+    function RouterPreloader(router, moduleLoader, compiler, injector, preloadingStrategy) {
+        this.router = router;
+        this.injector = injector;
+        this.preloadingStrategy = preloadingStrategy;
+        var onStartLoad = function (r) { return router.triggerEvent(new RouteConfigLoadStart(r)); };
+        var onEndLoad = function (r) { return router.triggerEvent(new RouteConfigLoadEnd(r)); };
+        this.loader = new RouterConfigLoader(moduleLoader, compiler, onStartLoad, onEndLoad);
+    }
+    RouterPreloader.prototype.setUpPreloading = function () {
+        var _this = this;
+        this.subscription =
+            this.router.events
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])(function (e) { return e instanceof NavigationEnd; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function () { return _this.preload(); }))
+                .subscribe(function () { });
+    };
+    RouterPreloader.prototype.preload = function () {
+        var ngModule = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleRef"]);
+        return this.processRoutes(ngModule, this.router.config);
+    };
+    // TODO(jasonaden): This class relies on code external to the class to call setUpPreloading. If
+    // this hasn't been done, ngOnDestroy will fail as this.subscription will be undefined. This
+    // should be refactored.
+    // TODO(jasonaden): This class relies on code external to the class to call setUpPreloading. If
+    // this hasn't been done, ngOnDestroy will fail as this.subscription will be undefined. This
+    // should be refactored.
+    RouterPreloader.prototype.ngOnDestroy = 
+    // TODO(jasonaden): This class relies on code external to the class to call setUpPreloading. If
+    // this hasn't been done, ngOnDestroy will fail as this.subscription will be undefined. This
+    // should be refactored.
+    function () { this.subscription.unsubscribe(); };
+    RouterPreloader.prototype.processRoutes = function (ngModule, routes) {
+        var res = [];
+        try {
+            for (var routes_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__values"])(routes), routes_1_1 = routes_1.next(); !routes_1_1.done; routes_1_1 = routes_1.next()) {
+                var route = routes_1_1.value;
+                // we already have the config loaded, just recurse
+                if (route.loadChildren && !route.canLoad && route._loadedConfig) {
+                    var childConfig = route._loadedConfig;
+                    res.push(this.processRoutes(childConfig.module, childConfig.routes));
+                    // no config loaded, fetch the config
+                }
+                else if (route.loadChildren && !route.canLoad) {
+                    res.push(this.preloadConfig(ngModule, route));
+                    // recurse into children
+                }
+                else if (route.children) {
+                    res.push(this.processRoutes(ngModule, route.children));
+                }
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (routes_1_1 && !routes_1_1.done && (_a = routes_1.return)) _a.call(routes_1);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(res).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeAll"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (_) { return void 0; }));
+        var e_1, _a;
+    };
+    RouterPreloader.prototype.preloadConfig = function (ngModule, route) {
+        var _this = this;
+        return this.preloadingStrategy.preload(route, function () {
+            var loaded$ = _this.loader.load(ngModule.injector, route);
+            return loaded$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(function (config) {
+                route._loadedConfig = config;
+                return _this.processRoutes(config.module, config.routes);
+            }));
+        });
+    };
+    RouterPreloader.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] }
+    ];
+    /** @nocollapse */
+    RouterPreloader.ctorParameters = function () { return [
+        { type: Router, },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleFactoryLoader"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Compiler"], },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"], },
+        { type: PreloadingStrategy, },
+    ]; };
+    return RouterPreloader;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Contains a list of directives
+ *
+ *
+ */
+var ROUTER_DIRECTIVES = [RouterOutlet, RouterLink, RouterLinkWithHref, RouterLinkActive];
+/**
+ * @description
+ *
+ * Is used in DI to configure the router.
+ *
+ *
+ */
+var ROUTER_CONFIGURATION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('ROUTER_CONFIGURATION');
+/**
+ * @docsNotRequired
+ */
+var ROUTER_FORROOT_GUARD = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('ROUTER_FORROOT_GUARD');
+var ROUTER_PROVIDERS = [
+    _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"],
+    { provide: UrlSerializer, useClass: DefaultUrlSerializer },
+    {
+        provide: Router,
+        useFactory: setupRouter,
+        deps: [
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"], UrlSerializer, ChildrenOutletContexts, _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["Compiler"], ROUTES, ROUTER_CONFIGURATION,
+            [UrlHandlingStrategy, new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]()], [RouteReuseStrategy, new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]()]
+        ]
+    },
+    ChildrenOutletContexts,
+    { provide: ActivatedRoute, useFactory: rootRoute, deps: [Router] },
+    { provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleFactoryLoader"], useClass: _angular_core__WEBPACK_IMPORTED_MODULE_1__["SystemJsNgModuleLoader"] },
+    RouterPreloader,
+    NoPreloading,
+    PreloadAllModules,
+    { provide: ROUTER_CONFIGURATION, useValue: { enableTracing: false } },
+];
+function routerNgProbeToken() {
+    return new _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgProbeToken"]('Router', Router);
+}
+/**
+ * @usageNotes
+ *
+ * RouterModule can be imported multiple times: once per lazily-loaded bundle.
+ * Since the router deals with a global shared resource--location, we cannot have
+ * more than one router service active.
+ *
+ * That is why there are two ways to create the module: `RouterModule.forRoot` and
+ * `RouterModule.forChild`.
+ *
+ * * `forRoot` creates a module that contains all the directives, the given routes, and the router
+ *   service itself.
+ * * `forChild` creates a module that contains all the directives and the given routes, but does not
+ *   include the router service.
+ *
+ * When registered at the root, the module should be used as follows
+ *
+ * ```
+ * @NgModule({
+ *   imports: [RouterModule.forRoot(ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ * For submodules and lazy loaded submodules the module should be used as follows:
+ *
+ * ```
+ * @NgModule({
+ *   imports: [RouterModule.forChild(ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ * @description
+ *
+ * Adds router directives and providers.
+ *
+ * Managing state transitions is one of the hardest parts of building applications. This is
+ * especially true on the web, where you also need to ensure that the state is reflected in the URL.
+ * In addition, we often want to split applications into multiple bundles and load them on demand.
+ * Doing this transparently is not trivial.
+ *
+ * The Angular router solves these problems. Using the router, you can declaratively specify
+ * application states, manage state transitions while taking care of the URL, and load bundles on
+ * demand.
+ *
+ * [Read this developer guide](https://angular.io/docs/ts/latest/guide/router.html) to get an
+ * overview of how the router should be used.
+ *
+ *
+ */
+var RouterModule = /** @class */ (function () {
+    // Note: We are injecting the Router so it gets created eagerly...
+    function RouterModule(guard, router) {
+    }
+    /**
+     * Creates a module with all the router providers and directives. It also optionally sets up an
+     * application listener to perform an initial navigation.
+     *
+     * Options (see `ExtraOptions`):
+     * * `enableTracing` makes the router log all its internal events to the console.
+     * * `useHash` enables the location strategy that uses the URL fragment instead of the history
+     * API.
+     * * `initialNavigation` disables the initial navigation.
+     * * `errorHandler` provides a custom error handler.
+     * * `preloadingStrategy` configures a preloading strategy (see `PreloadAllModules`).
+     * * `onSameUrlNavigation` configures how the router handles navigation to the current URL. See
+     * `ExtraOptions` for more details.
+     */
+    /**
+       * Creates a module with all the router providers and directives. It also optionally sets up an
+       * application listener to perform an initial navigation.
+       *
+       * Options (see `ExtraOptions`):
+       * * `enableTracing` makes the router log all its internal events to the console.
+       * * `useHash` enables the location strategy that uses the URL fragment instead of the history
+       * API.
+       * * `initialNavigation` disables the initial navigation.
+       * * `errorHandler` provides a custom error handler.
+       * * `preloadingStrategy` configures a preloading strategy (see `PreloadAllModules`).
+       * * `onSameUrlNavigation` configures how the router handles navigation to the current URL. See
+       * `ExtraOptions` for more details.
+       */
+    RouterModule.forRoot = /**
+       * Creates a module with all the router providers and directives. It also optionally sets up an
+       * application listener to perform an initial navigation.
+       *
+       * Options (see `ExtraOptions`):
+       * * `enableTracing` makes the router log all its internal events to the console.
+       * * `useHash` enables the location strategy that uses the URL fragment instead of the history
+       * API.
+       * * `initialNavigation` disables the initial navigation.
+       * * `errorHandler` provides a custom error handler.
+       * * `preloadingStrategy` configures a preloading strategy (see `PreloadAllModules`).
+       * * `onSameUrlNavigation` configures how the router handles navigation to the current URL. See
+       * `ExtraOptions` for more details.
+       */
+    function (routes, config) {
+        return {
+            ngModule: RouterModule,
+            providers: [
+                ROUTER_PROVIDERS,
+                provideRoutes(routes),
+                {
+                    provide: ROUTER_FORROOT_GUARD,
+                    useFactory: provideForRootGuard,
+                    deps: [[Router, new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"](), new _angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"]()]]
+                },
+                { provide: ROUTER_CONFIGURATION, useValue: config ? config : {} },
+                {
+                    provide: _angular_common__WEBPACK_IMPORTED_MODULE_0__["LocationStrategy"],
+                    useFactory: provideLocationStrategy,
+                    deps: [
+                        _angular_common__WEBPACK_IMPORTED_MODULE_0__["PlatformLocation"], [new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["APP_BASE_HREF"]), new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]()], ROUTER_CONFIGURATION
+                    ]
+                },
+                {
+                    provide: PreloadingStrategy,
+                    useExisting: config && config.preloadingStrategy ? config.preloadingStrategy :
+                        NoPreloading
+                },
+                { provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgProbeToken"], multi: true, useFactory: routerNgProbeToken },
+                provideRouterInitializer(),
+            ],
+        };
+    };
+    /**
+     * Creates a module with all the router directives and a provider registering routes.
+     */
+    /**
+       * Creates a module with all the router directives and a provider registering routes.
+       */
+    RouterModule.forChild = /**
+       * Creates a module with all the router directives and a provider registering routes.
+       */
+    function (routes) {
+        return { ngModule: RouterModule, providers: [provideRoutes(routes)] };
+    };
+    RouterModule.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{ declarations: ROUTER_DIRECTIVES, exports: ROUTER_DIRECTIVES },] }
+    ];
+    /** @nocollapse */
+    RouterModule.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [ROUTER_FORROOT_GUARD,] },] },
+        { type: Router, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] },] },
+    ]; };
+    return RouterModule;
+}());
+function provideLocationStrategy(platformLocationStrategy, baseHref, options) {
+    if (options === void 0) { options = {}; }
+    return options.useHash ? new _angular_common__WEBPACK_IMPORTED_MODULE_0__["HashLocationStrategy"](platformLocationStrategy, baseHref) :
+        new _angular_common__WEBPACK_IMPORTED_MODULE_0__["PathLocationStrategy"](platformLocationStrategy, baseHref);
+}
+function provideForRootGuard(router) {
+    if (router) {
+        throw new Error("RouterModule.forRoot() called twice. Lazy loaded modules should use RouterModule.forChild() instead.");
+    }
+    return 'guarded';
+}
+/**
+ * @description
+ *
+ * Registers routes.
+ *
+ * ### Example
+ *
+ * ```
+ * @NgModule({
+ *   imports: [RouterModule.forChild(ROUTES)],
+ *   providers: [provideRoutes(EXTRA_ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ *
+ */
+function provideRoutes(routes) {
+    return [
+        { provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ANALYZE_FOR_ENTRY_COMPONENTS"], multi: true, useValue: routes },
+        { provide: ROUTES, multi: true, useValue: routes },
+    ];
+}
+function setupRouter(ref, urlSerializer, contexts, location, injector, loader, compiler, config, opts, urlHandlingStrategy, routeReuseStrategy) {
+    if (opts === void 0) { opts = {}; }
+    var router = new Router(null, urlSerializer, contexts, location, injector, loader, compiler, flatten(config));
+    if (urlHandlingStrategy) {
+        router.urlHandlingStrategy = urlHandlingStrategy;
+    }
+    if (routeReuseStrategy) {
+        router.routeReuseStrategy = routeReuseStrategy;
+    }
+    if (opts.errorHandler) {
+        router.errorHandler = opts.errorHandler;
+    }
+    if (opts.enableTracing) {
+        var dom_1 = Object(_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["ɵgetDOM"])();
+        router.events.subscribe(function (e) {
+            dom_1.logGroup("Router Event: " + e.constructor.name);
+            dom_1.log(e.toString());
+            dom_1.log(e);
+            dom_1.logGroupEnd();
+        });
+    }
+    if (opts.onSameUrlNavigation) {
+        router.onSameUrlNavigation = opts.onSameUrlNavigation;
+    }
+    if (opts.paramsInheritanceStrategy) {
+        router.paramsInheritanceStrategy = opts.paramsInheritanceStrategy;
+    }
+    return router;
+}
+function rootRoute(router) {
+    return router.routerState.root;
+}
+/**
+ * To initialize the router properly we need to do in two steps:
+ *
+ * We need to start the navigation in a APP_INITIALIZER to block the bootstrap if
+ * a resolver or a guards executes asynchronously. Second, we need to actually run
+ * activation in a BOOTSTRAP_LISTENER. We utilize the afterPreactivation
+ * hook provided by the router to do that.
+ *
+ * The router navigation starts, reaches the point when preactivation is done, and then
+ * pauses. It waits for the hook to be resolved. We then resolve it only in a bootstrap listener.
+ */
+var RouterInitializer = /** @class */ (function () {
+    function RouterInitializer(injector) {
+        this.injector = injector;
+        this.initNavigation = false;
+        this.resultOfPreactivationDone = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
+    }
+    RouterInitializer.prototype.appInitializer = function () {
+        var _this = this;
+        var p = this.injector.get(_angular_common__WEBPACK_IMPORTED_MODULE_0__["LOCATION_INITIALIZED"], Promise.resolve(null));
+        return p.then(function () {
+            var resolve = (null);
+            var res = new Promise(function (r) { return resolve = r; });
+            var router = _this.injector.get(Router);
+            var opts = _this.injector.get(ROUTER_CONFIGURATION);
+            if (_this.isLegacyDisabled(opts) || _this.isLegacyEnabled(opts)) {
+                resolve(true);
+            }
+            else if (opts.initialNavigation === 'disabled') {
+                router.setUpLocationChangeListener();
+                resolve(true);
+            }
+            else if (opts.initialNavigation === 'enabled') {
+                router.hooks.afterPreactivation = function () {
+                    // only the initial navigation should be delayed
+                    if (!_this.initNavigation) {
+                        _this.initNavigation = true;
+                        resolve(true);
+                        return _this.resultOfPreactivationDone;
+                        // subsequent navigations should not be delayed
+                    }
+                    else {
+                        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+                    }
+                };
+                router.initialNavigation();
+            }
+            else {
+                throw new Error("Invalid initialNavigation options: '" + opts.initialNavigation + "'");
+            }
+            return res;
+        });
+    };
+    RouterInitializer.prototype.bootstrapListener = function (bootstrappedComponentRef) {
+        var opts = this.injector.get(ROUTER_CONFIGURATION);
+        var preloader = this.injector.get(RouterPreloader);
+        var router = this.injector.get(Router);
+        var ref = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"]);
+        if (bootstrappedComponentRef !== ref.components[0]) {
+            return;
+        }
+        if (this.isLegacyEnabled(opts)) {
+            router.initialNavigation();
+        }
+        else if (this.isLegacyDisabled(opts)) {
+            router.setUpLocationChangeListener();
+        }
+        preloader.setUpPreloading();
+        router.resetRootComponentType(ref.componentTypes[0]);
+        this.resultOfPreactivationDone.next((null));
+        this.resultOfPreactivationDone.complete();
+    };
+    RouterInitializer.prototype.isLegacyEnabled = function (opts) {
+        return opts.initialNavigation === 'legacy_enabled' || opts.initialNavigation === true ||
+            opts.initialNavigation === undefined;
+    };
+    RouterInitializer.prototype.isLegacyDisabled = function (opts) {
+        return opts.initialNavigation === 'legacy_disabled' || opts.initialNavigation === false;
+    };
+    RouterInitializer.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] }
+    ];
+    /** @nocollapse */
+    RouterInitializer.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"], },
+    ]; };
+    return RouterInitializer;
+}());
+function getAppInitializer(r) {
+    return r.appInitializer.bind(r);
+}
+function getBootstrapListener(r) {
+    return r.bootstrapListener.bind(r);
+}
+/**
+ * A token for the router initializer that will be called after the app is bootstrapped.
+ *
+ * @experimental
+ */
+var ROUTER_INITIALIZER = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('Router Initializer');
+function provideRouterInitializer() {
+    return [
+        RouterInitializer,
+        {
+            provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["APP_INITIALIZER"],
+            multi: true,
+            useFactory: getAppInitializer,
+            deps: [RouterInitializer]
+        },
+        { provide: ROUTER_INITIALIZER, useFactory: getBootstrapListener, deps: [RouterInitializer] },
+        { provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["APP_BOOTSTRAP_LISTENER"], multi: true, useExisting: ROUTER_INITIALIZER },
+    ];
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ *
+ */
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.0.0');
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+// This file only reexports content of the `src` folder. Keep it that way.
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+//# sourceMappingURL=router.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/ng2-page-scroll.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/ng2-page-scroll.js ***!
+  \*********************************************************/
+/*! exports provided: PageScroll, PageScrollService, NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY, NG2PAGESCROLL_SERVICE_PROVIDER, EasingLogic, PageScrollConfig, PageScrollInstance, PageScrollUtilService, Ng2PageScrollModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_ng2_page_scroll_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/ng2-page-scroll.directive */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.directive.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PageScroll", function() { return _src_ng2_page_scroll_directive__WEBPACK_IMPORTED_MODULE_0__["PageScroll"]; });
+
+/* harmony import */ var _src_ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/ng2-page-scroll.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.service.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PageScrollService", function() { return _src_ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_1__["PageScrollService"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY", function() { return _src_ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_1__["NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NG2PAGESCROLL_SERVICE_PROVIDER", function() { return _src_ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_1__["NG2PAGESCROLL_SERVICE_PROVIDER"]; });
+
+/* harmony import */ var _src_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/ng2-page-scroll-config */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-config.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "EasingLogic", function() { return _src_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_2__["EasingLogic"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PageScrollConfig", function() { return _src_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_2__["PageScrollConfig"]; });
+
+/* harmony import */ var _src_ng2_page_scroll_instance__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/ng2-page-scroll-instance */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-instance.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PageScrollInstance", function() { return _src_ng2_page_scroll_instance__WEBPACK_IMPORTED_MODULE_3__["PageScrollInstance"]; });
+
+/* harmony import */ var _src_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/ng2-page-scroll-util.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PageScrollUtilService", function() { return _src_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_4__["PageScrollUtilService"]; });
+
+/* harmony import */ var _src_ng2_page_scroll_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/ng2-page-scroll.module */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.module.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Ng2PageScrollModule", function() { return _src_ng2_page_scroll_module__WEBPACK_IMPORTED_MODULE_5__["Ng2PageScrollModule"]; });
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-config.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll-config.js ***!
+  \********************************************************************/
+/*! exports provided: EasingLogic, PageScrollConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EasingLogic", function() { return EasingLogic; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageScrollConfig", function() { return PageScrollConfig; });
+var EasingLogic = (function () {
+    function EasingLogic() {
+    }
+    return EasingLogic;
+}());
+
+var PageScrollConfig = (function () {
+    function PageScrollConfig() {
+    }
+    Object.defineProperty(PageScrollConfig, "defaultEasingLogic", {
+        // Getter and setter to avoid auto completion to suggest calling the method
+        get: function () {
+            return PageScrollConfig._easingLogic;
+        },
+        set: function (easingLogic) {
+            PageScrollConfig._easingLogic = easingLogic;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * The number of milliseconds to wait till updating the scroll position again.
+     * Small amounts may produce smoother animations but require more processing power.
+     * @type {number}
+     * @private
+     */
+    PageScrollConfig._interval = 10;
+    /**
+     * The amount of pixels that need to be between the current scrollTop/scrollLeft position
+     * and the target position the cause a scroll animation. In case distance is below
+     * this threshold, an immediate jump will be performed.
+     * Due to dpi or rounding irregularities in browsers floating point numbers for scrollTop/scrollLeft values
+     * are possible, making a === comparison of current scrollTop or scrollLeft and target scrollPosition error-prone.
+     * @type {number}
+     * @private
+     */
+    PageScrollConfig._minScrollDistance = 2;
+    /**
+     * Name of the default namespace.
+     * @type {string}
+     * @private
+     */
+    PageScrollConfig._defaultNamespace = 'default';
+    /**
+     * Whether by default the scrolling should happen in vertical direction (by manipulating the scrollTop property)
+     * (= true; default) or in horizontal direction (by manipulating the scrollLeft property) (= false
+     * @type {boolean}
+     */
+    PageScrollConfig.defaultIsVerticalScrolling = true;
+    /**
+     * How many console logs should be emitted. Also influenced by angular mode (dev or prod mode)
+     * 0: No logs, neither in dev nor in prod mode
+     * 1: Animation errors in dev mode, no logs in prod mode
+     * 2: Animation errors in dev and prod mode
+     * 5: Animation errors in dev and all scroll position values that get set; animation errors in prod mode
+     * @type {boolean}
+     * @private
+     */
+    PageScrollConfig._logLevel = 2;
+    /**
+     * The duration how long a scrollTo animation should last by default.
+     * May be overridden using the page-scroll-duration attribute on a single ng2PageScroll instance.
+     * @type {number}
+     */
+    PageScrollConfig.defaultDuration = 1250;
+    /**
+     * The distance in pixels above scroll target where the animation should stop. Setting a positive number results in
+     * the scroll target being more in the middle of the screen, negative numbers will produce scrolling "too far"
+     * @type {number}
+     */
+    PageScrollConfig.defaultScrollOffset = 0;
+    /**
+     * Whether by default for inline scroll animations the advanced offset calculation should take place (true) or
+     * not (false). Default is false.
+     * The advanced offset calculation will traverse the DOM tree upwards, starting at the scrollTarget, until it finds
+     * the scrollingView container element. Along the way the offset positions of the relative positioned
+     * (position: relative) elements will be taken into account for calculating the target elements position.
+     * @type {boolean}
+     */
+    PageScrollConfig.defaultAdvancedInlineOffsetCalculation = false;
+    /**
+     * The events that are listened to on the body to decide whether a scroll animation has been interfered/interrupted by the user
+     * @type {string[]}
+     * @private
+     */
+    PageScrollConfig._interruptEvents = ['mousedown', 'wheel', 'DOMMouseScroll', 'mousewheel', 'keyup', 'touchmove'];
+    /**
+     * The keys that are considered to interrupt a scroll animation (mainly the arrow keys). All other key presses will not stop the
+     * scroll animation.
+     * @type {number[]}
+     * @private
+     */
+    PageScrollConfig._interruptKeys = [33, 34, 35, 36, 38, 40];
+    /**
+     * Whether a scroll animation should be interruptible by user interaction (true) or not (false). If the user performs an
+     * interrupting event while a scroll animation takes place, the scroll animation stops.
+     * @type {boolean}
+     */
+    PageScrollConfig.defaultInterruptible = true;
+    PageScrollConfig._easingLogic = {
+        ease: function (t, b, c, d) {
+            // Linear easing
+            return c * t / d + b;
+        }
+    };
+    return PageScrollConfig;
+}());
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-instance.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll-instance.js ***!
+  \**********************************************************************/
+/*! exports provided: PageScrollInstance */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageScrollInstance", function() { return PageScrollInstance; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ng2-page-scroll-config */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-config.js");
+/* harmony import */ var _ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ng2-page-scroll-util.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js");
+
+
+
+/**
+ * Represents a scrolling action
+ */
+var PageScrollInstance = (function () {
+    /**
+     * Private constructor, requires the properties assumed to be the bare minimum.
+     * Use the factory methods to create instances:
+     *      {@link PageScrollInstance#simpleInstance}
+     *      {@link PageScrollInstance#newInstance}
+     * @param namespace
+     * @param document
+     */
+    function PageScrollInstance(namespace, document) {
+        /**
+         * These properties will be set during instance construction and default to their defaults from PageScrollConfig
+         */
+        /* A namespace to "group" scroll animations together and stopping some does not stop others */
+        this._namespace = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._defaultNamespace;
+        /* Whether we scroll vertically (true) or horizontally (false) */
+        this._verticalScrolling = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultIsVerticalScrolling;
+        /* Offset in px that the animation should stop above that target element */
+        this._offset = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultScrollOffset;
+        /* Duration in milliseconds the scroll animation should last */
+        this._duration = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultDuration;
+        /* Easing function to manipulate the scrollTop/scrollLeft value over time */
+        this._easingLogic = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultEasingLogic;
+        /* Boolean whether the scroll animation should stop on user interruption or not */
+        this._interruptible = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultInterruptible;
+        /* Whether the advanded offset calculation for inline scrolling should be used */
+        this._advancedInlineOffsetCalculation = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultAdvancedInlineOffsetCalculation;
+        /* Event emitter to notify the world about the scrolling */
+        this._pageScrollFinish = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        /**
+         * These properties will be set/manipulated if the scroll animation starts
+         */
+        /* The initial value of the scrollTop or scrollLeft position when the animation starts */
+        this._startScrollPosition = 0;
+        /* Whether an interrupt listener is attached to the body or not */
+        this._interruptListenersAttached = false;
+        /* References to the timer instance that is used to perform the scroll animation to be
+         able to clear it on animation end*/
+        this._timer = null;
+        this._namespace = namespace;
+        this.document = document;
+    }
+    /*
+     * Factory methods for instance creation
+     */
+    PageScrollInstance.simpleInstance = function (document, scrollTarget, namespace) {
+        return PageScrollInstance.newInstance({
+            document: document,
+            scrollTarget: scrollTarget,
+            namespace: namespace
+        });
+    };
+    PageScrollInstance.newInstance = function (options) {
+        if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.namespace) || options.namespace.length <= 0) {
+            options.namespace = _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._defaultNamespace;
+        }
+        var pageScrollInstance = new PageScrollInstance(options.namespace, document);
+        if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.scrollingViews) || options.scrollingViews.length === 0) {
+            pageScrollInstance._isInlineScrolling = false;
+            pageScrollInstance._scrollingViews = [document.documentElement, document.body, document.body.parentNode];
+        }
+        else {
+            pageScrollInstance._isInlineScrolling = true;
+            pageScrollInstance._scrollingViews = options.scrollingViews;
+        }
+        pageScrollInstance._scrollTarget = options.scrollTarget;
+        if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.verticalScrolling)) {
+            pageScrollInstance._verticalScrolling = options.verticalScrolling;
+        }
+        if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollOffset)) {
+            pageScrollInstance._offset = options.pageScrollOffset;
+        }
+        if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollEasingLogic)) {
+            pageScrollInstance._easingLogic = options.pageScrollEasingLogic;
+        }
+        if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollDuration) && !_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollSpeed)) {
+            // No duration specified in the options, only in this case we use the speed option when present
+            pageScrollInstance._speed = options.pageScrollSpeed;
+            pageScrollInstance._duration = undefined;
+        }
+        else if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollDuration)) {
+            pageScrollInstance._duration = options.pageScrollDuration;
+        }
+        if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollFinishListener)) {
+            pageScrollInstance._pageScrollFinish = options.pageScrollFinishListener;
+        }
+        pageScrollInstance._interruptible = options.pageScrollInterruptible ||
+            (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.pageScrollInterruptible) && _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultInterruptible);
+        pageScrollInstance._advancedInlineOffsetCalculation = options.advancedInlineOffsetCalculation ||
+            (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(options.advancedInlineOffsetCalculation) &&
+                _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultAdvancedInlineOffsetCalculation);
+        return pageScrollInstance;
+    };
+    PageScrollInstance.prototype.getScrollPropertyValue = function (scrollingView) {
+        if (!this.verticalScrolling) {
+            return scrollingView.scrollLeft;
+        }
+        return scrollingView.scrollTop;
+    };
+    /**
+     * Extract the exact location of the scrollTarget element.
+     *
+     * Extract the scrollTarget HTMLElement from the given PageScrollTarget object. The latter one may be
+     * a string like "#heading2", then this method returns the corresponding DOM element for that id.
+     *
+     * @returns {HTMLElement}
+     */
+    PageScrollInstance.prototype.extractScrollTargetPosition = function () {
+        var scrollTargetElement;
+        if (typeof this._scrollTarget === 'string') {
+            var targetSelector = this._scrollTarget;
+            if (targetSelector.match(/^#[^\s]+$/g) !== null) {
+                // It's an id selector and a valid id, as it does not contain any white space characters
+                scrollTargetElement = this.document.getElementById(targetSelector.substr(1));
+            }
+            else {
+                scrollTargetElement = this.document.querySelector(targetSelector);
+            }
+        }
+        else {
+            scrollTargetElement = this._scrollTarget;
+        }
+        if (scrollTargetElement === null || scrollTargetElement === undefined) {
+            // Scroll target not found
+            return { top: NaN, left: NaN };
+        }
+        if (this._isInlineScrolling) {
+            var position = { top: scrollTargetElement.offsetTop, left: scrollTargetElement.offsetLeft };
+            if (this._advancedInlineOffsetCalculation && this.scrollingViews.length === 1) {
+                var accumulatedParentsPos = { top: 0, left: 0 };
+                // not named window to make sure we're not getting the global window variable by accident
+                var theWindow = scrollTargetElement.ownerDocument.defaultView;
+                var parentFound = false;
+                // Start parent is the immediate parent
+                var parent_1 = scrollTargetElement.parentElement;
+                // Iterate upwards all parents
+                while (!parentFound && !_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(parent_1)) {
+                    if (theWindow.getComputedStyle(parent_1).getPropertyValue('position') === 'relative') {
+                        accumulatedParentsPos.top += parent_1.offsetTop;
+                        accumulatedParentsPos.left += parent_1.offsetLeft;
+                    }
+                    // Next iteration
+                    parent_1 = parent_1.parentElement;
+                    parentFound = parent_1 === this.scrollingViews[0];
+                }
+                if (parentFound) {
+                    // Only use the results if we found the parent, otherwise we accumulated too much anyway
+                    position.top += accumulatedParentsPos.top;
+                    position.left += accumulatedParentsPos.left;
+                }
+                else {
+                    if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 2 || (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 1 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])())) {
+                        console.warn('Unable to find nested scrolling targets parent!');
+                    }
+                }
+            }
+            return position;
+        }
+        return _ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].extractElementPosition(this.document, scrollTargetElement);
+    };
+    /**
+     * Get the top offset of the scroll animation.
+     * This automatically takes the offset location of the scrolling container/scrolling view
+     * into account (for nested/inline scrolling).
+     *
+     * @returns {number}
+     */
+    PageScrollInstance.prototype.getCurrentOffset = function () {
+        return this._offset;
+    };
+    /**
+     * Sets the "scrollTop" or "scrollLeft" property for all scrollingViews to the provided value
+     * @param position
+     * @return true if at least for one ScrollTopSource the scrollTop/scrollLeft value could be set and it kept the new value.
+     *          false if it failed for all ScrollingViews, meaning that we should stop the animation
+     *          (probably because we're at the end of the scrolling region)
+     */
+    PageScrollInstance.prototype.setScrollPosition = function (position) {
+        var _this = this;
+        if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 5 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])()) {
+            console.warn('Scroll Position: ' + position);
+        }
+        // Set the new scrollTop/scrollLeft to all scrollingViews elements
+        return this.scrollingViews.reduce(function (oneAlreadyWorked, scrollingView) {
+            var startScrollPropertyValue = _this.getScrollPropertyValue(scrollingView);
+            if (scrollingView && !_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(startScrollPropertyValue)) {
+                var scrollDistance = Math.abs(startScrollPropertyValue - position);
+                // The movement we need to perform is less than 2px
+                // This we consider a small movement which some browser may not perform when
+                // changing the scrollTop/scrollLeft property
+                // Thus in this cases we do not stop the scroll animation, although setting the
+                // scrollTop/scrollLeft value "fails"
+                var isSmallMovement = scrollDistance < _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._minScrollDistance;
+                if (!_this.verticalScrolling) {
+                    scrollingView.scrollLeft = position;
+                }
+                else {
+                    scrollingView.scrollTop = position;
+                }
+                // Return true of setting the new scrollTop/scrollLeft value worked
+                // We consider that it worked if the new scrollTop/scrollLeft value is closer to the
+                // desired scrollTop/scrollLeft than before (it might not be exactly the value we
+                // set due to dpi or rounding irregularities)
+                if (isSmallMovement || scrollDistance > Math.abs(_this.getScrollPropertyValue(scrollingView) - position)) {
+                    return true;
+                }
+            }
+            return oneAlreadyWorked;
+        }, false);
+    };
+    /**
+     * Trigger firing a animation finish event
+     * @param value Whether the animation finished at the target (true) or got interrupted (false)
+     */
+    PageScrollInstance.prototype.fireEvent = function (value) {
+        if (this._pageScrollFinish) {
+            this._pageScrollFinish.emit(value);
+        }
+    };
+    /**
+     * Attach the interrupt listeners to the PageScrollInstance body. The given interruptReporter
+     * will be called if any of the attached events is fired.
+     *
+     * Possibly attached interruptListeners are automatically removed from the body before the new one will be attached.
+     *
+     * @param interruptReporter
+     */
+    PageScrollInstance.prototype.attachInterruptListeners = function (interruptReporter) {
+        var _this = this;
+        if (this._interruptListenersAttached) {
+            // Detach possibly existing listeners first
+            this.detachInterruptListeners();
+        }
+        this._interruptListener = function (event) {
+            interruptReporter.report(event, _this);
+        };
+        _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._interruptEvents.forEach(function (event) { return _this.document.body.addEventListener(event, _this._interruptListener); });
+        this._interruptListenersAttached = true;
+    };
+    /**
+     * Remove event listeners from the body and stop listening for events that might be treated as "animation
+     * interrupt" events.
+     */
+    PageScrollInstance.prototype.detachInterruptListeners = function () {
+        var _this = this;
+        _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._interruptEvents.forEach(function (event) { return _this.document.body.removeEventListener(event, _this._interruptListener); });
+        this._interruptListenersAttached = false;
+    };
+    Object.defineProperty(PageScrollInstance.prototype, "namespace", {
+        get: function () {
+            return this._namespace;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "scrollTarget", {
+        get: function () {
+            return this._scrollTarget;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "verticalScrolling", {
+        get: function () {
+            return this._verticalScrolling;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "scrollingViews", {
+        get: function () {
+            return this._scrollingViews;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "startScrollPosition", {
+        get: function () {
+            return this._startScrollPosition;
+        },
+        set: function (value) {
+            this._startScrollPosition = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "targetScrollPosition", {
+        get: function () {
+            return this._targetScrollPosition;
+        },
+        set: function (value) {
+            this._targetScrollPosition = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "distanceToScroll", {
+        get: function () {
+            return this._distanceToScroll;
+        },
+        set: function (value) {
+            this._distanceToScroll = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "executionDuration", {
+        get: function () {
+            return this._executionDuration;
+        },
+        set: function (value) {
+            this._executionDuration = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "duration", {
+        get: function () {
+            return this._duration;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "speed", {
+        get: function () {
+            return this._speed;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "easingLogic", {
+        get: function () {
+            return this._easingLogic;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "interruptible", {
+        get: function () {
+            return this._interruptible;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "startTime", {
+        get: function () {
+            return this._startTime;
+        },
+        set: function (value) {
+            this._startTime = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "endTime", {
+        get: function () {
+            return this._endTime;
+        },
+        set: function (value) {
+            this._endTime = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "timer", {
+        get: function () {
+            return this._timer;
+        },
+        set: function (value) {
+            this._timer = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PageScrollInstance.prototype, "interruptListenersAttached", {
+        get: function () {
+            return this._interruptListenersAttached;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return PageScrollInstance;
+}());
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js ***!
+  \**************************************************************************/
+/*! exports provided: PageScrollUtilService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageScrollUtilService", function() { return PageScrollUtilService; });
+var PageScrollUtilService = (function () {
+    function PageScrollUtilService() {
+    }
+    /**
+     * Util method to check whether a given variable is either undefined or null
+     * @param variable
+     * @returns {boolean} true the variable is undefined or null
+     */
+    PageScrollUtilService.isUndefinedOrNull = function (variable) {
+        return (typeof variable === 'undefined') || variable === undefined || variable === null;
+    };
+    PageScrollUtilService.extractElementPosition = function (document, scrollTargetElement) {
+        var body = document.body;
+        var docEl = document.documentElement;
+        var windowPageYOffset = document.defaultView && document.defaultView.pageYOffset || undefined;
+        var windowPageXOffset = document.defaultView && document.defaultView.pageXOffset || undefined;
+        var scrollTop = windowPageYOffset || docEl.scrollTop || body.scrollTop;
+        var scrollLeft = windowPageXOffset || docEl.scrollLeft || body.scrollLeft;
+        var clientTop = docEl.clientTop || body.clientTop || 0;
+        var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+        if (PageScrollUtilService.isUndefinedOrNull(scrollTargetElement)) {
+            // No element found, so return the current position to not cause any change in scroll position
+            return { top: scrollTop, left: scrollLeft };
+        }
+        var box = scrollTargetElement.getBoundingClientRect();
+        var top = box.top + scrollTop - clientTop;
+        var left = box.left + scrollLeft - clientLeft;
+        return { top: Math.round(top), left: Math.round(left) };
+    };
+    return PageScrollUtilService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.directive.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll.directive.js ***!
+  \***********************************************************************/
+/*! exports provided: PageScroll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageScroll", function() { return PageScroll; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ng2-page-scroll.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.service.js");
+/* harmony import */ var _ng2_page_scroll_instance__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ng2-page-scroll-instance */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-instance.js");
+/* harmony import */ var _ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ng2-page-scroll-util.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js");
+
+
+
+
+
+
+var PageScroll = (function () {
+    function PageScroll(pageScrollService, router, document) {
+        this.pageScrollService = pageScrollService;
+        this.router = router;
+        this.pageScrollTarget = null;
+        this.pageScrollHorizontal = null;
+        this.pageScrollOffset = null;
+        this.pageScrollDuration = null;
+        this.pageScrollSpeed = null;
+        this.pageScrollEasing = null;
+        this.pageScrollAdjustHash = false;
+        this.pageScroll = null;
+        this.pageScrollFinish = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.document = document;
+    }
+    PageScroll.prototype.ngOnChanges = function (changes) {
+        // Some inputs changed, reset the pageScrollInstance
+        this.pageScrollInstance = undefined;
+    };
+    PageScroll.prototype.ngOnDestroy = function () {
+        if (this.pageScrollInstance) {
+            this.pageScrollService.stop(this.pageScrollInstance);
+        }
+        return undefined;
+    };
+    PageScroll.prototype.generatePageScrollInstance = function () {
+        if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_5__["PageScrollUtilService"].isUndefinedOrNull(this.pageScrollInstance)) {
+            this.pageScrollInstance = _ng2_page_scroll_instance__WEBPACK_IMPORTED_MODULE_4__["PageScrollInstance"].newInstance({
+                document: this.document,
+                scrollTarget: this.pageScrollTarget || this.href,
+                scrollingViews: null,
+                namespace: this.pageScroll,
+                verticalScrolling: !this.pageScrollHorizontal,
+                pageScrollOffset: this.pageScrollOffset,
+                pageScrollInterruptible: this.pageScrollInterruptible,
+                pageScrollEasingLogic: this.pageScrollEasing,
+                pageScrollDuration: this.pageScrollDuration,
+                pageScrollSpeed: this.pageScrollSpeed,
+                pageScrollFinishListener: this.pageScrollFinish
+            });
+        }
+        return this.pageScrollInstance;
+    };
+    PageScroll.prototype.pushRouterState = function () {
+        if (this.pageScrollAdjustHash && typeof this.pageScrollInstance.scrollTarget === 'string'
+            && this.pageScrollInstance.scrollTarget.substr(0, 1) === '#') {
+            // "Navigate" to the current route again and this time set the fragment/hash
+            this.router.navigate([], {
+                fragment: this.pageScrollInstance.scrollTarget.substr(1),
+                preserveQueryParams: true
+            });
+        }
+    };
+    PageScroll.prototype.scroll = function () {
+        var pageScrollInstance = this.generatePageScrollInstance();
+        this.pushRouterState();
+        this.pageScrollService.start(pageScrollInstance);
+    };
+    PageScroll.prototype.handleClick = function (clickEvent) {
+        var _this = this;
+        if (this.routerLink && this.router !== null && this.router !== undefined) {
+            var urlTree = void 0;
+            if (typeof this.routerLink === 'string') {
+                urlTree = this.router.parseUrl(this.routerLink);
+            }
+            else {
+                urlTree = this.router.createUrlTree(this.routerLink);
+            }
+            if (!this.router.isActive(urlTree, true)) {
+                // We need to navigate their first.
+                // Navigation is handled by the routerLink directive
+                // so we only need to listen for route change
+                var subscription_1 = this.router.events.subscribe(function (routerEvent) {
+                    if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"]) {
+                        subscription_1.unsubscribe();
+                        // use a timeout to start scrolling as soon as the stack is cleared
+                        setTimeout(function () {
+                            _this.scroll();
+                        }, 0);
+                    }
+                    else if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationError"] || routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationCancel"]) {
+                        subscription_1.unsubscribe();
+                    }
+                });
+                return false; // to preventDefault()
+            }
+        }
+        this.scroll();
+        return false; // to preventDefault()
+    };
+    PageScroll.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"], args: [{
+                    selector: '[pageScroll]',
+                    host: {
+                        '(click)': 'handleClick($event)',
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    PageScroll.ctorParameters = function () { return [
+        { type: _ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_3__["PageScrollService"], },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] },] },
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"],] },] },
+    ]; };
+    PageScroll.propDecorators = {
+        'routerLink': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'href': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollTarget': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollHorizontal': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollOffset': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollDuration': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollSpeed': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollEasing': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollInterruptible': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollAdjustHash': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScroll': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] },],
+        'pageScrollFinish': [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] },],
+    };
+    return PageScroll;
+}());
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.module.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll.module.js ***!
+  \********************************************************************/
+/*! exports provided: Ng2PageScrollModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2PageScrollModule", function() { return Ng2PageScrollModule; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ng2-page-scroll.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.service.js");
+/* harmony import */ var _ng2_page_scroll_directive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ng2-page-scroll.directive */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.directive.js");
+
+
+
+
+var Ng2PageScrollModule = (function () {
+    function Ng2PageScrollModule() {
+    }
+    /** @deprecated since v4.0.0-beta.10 (https://github.com/Nolanus/ng2-page-scroll/pull/190) */
+    Ng2PageScrollModule.forRoot = function () {
+        return {
+            ngModule: Ng2PageScrollModule,
+            providers: [
+                { provide: _ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollService"], useClass: _ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollService"] }
+            ]
+        };
+    };
+    Ng2PageScrollModule.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]],
+                    declarations: [_ng2_page_scroll_directive__WEBPACK_IMPORTED_MODULE_3__["PageScroll"]],
+                    exports: [_ng2_page_scroll_directive__WEBPACK_IMPORTED_MODULE_3__["PageScroll"]],
+                    providers: [_ng2_page_scroll_service__WEBPACK_IMPORTED_MODULE_2__["NG2PAGESCROLL_SERVICE_PROVIDER"]]
+                },] },
+    ];
+    /** @nocollapse */
+    Ng2PageScrollModule.ctorParameters = function () { return []; };
+    return Ng2PageScrollModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ng2-page-scroll/src/ng2-page-scroll.service.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ng2-page-scroll/src/ng2-page-scroll.service.js ***!
+  \*********************************************************************/
+/*! exports provided: PageScrollService, NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY, NG2PAGESCROLL_SERVICE_PROVIDER */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageScrollService", function() { return PageScrollService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY", function() { return NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG2PAGESCROLL_SERVICE_PROVIDER", function() { return NG2PAGESCROLL_SERVICE_PROVIDER; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ng2-page-scroll-config */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-config.js");
+/* harmony import */ var _ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ng2-page-scroll-util.service */ "./node_modules/ng2-page-scroll/src/ng2-page-scroll-util.service.js");
+
+
+
+var PageScrollService = (function () {
+    function PageScrollService() {
+        var _this = this;
+        this.runningInstances = [];
+        this.onInterrupted = {
+            report: function (event, pageScrollInstance) {
+                if (!pageScrollInstance.interruptible) {
+                    // Non-interruptible anyway, so do not stop anything
+                    return;
+                }
+                var shouldStop = true;
+                if (event.type === 'keyup') {
+                    // Only stop if specific keys have been pressed, for all others don't stop anything
+                    if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._interruptKeys.indexOf(event.keyCode) === -1) {
+                        // The pressed key is not in the list of interrupting keys
+                        shouldStop = false;
+                    }
+                }
+                else if (event.type === 'mousedown') {
+                    // For mousedown events we only stop the scroll animation of the mouse has
+                    // been clicked inside the scrolling container
+                    if (!pageScrollInstance.scrollingViews.some(function (scrollingView) { return scrollingView.contains(event.target); })) {
+                        // Mouse clicked an element which is not inside any of the the scrolling containers
+                        shouldStop = false;
+                    }
+                }
+                if (shouldStop) {
+                    _this.stopAll(pageScrollInstance.namespace);
+                }
+            }
+        };
+        if (PageScrollService.instanceCounter > 0 &&
+            (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 2 || (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 1 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])()))) {
+            console.warn('An instance of PageScrollService already exists, usually ' +
+                'including one provider should be enough, so double check.');
+        }
+        PageScrollService.instanceCounter++;
+    }
+    PageScrollService.prototype.stopInternal = function (interrupted, pageScrollInstance) {
+        var index = this.runningInstances.indexOf(pageScrollInstance);
+        if (index >= 0) {
+            this.runningInstances.splice(index, 1);
+        }
+        if (pageScrollInstance.interruptListenersAttached) {
+            pageScrollInstance.detachInterruptListeners();
+        }
+        if (pageScrollInstance.timer) {
+            // Clear/Stop the timer
+            clearInterval(pageScrollInstance.timer);
+            // Clear the reference to this timer
+            pageScrollInstance.timer = undefined;
+            pageScrollInstance.fireEvent(!interrupted);
+            return true;
+        }
+        return false;
+    };
+    /**
+     * Start a scroll animation. All properties of the animation are stored in the given {@link PageScrollInstance} object.
+     *
+     * This is the core functionality of the whole library.
+     *
+     * @param pageScrollInstance
+     */
+    PageScrollService.prototype.start = function (pageScrollInstance) {
+        var _this = this;
+        // Stop all possibly running scroll animations in the same namespace
+        this.stopAll(pageScrollInstance.namespace);
+        if (pageScrollInstance.scrollingViews === null || pageScrollInstance.scrollingViews.length === 0) {
+            // No scrollingViews specified, thus we can't animate anything
+            if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 2 || (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 1 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])())) {
+                console.warn('No scrollingViews specified, this ng2-page-scroll does not know which DOM elements to scroll');
+            }
+            return;
+        }
+        var startScrollPositionFound = false;
+        // Reset start scroll position to 0. If any of the scrollingViews has a different one, it will be extracted next
+        pageScrollInstance.startScrollPosition = 0;
+        // Get the start scroll position from the scrollingViews (e.g. if the user already scrolled down the content)
+        pageScrollInstance.scrollingViews.forEach(function (scrollingView) {
+            if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(scrollingView)) {
+                return;
+            }
+            // Get the scrollTop or scrollLeft value of the first scrollingView that returns a value for its "scrollTop"
+            // or "scrollLeft" property that is not undefined and unequal to 0
+            var scrollPosition = pageScrollInstance.getScrollPropertyValue(scrollingView);
+            if (!startScrollPositionFound && scrollPosition) {
+                // We found a scrollingView that does not have scrollTop or scrollLeft 0
+                // Return the scroll position value, as this will be our startScrollPosition
+                pageScrollInstance.startScrollPosition = scrollPosition;
+                startScrollPositionFound = true;
+            }
+        });
+        var pageScrollOffset = pageScrollInstance.getCurrentOffset();
+        // Calculate the target position that the scroll animation should go to
+        var scrollTargetPosition = pageScrollInstance.extractScrollTargetPosition();
+        pageScrollInstance.targetScrollPosition = Math.round((pageScrollInstance.verticalScrolling ? scrollTargetPosition.top : scrollTargetPosition.left) - pageScrollOffset);
+        // Calculate the distance we need to go in total
+        pageScrollInstance.distanceToScroll = pageScrollInstance.targetScrollPosition - pageScrollInstance.startScrollPosition;
+        if (isNaN(pageScrollInstance.distanceToScroll)) {
+            // We weren't able to find the target position, maybe the element does not exist?
+            if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 2 || (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 1 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])())) {
+                console.log('Scrolling not possible, as we can\'t find the specified target');
+            }
+            pageScrollInstance.fireEvent(false);
+            return;
+        }
+        // We're at the final destination already
+        // OR we need to scroll down but are already at the end
+        // OR we need to scroll up but are at the top already
+        var allReadyAtDestination = Math.abs(pageScrollInstance.distanceToScroll) < _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._minScrollDistance;
+        // Check how long we need to scroll if a speed option is given
+        // Default executionDuration is the specified duration
+        pageScrollInstance.executionDuration = pageScrollInstance.duration;
+        // Maybe we need to pay attention to the speed option?
+        if (!_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(pageScrollInstance.speed) && _ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(pageScrollInstance.duration)) {
+            // Speed option is set and no duration => calculate duration based on speed and scroll distance
+            pageScrollInstance.executionDuration = Math.abs(pageScrollInstance.distanceToScroll) / pageScrollInstance.speed * 1000;
+        }
+        // We should go there directly, as our "animation" would have one big step
+        // only anyway and this way we save the interval stuff
+        var tooShortInterval = pageScrollInstance.executionDuration <= _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._interval;
+        if (allReadyAtDestination || tooShortInterval) {
+            if (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 2 || (_ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._logLevel >= 1 && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])())) {
+                if (allReadyAtDestination) {
+                    console.log('Scrolling not possible, as we can\'t get any closer to the destination');
+                }
+                else {
+                    console.log('Scroll duration shorter that interval length, jumping to target');
+                }
+            }
+            pageScrollInstance.setScrollPosition(pageScrollInstance.targetScrollPosition);
+            pageScrollInstance.fireEvent(true);
+            return;
+        }
+        // Register the interrupt listeners if we want an interruptible scroll animation
+        if (pageScrollInstance.interruptible ||
+            (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(pageScrollInstance.interruptible) && _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"].defaultInterruptible)) {
+            pageScrollInstance.attachInterruptListeners(this.onInterrupted);
+        }
+        // Let's get started, get the start time...
+        pageScrollInstance.startTime = new Date().getTime();
+        // .. and calculate the end time (when we need to finish at last)
+        pageScrollInstance.endTime = pageScrollInstance.startTime + pageScrollInstance.executionDuration;
+        pageScrollInstance.timer = setInterval(function (_pageScrollInstance) {
+            // Take the current time
+            var currentTime = new Date().getTime();
+            // Determine the new scroll position
+            var newScrollPosition;
+            var stopNow = false;
+            if (_pageScrollInstance.endTime <= currentTime) {
+                // We're over the time already, so go the targetScrollPosition (aka destination)
+                newScrollPosition = _pageScrollInstance.targetScrollPosition;
+                stopNow = true;
+            }
+            else {
+                // Calculate the scroll position based on the current time using the easing function
+                newScrollPosition = Math.round(_pageScrollInstance.easingLogic.ease(currentTime - _pageScrollInstance.startTime, _pageScrollInstance.startScrollPosition, _pageScrollInstance.distanceToScroll, _pageScrollInstance.executionDuration));
+            }
+            // Set the new scrollPosition to all scrollingViews elements
+            if (!_pageScrollInstance.setScrollPosition(newScrollPosition)) {
+                // Setting the new scrollTop/scrollLeft value failed for all ScrollingViews
+                // early stop the scroll animation to save resources
+                stopNow = true;
+            }
+            // At the end do the internal stop maintenance and fire the pageScrollFinish event
+            // (otherwise the event might arrive at "too early")
+            if (stopNow) {
+                _this.stopInternal(false, _pageScrollInstance);
+            }
+        }, _ng2_page_scroll_config__WEBPACK_IMPORTED_MODULE_1__["PageScrollConfig"]._interval, pageScrollInstance);
+        // Register the instance as running one
+        this.runningInstances.push(pageScrollInstance);
+    };
+    /**
+     * Stop all running scroll animations. Optionally limit to stop only the ones of specific namespace.
+     *
+     * @param namespace
+     * @returns {boolean}
+     */
+    PageScrollService.prototype.stopAll = function (namespace) {
+        if (this.runningInstances.length > 0) {
+            var stoppedSome = false;
+            for (var i = 0; i < this.runningInstances.length; ++i) {
+                var pageScrollInstance = this.runningInstances[i];
+                if (_ng2_page_scroll_util_service__WEBPACK_IMPORTED_MODULE_2__["PageScrollUtilService"].isUndefinedOrNull(namespace) || namespace.length === 0 ||
+                    pageScrollInstance.namespace === namespace) {
+                    stoppedSome = true;
+                    this.stopInternal(true, pageScrollInstance);
+                    // Decrease the counter, as we removed an item from the array we iterate over
+                    i--;
+                }
+            }
+            return stoppedSome;
+        }
+        return false;
+    };
+    PageScrollService.prototype.stop = function (pageScrollInstance) {
+        return this.stopInternal(true, pageScrollInstance);
+    };
+    PageScrollService.instanceCounter = 0;
+    PageScrollService.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] },
+    ];
+    /** @nocollapse */
+    PageScrollService.ctorParameters = function () { return []; };
+    return PageScrollService;
+}());
+
+/* singleton pattern taken from https://github.com/angular/angular/issues/13854 */
+function NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY(parentDispatcher) {
+    return parentDispatcher || new PageScrollService();
+}
+var NG2PAGESCROLL_SERVICE_PROVIDER = {
+    provide: PageScrollService,
+    deps: [[new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"](), new _angular_core__WEBPACK_IMPORTED_MODULE_0__["SkipSelf"](), PageScrollService]],
+    useFactory: NG2PAGESCROLL_SERVICE_PROVIDER_FACTORY
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ngx-gallery/bundles/ngx-gallery.umd.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ngx-gallery/bundles/ngx-gallery.umd.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+	 true ? factory(exports, __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js"), __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js"), __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js")) :
+	undefined;
+}(this, (function (exports,core,common,platformBrowser) { 'use strict';
+
+var NgxGalleryActionComponent = /** @class */ (function () {
+    function NgxGalleryActionComponent() {
+        this.disabled = false;
+        this.titleText = '';
+        this.onClick = new core.EventEmitter();
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    NgxGalleryActionComponent.prototype.handleClick = function (event) {
+        if (!this.disabled) {
+            this.onClick.emit(event);
+        }
+        event.stopPropagation();
+        event.preventDefault();
+    };
+    NgxGalleryActionComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery-action',
+                    template: "\n        <div class=\"ngx-gallery-icon\" [class.ngx-gallery-icon-disabled]=\"disabled\"\n            aria-hidden=\"true\"\n            title=\"{{ titleText }}\"\n            (click)=\"handleClick($event)\">\n                <i class=\"ngx-gallery-icon-content {{ icon }}\"></i>\n        </div>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryActionComponent.ctorParameters = function () { return []; };
+    NgxGalleryActionComponent.propDecorators = {
+        'icon': [{ type: core.Input },],
+        'disabled': [{ type: core.Input },],
+        'titleText': [{ type: core.Input },],
+        'onClick': [{ type: core.Output },],
+    };
+    return NgxGalleryActionComponent;
+}());
+
+var NgxGalleryArrowsComponent = /** @class */ (function () {
+    function NgxGalleryArrowsComponent() {
+        this.onPrevClick = new core.EventEmitter();
+        this.onNextClick = new core.EventEmitter();
+    }
+    /**
+     * @return {?}
+     */
+    NgxGalleryArrowsComponent.prototype.handlePrevClick = function () {
+        this.onPrevClick.emit();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryArrowsComponent.prototype.handleNextClick = function () {
+        this.onNextClick.emit();
+    };
+    NgxGalleryArrowsComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery-arrows',
+                    template: "\n        <div class=\"ngx-gallery-arrow-wrapper ngx-gallery-arrow-left\">\n            <div class=\"ngx-gallery-icon ngx-gallery-arrow\" aria-hidden=\"true\" (click)=\"handlePrevClick()\" [class.ngx-gallery-disabled]=\"prevDisabled\">\n                <i class=\"ngx-gallery-icon-content {{arrowPrevIcon}}\"></i>\n            </div>\n        </div>\n        <div class=\"ngx-gallery-arrow-wrapper ngx-gallery-arrow-right\">\n            <div class=\"ngx-gallery-icon ngx-gallery-arrow\" aria-hidden=\"true\" (click)=\"handleNextClick()\" [class.ngx-gallery-disabled]=\"nextDisabled\">\n                <i class=\"ngx-gallery-icon-content {{arrowNextIcon}}\"></i>\n            </div>\n        </div>\n    ",
+                    styles: [".ngx-gallery-arrow-wrapper { position: absolute; height: 100%; width: 1px; display: table; z-index: 2000; table-layout: fixed; } .ngx-gallery-arrow-left { left: 0px; } .ngx-gallery-arrow-right { right: 0px; } .ngx-gallery-arrow { top: 50%; transform: translateY(-50%); cursor: pointer; } .ngx-gallery-arrow.ngx-gallery-disabled { opacity: 0.6; cursor: default; } .ngx-gallery-arrow-left .ngx-gallery-arrow { left: 10px; } .ngx-gallery-arrow-right .ngx-gallery-arrow { right: 10px; } "]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryArrowsComponent.ctorParameters = function () { return []; };
+    NgxGalleryArrowsComponent.propDecorators = {
+        'prevDisabled': [{ type: core.Input },],
+        'nextDisabled': [{ type: core.Input },],
+        'arrowPrevIcon': [{ type: core.Input },],
+        'arrowNextIcon': [{ type: core.Input },],
+        'onPrevClick': [{ type: core.Output },],
+        'onNextClick': [{ type: core.Output },],
+    };
+    return NgxGalleryArrowsComponent;
+}());
+
+var NgxGalleryHelperService = /** @class */ (function () {
+    /**
+     * @param {?} renderer
+     */
+    function NgxGalleryHelperService(renderer) {
+        this.renderer = renderer;
+        this.swipeHandlers = new Map();
+    }
+    /**
+     * @param {?} status
+     * @param {?} element
+     * @param {?} id
+     * @param {?} nextHandler
+     * @param {?} prevHandler
+     * @return {?}
+     */
+    NgxGalleryHelperService.prototype.manageSwipe = function (status, element, id, nextHandler, prevHandler) {
+        var /** @type {?} */ handlers = this.getSwipeHandlers(id);
+        // swipeleft and swiperight are available only if hammerjs is included
+        try {
+            if (status && !handlers) {
+                this.swipeHandlers.set(id, [
+                    this.renderer.listen(element.nativeElement, 'swipeleft', function () { return nextHandler(); }),
+                    this.renderer.listen(element.nativeElement, 'swiperight', function () { return prevHandler(); })
+                ]);
+            }
+            else if (!status && handlers) {
+                handlers.map(function (handler) { return handler(); });
+                this.removeSwipeHandlers(id);
+            }
+        }
+        catch (e) { }
+    };
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    NgxGalleryHelperService.prototype.validateUrl = function (url) {
+        if (url.replace) {
+            return url.replace(new RegExp(' ', 'g'), '%20');
+        }
+        else {
+            return url;
+        }
+    };
+    /**
+     * @param {?} image
+     * @return {?}
+     */
+    NgxGalleryHelperService.prototype.getBackgroundUrl = function (image) {
+        return 'url(\'' + this.validateUrl(image) + '\')';
+    };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    NgxGalleryHelperService.prototype.getSwipeHandlers = function (id) {
+        return this.swipeHandlers.get(id);
+    };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    NgxGalleryHelperService.prototype.removeSwipeHandlers = function (id) {
+        this.swipeHandlers.delete(id);
+    };
+    NgxGalleryHelperService.decorators = [
+        { type: core.Injectable },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryHelperService.ctorParameters = function () { return [
+        { type: core.Renderer, },
+    ]; };
+    return NgxGalleryHelperService;
+}());
+
+var NgxGalleryAnimation = /** @class */ (function () {
+    function NgxGalleryAnimation() {
+    }
+    NgxGalleryAnimation.Fade = 'fade';
+    NgxGalleryAnimation.Slide = 'slide';
+    NgxGalleryAnimation.Rotate = 'rotate';
+    NgxGalleryAnimation.Zoom = 'zoom';
+    return NgxGalleryAnimation;
+}());
+
+var NgxGalleryImageComponent = /** @class */ (function () {
+    /**
+     * @param {?} sanitization
+     * @param {?} elementRef
+     * @param {?} helperService
+     */
+    function NgxGalleryImageComponent(sanitization, elementRef, helperService) {
+        this.sanitization = sanitization;
+        this.elementRef = elementRef;
+        this.helperService = helperService;
+        this.onClick = new core.EventEmitter();
+        this.onActiveChange = new core.EventEmitter();
+        this.canChangeImage = true;
+    }
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.ngOnInit = function () {
+        if (this.arrows && this.arrowsAutoHide) {
+            this.arrows = false;
+        }
+        if (this.autoPlay) {
+            this.startAutoPlay();
+        }
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (changes['swipe']) {
+            this.helperService.manageSwipe(this.swipe, this.elementRef, 'image', function () { return _this.showNext(); }, function () { return _this.showPrev(); });
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.onMouseEnter = function () {
+        if (this.arrowsAutoHide && !this.arrows) {
+            this.arrows = true;
+        }
+        if (this.autoPlay && this.autoPlayPauseOnHover) {
+            this.stopAutoPlay();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.onMouseLeave = function () {
+        if (this.arrowsAutoHide && this.arrows) {
+            this.arrows = false;
+        }
+        if (this.autoPlay && this.autoPlayPauseOnHover) {
+            this.startAutoPlay();
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.reset = function (index) {
+        this.selectedIndex = index;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.getImages = function () {
+        if (this.lazyLoading) {
+            var /** @type {?} */ indexes_1 = [this.selectedIndex];
+            var /** @type {?} */ prevIndex = this.selectedIndex - 1;
+            if (prevIndex === -1 && this.infinityMove) {
+                indexes_1.push(this.images.length - 1);
+            }
+            else if (prevIndex >= 0) {
+                indexes_1.push(prevIndex);
+            }
+            var /** @type {?} */ nextIndex = this.selectedIndex + 1;
+            if (nextIndex == this.images.length && this.infinityMove) {
+                indexes_1.push(0);
+            }
+            else if (nextIndex < this.images.length) {
+                indexes_1.push(nextIndex);
+            }
+            return this.images.filter(function (img, i) { return indexes_1.indexOf(i) != -1; });
+        }
+        else {
+            return this.images;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.startAutoPlay = function () {
+        var _this = this;
+        this.stopAutoPlay();
+        this.timer = setInterval(function () {
+            if (!_this.showNext()) {
+                _this.selectedIndex = -1;
+                _this.showNext();
+            }
+        }, this.autoPlayInterval);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.stopAutoPlay = function () {
+        if (this.timer) {
+            clearInterval(this.timer);
+        }
+    };
+    /**
+     * @param {?} event
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.handleClick = function (event, index) {
+        if (this.clickable) {
+            this.onClick.emit(index);
+            event.stopPropagation();
+            event.preventDefault();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.showNext = function () {
+        if (this.canShowNext() && this.canChangeImage) {
+            this.selectedIndex++;
+            if (this.selectedIndex === this.images.length) {
+                this.selectedIndex = 0;
+            }
+            this.onActiveChange.emit(this.selectedIndex);
+            this.setChangeTimeout();
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.showPrev = function () {
+        if (this.canShowPrev() && this.canChangeImage) {
+            this.selectedIndex--;
+            if (this.selectedIndex < 0) {
+                this.selectedIndex = this.images.length - 1;
+            }
+            this.onActiveChange.emit(this.selectedIndex);
+            this.setChangeTimeout();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.setChangeTimeout = function () {
+        var _this = this;
+        this.canChangeImage = false;
+        var /** @type {?} */ timeout = 1000;
+        if (this.animation === NgxGalleryAnimation.Slide
+            || this.animation === NgxGalleryAnimation.Fade) {
+            timeout = 500;
+        }
+        setTimeout(function () {
+            _this.canChangeImage = true;
+        }, timeout);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.canShowNext = function () {
+        if (this.images) {
+            return this.infinityMove || this.selectedIndex < this.images.length - 1
+                ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.canShowPrev = function () {
+        if (this.images) {
+            return this.infinityMove || this.selectedIndex > 0 ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @param {?} image
+     * @return {?}
+     */
+    NgxGalleryImageComponent.prototype.getSafeUrl = function (image) {
+        return this.sanitization.bypassSecurityTrustStyle(this.helperService.getBackgroundUrl(image));
+    };
+    NgxGalleryImageComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery-image',
+                    template: "\n        <div class=\"ngx-gallery-image-wrapper ngx-gallery-animation-{{animation}} ngx-gallery-image-size-{{size}}\">\n            <div class=\"ngx-gallery-image\" *ngFor=\"let image of getImages(); let i = index;\" [ngClass]=\"{ 'ngx-gallery-active': selectedIndex == image.index, 'ngx-gallery-inactive-left': selectedIndex > image.index, 'ngx-gallery-inactive-right': selectedIndex < image.index, 'ngx-gallery-clickable': clickable }\" [style.background-image]=\"getSafeUrl(image.src)\" (click)=\"handleClick($event, image.index)\">\n                <div class=\"ngx-gallery-icons-wrapper\">\n                    <ngx-gallery-action *ngFor=\"let action of actions\" [icon]=\"action.icon\" [disabled]=\"action.disabled\" [titleText]=\"action.titleText\" (onClick)=\"action.onClick($event, image.index)\"></ngx-gallery-action>\n                </div>\n                <div class=\"ngx-gallery-image-text\" *ngIf=\"showDescription && descriptions[image.index]\" [innerHTML]=\"descriptions[image.index]\"></div>\n            </div>\n        </div>\n        <ngx-gallery-arrows class=\"ngx-gallery-image-size-{{size}}\" *ngIf=\"arrows\" (onPrevClick)=\"showPrev()\" (onNextClick)=\"showNext()\" [prevDisabled]=\"!canShowPrev()\" [nextDisabled]=\"!canShowNext()\" [arrowPrevIcon]=\"arrowPrevIcon\" [arrowNextIcon]=\"arrowNextIcon\"></ngx-gallery-arrows>\n    ",
+                    styles: [":host { width: 100%; display: inline-block; position: relative; } .ngx-gallery-image-wrapper { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; overflow: hidden; } .ngx-gallery-image { background-position: center; background-repeat: no-repeat; height: 100%; width: 100%; position: absolute; top: 0px; } .ngx-gallery-image.ngx-gallery-active { z-index: 1000; } .ngx-gallery-image-size-cover .ngx-gallery-image { background-size: cover; } .ngx-gallery-image-size-contain .ngx-gallery-image { background-size: contain; } .ngx-gallery-animation-fade .ngx-gallery-image { left: 0px; opacity: 0; transition: 0.5s ease-in-out; } .ngx-gallery-animation-fade .ngx-gallery-image.ngx-gallery-active { opacity: 1; } .ngx-gallery-animation-slide .ngx-gallery-image { transition: 0.5s ease-in-out; } .ngx-gallery-animation-slide .ngx-gallery-image.ngx-gallery-active { left: 0px; } .ngx-gallery-animation-slide .ngx-gallery-image.ngx-gallery-inactive-left { left: -100%; } .ngx-gallery-animation-slide .ngx-gallery-image.ngx-gallery-inactive-right { left: 100%; } .ngx-gallery-animation-rotate .ngx-gallery-image { transition: 1s ease; transform: scale(3.5, 3.5) rotate(90deg); left: 0px; opacity: 0; } .ngx-gallery-animation-rotate .ngx-gallery-image.ngx-gallery-active { transform: scale(1, 1) rotate(0deg); opacity: 1; } .ngx-gallery-animation-zoom .ngx-gallery-image { transition: 1s ease; transform: scale(2.5, 2.5); left: 0px; opacity: 0; } .ngx-gallery-animation-zoom .ngx-gallery-image.ngx-gallery-active { transform: scale(1, 1); opacity: 1; } .ngx-gallery-image-text { width: 100%; background: rgba(0, 0, 0, 0.7); padding: 10px; text-align: center; color: white; font-size: 16px; position: absolute; bottom: 0px; z-index: 10; } "]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryImageComponent.ctorParameters = function () { return [
+        { type: platformBrowser.DomSanitizer, },
+        { type: core.ElementRef, },
+        { type: NgxGalleryHelperService, },
+    ]; };
+    NgxGalleryImageComponent.propDecorators = {
+        'images': [{ type: core.Input },],
+        'clickable': [{ type: core.Input },],
+        'selectedIndex': [{ type: core.Input },],
+        'arrows': [{ type: core.Input },],
+        'arrowsAutoHide': [{ type: core.Input },],
+        'swipe': [{ type: core.Input },],
+        'animation': [{ type: core.Input },],
+        'size': [{ type: core.Input },],
+        'arrowPrevIcon': [{ type: core.Input },],
+        'arrowNextIcon': [{ type: core.Input },],
+        'autoPlay': [{ type: core.Input },],
+        'autoPlayInterval': [{ type: core.Input },],
+        'autoPlayPauseOnHover': [{ type: core.Input },],
+        'infinityMove': [{ type: core.Input },],
+        'lazyLoading': [{ type: core.Input },],
+        'actions': [{ type: core.Input },],
+        'descriptions': [{ type: core.Input },],
+        'showDescription': [{ type: core.Input },],
+        'onClick': [{ type: core.Output },],
+        'onActiveChange': [{ type: core.Output },],
+        'onMouseEnter': [{ type: core.HostListener, args: ['mouseenter',] },],
+        'onMouseLeave': [{ type: core.HostListener, args: ['mouseleave',] },],
+    };
+    return NgxGalleryImageComponent;
+}());
+
+var NgxGalleryOrder = /** @class */ (function () {
+    function NgxGalleryOrder() {
+    }
+    NgxGalleryOrder.Column = 1;
+    NgxGalleryOrder.Row = 2;
+    return NgxGalleryOrder;
+}());
+
+var NgxGalleryThumbnailsComponent = /** @class */ (function () {
+    /**
+     * @param {?} sanitization
+     * @param {?} elementRef
+     * @param {?} helperService
+     */
+    function NgxGalleryThumbnailsComponent(sanitization, elementRef, helperService) {
+        this.sanitization = sanitization;
+        this.elementRef = elementRef;
+        this.helperService = helperService;
+        this.minStopIndex = 0;
+        this.onActiveChange = new core.EventEmitter();
+        this.index = 0;
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (changes['selectedIndex']) {
+            this.validateIndex();
+        }
+        if (changes['swipe']) {
+            this.helperService.manageSwipe(this.swipe, this.elementRef, 'thumbnails', function () { return _this.moveRight(); }, function () { return _this.moveLeft(); });
+        }
+        if (this.images) {
+            this.remainingCountValue = this.images.length - this.columns;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.onMouseEnter = function () {
+        this.mouseenter = true;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.onMouseLeave = function () {
+        this.mouseenter = false;
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.reset = function (index) {
+        this.selectedIndex = index;
+        this.setDefaultPosition();
+        this.index = 0;
+        this.validateIndex();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getImages = function () {
+        if (this.remainingCount) {
+            return this.images.slice(0, this.columns);
+        }
+        else if (this.lazyLoading && this.order != NgxGalleryOrder.Row) {
+            var /** @type {?} */ stopIndex = this.index + this.columns + this.moveSize;
+            if (this.rows > 1 && this.order === NgxGalleryOrder.Column) {
+                stopIndex = stopIndex * this.rows;
+            }
+            if (stopIndex <= this.minStopIndex) {
+                stopIndex = this.minStopIndex;
+            }
+            else {
+                this.minStopIndex = stopIndex;
+            }
+            return this.images.slice(0, stopIndex);
+        }
+        else {
+            return this.images;
+        }
+    };
+    /**
+     * @param {?} event
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.handleClick = function (event, index) {
+        if (!this.hasLinks()) {
+            this.selectedIndex = index;
+            this.onActiveChange.emit(index);
+            event.stopPropagation();
+            event.preventDefault();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.hasLinks = function () {
+        if (this.links && this.links.length)
+            return true;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.moveRight = function () {
+        if (this.canMoveRight()) {
+            this.index += this.moveSize;
+            var /** @type {?} */ maxIndex = this.getMaxIndex() - this.columns;
+            if (this.index > maxIndex) {
+                this.index = maxIndex;
+            }
+            this.setThumbnailsPosition();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.moveLeft = function () {
+        if (this.canMoveLeft()) {
+            this.index -= this.moveSize;
+            if (this.index < 0) {
+                this.index = 0;
+            }
+            this.setThumbnailsPosition();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.canMoveRight = function () {
+        return this.index + this.columns < this.getMaxIndex() ? true : false;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.canMoveLeft = function () {
+        return this.index !== 0 ? true : false;
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailLeft = function (index) {
+        var /** @type {?} */ calculatedIndex;
+        if (this.order === NgxGalleryOrder.Column) {
+            calculatedIndex = Math.floor(index / this.rows);
+        }
+        else {
+            calculatedIndex = index % Math.ceil(this.images.length / this.rows);
+        }
+        return this.getThumbnailPosition(calculatedIndex, this.columns);
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailTop = function (index) {
+        var /** @type {?} */ calculatedIndex;
+        if (this.order === NgxGalleryOrder.Column) {
+            calculatedIndex = index % this.rows;
+        }
+        else {
+            calculatedIndex = Math.floor(index / Math.ceil(this.images.length / this.rows));
+        }
+        return this.getThumbnailPosition(calculatedIndex, this.rows);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailWidth = function () {
+        return this.getThumbnailDimension(this.columns);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailHeight = function () {
+        return this.getThumbnailDimension(this.rows);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.setThumbnailsPosition = function () {
+        this.thumbnailsLeft = -((100 / this.columns) * this.index) + '%';
+        this.thumbnailsMarginLeft = -((this.margin - (((this.columns - 1)
+            * this.margin) / this.columns)) * this.index) + 'px';
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.setDefaultPosition = function () {
+        this.thumbnailsLeft = '0px';
+        this.thumbnailsMarginLeft = '0px';
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.canShowArrows = function () {
+        if (this.remainingCount) {
+            return false;
+        }
+        else if (this.arrows && this.images && this.images.length > this.getVisibleCount()
+            && (!this.arrowsAutoHide || this.mouseenter)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.validateIndex = function () {
+        var /** @type {?} */ newIndex;
+        if (this.order === NgxGalleryOrder.Column) {
+            newIndex = Math.floor(this.selectedIndex / this.rows);
+        }
+        else {
+            newIndex = this.selectedIndex % Math.ceil(this.images.length / this.rows);
+        }
+        if (this.remainingCount) {
+            newIndex = 0;
+        }
+        if (newIndex < this.index || newIndex >= this.index + this.columns) {
+            var /** @type {?} */ maxIndex = this.getMaxIndex() - this.columns;
+            this.index = newIndex > maxIndex ? maxIndex : newIndex;
+            this.setThumbnailsPosition();
+        }
+    };
+    /**
+     * @param {?} image
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getSafeUrl = function (image) {
+        return this.sanitization.bypassSecurityTrustStyle(this.helperService.getBackgroundUrl(image));
+    };
+    /**
+     * @param {?} index
+     * @param {?} count
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailPosition = function (index, count) {
+        return this.getSafeStyle('calc(' + ((100 / count) * index) + '% + '
+            + ((this.margin - (((count - 1) * this.margin) / count)) * index) + 'px)');
+    };
+    /**
+     * @param {?} count
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getThumbnailDimension = function (count) {
+        if (this.margin !== 0) {
+            return this.getSafeStyle('calc(' + (100 / count) + '% - '
+                + (((count - 1) * this.margin) / count) + 'px)');
+        }
+        else {
+            return this.getSafeStyle('calc(' + (100 / count) + '% + 1px)');
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getMaxIndex = function () {
+        return Math.ceil(this.images.length / this.rows);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getVisibleCount = function () {
+        return this.columns * this.rows;
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NgxGalleryThumbnailsComponent.prototype.getSafeStyle = function (value) {
+        return this.sanitization.bypassSecurityTrustStyle(value);
+    };
+    NgxGalleryThumbnailsComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery-thumbnails',
+                    template: "\n    <div class=\"ngx-gallery-thumbnails-wrapper ngx-gallery-thumbnail-size-{{size}}\">\n        <div class=\"ngx-gallery-thumbnails\" [style.left]=\"thumbnailsLeft\" [style.marginLeft]=\"thumbnailsMarginLeft\">\n            <a [href]=\"hasLinks() ? links[i] : '#'\" [target]=\"linkTarget\" class=\"ngx-gallery-thumbnail\" *ngFor=\"let image of getImages(); let i = index;\" [style.background-image]=\"getSafeUrl(image)\" (click)=\"handleClick($event, i)\" [style.width]=\"getThumbnailWidth()\" [style.height]=\"getThumbnailHeight()\" [style.left]=\"getThumbnailLeft(i)\" [style.top]=\"getThumbnailTop(i)\" [ngClass]=\"{ 'ngx-gallery-active': i == selectedIndex, 'ngx-gallery-clickable': clickable }\">\n                <div class=\"ngx-gallery-icons-wrapper\">\n                    <ngx-gallery-action *ngFor=\"let action of actions\" [icon]=\"action.icon\" [disabled]=\"action.disabled\" [titleText]=\"action.titleText\" (onClick)=\"action.onClick($event, i)\"></ngx-gallery-action>\n                </div>\n                <div class=\"ngx-gallery-remaining-count-overlay\" *ngIf=\"remainingCount && remainingCountValue && (i == columns - 1)\">\n                    <span class=\"ngx-gallery-remaining-count\">+{{remainingCountValue}}</span>\n                </div>\n            </a>\n        </div>\n    </div>\n    <ngx-gallery-arrows *ngIf=\"canShowArrows()\" (onPrevClick)=\"moveLeft()\" (onNextClick)=\"moveRight()\" [prevDisabled]=\"!canMoveLeft()\" [nextDisabled]=\"!canMoveRight()\" [arrowPrevIcon]=\"arrowPrevIcon\" [arrowNextIcon]=\"arrowNextIcon\"></ngx-gallery-arrows>\n    ",
+                    styles: [":host { width: 100%; display: inline-block; position: relative; } .ngx-gallery-thumbnails-wrapper { width: 100%; height: 100%; position: absolute; overflow: hidden; } .ngx-gallery-thumbnails { height: 100%; width: 100%; position: absolute; left: 0px; transition: left 0.5s ease-in-out; } .ngx-gallery-thumbnails .ngx-gallery-thumbnail { position: absolute; height: 100%; background-position: center; background-repeat: no-repeat; text-decoration: none; } .ngx-gallery-thumbnail-size-cover .ngx-gallery-thumbnails .ngx-gallery-thumbnail { background-size: cover; } .ngx-gallery-thumbnail-size-contain .ngx-gallery-thumbnails .ngx-gallery-thumbnail { background-size: contain; } .ngx-gallery-remaining-count-overlay { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); } .ngx-gallery-remaining-count { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 30px; } "]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryThumbnailsComponent.ctorParameters = function () { return [
+        { type: platformBrowser.DomSanitizer, },
+        { type: core.ElementRef, },
+        { type: NgxGalleryHelperService, },
+    ]; };
+    NgxGalleryThumbnailsComponent.propDecorators = {
+        'images': [{ type: core.Input },],
+        'links': [{ type: core.Input },],
+        'linkTarget': [{ type: core.Input },],
+        'columns': [{ type: core.Input },],
+        'rows': [{ type: core.Input },],
+        'arrows': [{ type: core.Input },],
+        'arrowsAutoHide': [{ type: core.Input },],
+        'margin': [{ type: core.Input },],
+        'selectedIndex': [{ type: core.Input },],
+        'clickable': [{ type: core.Input },],
+        'swipe': [{ type: core.Input },],
+        'size': [{ type: core.Input },],
+        'arrowPrevIcon': [{ type: core.Input },],
+        'arrowNextIcon': [{ type: core.Input },],
+        'moveSize': [{ type: core.Input },],
+        'order': [{ type: core.Input },],
+        'remainingCount': [{ type: core.Input },],
+        'lazyLoading': [{ type: core.Input },],
+        'actions': [{ type: core.Input },],
+        'onActiveChange': [{ type: core.Output },],
+        'onMouseEnter': [{ type: core.HostListener, args: ['mouseenter',] },],
+        'onMouseLeave': [{ type: core.HostListener, args: ['mouseleave',] },],
+    };
+    return NgxGalleryThumbnailsComponent;
+}());
+
+var NgxGalleryPreviewComponent = /** @class */ (function () {
+    /**
+     * @param {?} sanitization
+     * @param {?} elementRef
+     * @param {?} helperService
+     */
+    function NgxGalleryPreviewComponent(sanitization, elementRef, helperService) {
+        this.sanitization = sanitization;
+        this.elementRef = elementRef;
+        this.helperService = helperService;
+        this.showSpinner = false;
+        this.positionLeft = 0;
+        this.positionTop = 0;
+        this.zoomValue = 1;
+        this.loading = false;
+        this.rotateValue = 0;
+        this.onOpen = new core.EventEmitter();
+        this.onClose = new core.EventEmitter();
+        this.onActiveChange = new core.EventEmitter();
+        this.index = 0;
+        this.isOpen = false;
+        this.initialX = 0;
+        this.initialY = 0;
+        this.initialLeft = 0;
+        this.initialTop = 0;
+        this.isMove = false;
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (changes['swipe']) {
+            this.helperService.manageSwipe(this.swipe, this.elementRef, 'preview', function () { return _this.showNext(); }, function () { return _this.showPrev(); });
+        }
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.onKeyDown = function (e) {
+        if (this.isOpen) {
+            if (this.keyboardNavigation) {
+                if (this.isKeyboardPrev(e)) {
+                    this.showPrev();
+                }
+                else if (this.isKeyboardNext(e)) {
+                    this.showNext();
+                }
+            }
+            if (this.closeOnEsc && this.isKeyboardEsc(e)) {
+                this.close();
+            }
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.open = function (index) {
+        this.onOpen.emit();
+        this.index = index;
+        this.isOpen = true;
+        this.show(true);
+        if (this.forceFullscreen) {
+            this.manageFullscreen();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.close = function () {
+        this.isOpen = false;
+        this.closeFullscreen();
+        this.onClose.emit();
+        this.stopAutoPlay();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.imageMouseEnter = function () {
+        if (this.autoPlay && this.autoPlayPauseOnHover) {
+            this.stopAutoPlay();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.imageMouseLeave = function () {
+        if (this.autoPlay && this.autoPlayPauseOnHover) {
+            this.startAutoPlay();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.startAutoPlay = function () {
+        var _this = this;
+        if (this.autoPlay) {
+            this.stopAutoPlay();
+            this.timer = setTimeout(function () {
+                if (!_this.showNext()) {
+                    _this.index = -1;
+                    _this.showNext();
+                }
+            }, this.autoPlayInterval);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.stopAutoPlay = function () {
+        if (this.timer) {
+            clearTimeout(this.timer);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.showNext = function () {
+        if (this.canShowNext()) {
+            this.index++;
+            if (this.index === this.images.length) {
+                this.index = 0;
+            }
+            this.show();
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.showPrev = function () {
+        if (this.canShowPrev()) {
+            this.index--;
+            if (this.index < 0) {
+                this.index = this.images.length - 1;
+            }
+            this.show();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.canShowNext = function () {
+        if (this.loading) {
+            return false;
+        }
+        else if (this.images) {
+            return this.infinityMove || this.index < this.images.length - 1 ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.canShowPrev = function () {
+        if (this.loading) {
+            return false;
+        }
+        else if (this.images) {
+            return this.infinityMove || this.index > 0 ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.manageFullscreen = function () {
+        if (this.fullscreen || this.forceFullscreen) {
+            var /** @type {?} */ doc = (document);
+            if (!doc.fullscreenElement && !doc.mozFullScreenElement
+                && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+                this.openFullscreen();
+            }
+            else {
+                this.closeFullscreen();
+            }
+        }
+    };
+    /**
+     * @param {?} image
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.getSafeUrl = function (image) {
+        return image.substr(0, 10) === 'data:image' ?
+            image : this.sanitization.bypassSecurityTrustUrl(image);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.zoomIn = function () {
+        if (this.canZoomIn()) {
+            this.zoomValue += this.zoomStep;
+            if (this.zoomValue > this.zoomMax) {
+                this.zoomValue = this.zoomMax;
+            }
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.zoomOut = function () {
+        if (this.canZoomOut()) {
+            this.zoomValue -= this.zoomStep;
+            if (this.zoomValue < this.zoomMin) {
+                this.zoomValue = this.zoomMin;
+            }
+            if (this.zoomValue <= 1) {
+                this.resetPosition();
+            }
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.rotateLeft = function () {
+        this.rotateValue -= 90;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.rotateRight = function () {
+        this.rotateValue += 90;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.getTransform = function () {
+        return this.sanitization.bypassSecurityTrustStyle('scale(' + this.zoomValue + ') rotate(' + this.rotateValue + 'deg)');
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.canZoomIn = function () {
+        return this.zoomValue < this.zoomMax ? true : false;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.canZoomOut = function () {
+        return this.zoomValue > this.zoomMin ? true : false;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.canDragOnZoom = function () {
+        return this.zoom && this.zoomValue > 1;
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.mouseDownHandler = function (e) {
+        if (this.canDragOnZoom()) {
+            this.initialX = this.getClientX(e);
+            this.initialY = this.getClientY(e);
+            this.initialLeft = this.positionLeft;
+            this.initialTop = this.positionTop;
+            this.isMove = true;
+            e.preventDefault();
+        }
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.mouseUpHandler = function (e) {
+        this.isMove = false;
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.mouseMoveHandler = function (e) {
+        if (this.isMove) {
+            this.positionLeft = this.initialLeft + (this.getClientX(e) - this.initialX);
+            this.positionTop = this.initialTop + (this.getClientY(e) - this.initialY);
+        }
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.getClientX = function (e) {
+        return e.touches && e.touches.length ? e.touches[0].clientX : e.clientX;
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.getClientY = function (e) {
+        return e.touches && e.touches.length ? e.touches[0].clientY : e.clientY;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.resetPosition = function () {
+        if (this.zoom) {
+            this.positionLeft = 0;
+            this.positionTop = 0;
+        }
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.isKeyboardNext = function (e) {
+        return e.keyCode === 39 ? true : false;
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.isKeyboardPrev = function (e) {
+        return e.keyCode === 37 ? true : false;
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.isKeyboardEsc = function (e) {
+        return e.keyCode === 27 ? true : false;
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.openFullscreen = function () {
+        var /** @type {?} */ element = (document.documentElement);
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        }
+        else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+        else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        }
+        else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.closeFullscreen = function () {
+        var /** @type {?} */ doc = (document);
+        if (doc.exitFullscreen) {
+            doc.exitFullscreen();
+        }
+        else if (doc.msExitFullscreen) {
+            doc.msExitFullscreen();
+        }
+        else if (doc.mozCancelFullScreen) {
+            doc.mozCancelFullScreen();
+        }
+        else if (doc.webkitExitFullscreen) {
+            doc.webkitExitFullscreen();
+        }
+    };
+    /**
+     * @param {?=} first
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.show = function (first) {
+        var _this = this;
+        if (first === void 0) { first = false; }
+        this.loading = true;
+        this.stopAutoPlay();
+        this.onActiveChange.emit(this.index);
+        if (first || !this.animation) {
+            this._show();
+        }
+        else {
+            setTimeout(function () { return _this._show(); }, 600);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype._show = function () {
+        var _this = this;
+        this.zoomValue = 1;
+        this.rotateValue = 0;
+        this.resetPosition();
+        this.src = this.getSafeUrl(/** @type {?} */ (this.images[this.index]));
+        this.srcIndex = this.index;
+        this.description = this.descriptions[this.index];
+        setTimeout(function () {
+            if (_this.isLoaded(_this.previewImage.nativeElement)) {
+                _this.loading = false;
+                _this.startAutoPlay();
+            }
+            else {
+                setTimeout(function () {
+                    if (_this.loading) {
+                        _this.showSpinner = true;
+                    }
+                });
+                _this.previewImage.nativeElement.onload = function () {
+                    _this.loading = false;
+                    _this.showSpinner = false;
+                    _this.previewImage.nativeElement.onload = null;
+                    _this.startAutoPlay();
+                };
+            }
+        });
+    };
+    /**
+     * @param {?} img
+     * @return {?}
+     */
+    NgxGalleryPreviewComponent.prototype.isLoaded = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+        if (typeof img.naturalWidth !== 'undefined' && img.naturalWidth === 0) {
+            return false;
+        }
+        return true;
+    };
+    NgxGalleryPreviewComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery-preview',
+                    template: "\n        <ngx-gallery-arrows (onPrevClick)=\"showPrev()\" (onNextClick)=\"showNext()\" [prevDisabled]=\"!canShowPrev()\" [nextDisabled]=\"!canShowNext()\" [arrowPrevIcon]=\"arrowPrevIcon\" [arrowNextIcon]=\"arrowNextIcon\"></ngx-gallery-arrows>\n        <div class=\"ngx-gallery-preview-top\">\n            <div class=\"ngx-gallery-preview-icons\">\n                <ngx-gallery-action *ngFor=\"let action of actions\" [icon]=\"action.icon\" [disabled]=\"action.disabled\" [titleText]=\"action.titleText\" (onClick)=\"action.onClick($event)\"></ngx-gallery-action>\n                <ngx-gallery-action *ngIf=\"zoom\" [icon]=\"zoomOutIcon\" [disabled]=\"!canZoomOut()\" (onClick)=\"zoomOut()\"></ngx-gallery-action>\n                <ngx-gallery-action *ngIf=\"zoom\" [icon]=\"zoomInIcon\" [disabled]=\"!canZoomIn()\" (onClick)=\"zoomIn()\"></ngx-gallery-action>\n                <ngx-gallery-action *ngIf=\"rotate\" [icon]=\"rotateLeftIcon\" (onClick)=\"rotateLeft()\"></ngx-gallery-action>\n                <ngx-gallery-action *ngIf=\"rotate\" [icon]=\"rotateRightIcon\" (onClick)=\"rotateRight()\"></ngx-gallery-action>\n                <ngx-gallery-action *ngIf=\"fullscreen\" [icon]=\"'ngx-gallery-fullscreen ' + fullscreenIcon\" (onClick)=\"manageFullscreen()\"></ngx-gallery-action>\n                <ngx-gallery-action [icon]=\"'ngx-gallery-close ' + closeIcon\" (onClick)=\"close()\"></ngx-gallery-action>\n            </div>\n        </div>\n        <div class=\"ngx-spinner-wrapper ngx-gallery-center\" [class.ngx-gallery-active]=\"showSpinner\">\n            <i class=\"ngx-gallery-icon ngx-gallery-spinner {{spinnerIcon}}\" aria-hidden=\"true\"></i>\n        </div>\n        <div class=\"ngx-gallery-preview-wrapper\" (click)=\"closeOnClick && close()\" (mouseup)=\"mouseUpHandler($event)\" (mousemove)=\"mouseMoveHandler($event)\" (touchend)=\"mouseUpHandler($event)\" (touchmove)=\"mouseMoveHandler($event)\">\n            <div class=\"ngx-gallery-preview-img-wrapper\">\n                <img *ngIf=\"src\" #previewImage class=\"ngx-gallery-preview-img ngx-gallery-center\" [src]=\"src\" (click)=\"$event.stopPropagation()\" (mouseenter)=\"imageMouseEnter()\" (mouseleave)=\"imageMouseLeave()\" (mousedown)=\"mouseDownHandler($event)\" (touchstart)=\"mouseDownHandler($event)\" [class.ngx-gallery-active]=\"!loading\" [class.animation]=\"animation\" [class.ngx-gallery-grab]=\"canDragOnZoom()\" [style.transform]=\"getTransform()\" [style.left]=\"positionLeft + 'px'\" [style.top]=\"positionTop + 'px'\"/>\n            </div>\n            <div class=\"ngx-gallery-preview-text\" *ngIf=\"showDescription && description\" [innerHTML]=\"description\"></div>\n        </div>\n    ",
+                    styles: [":host(.ngx-gallery-active) { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.7); z-index: 10000; display: inline-block; } :host { display: none; } :host /deep/ .ngx-gallery-arrow { font-size: 50px; } .ngx-gallery-preview-img { opacity: 0; max-width: 90%; max-height: 90%; user-select: none; transition: transform .5s; } .ngx-gallery-preview-img.animation { transition: opacity 0.5s linear, transform .5s; } .ngx-gallery-preview-img.ngx-gallery-active { opacity: 1; } .ngx-gallery-preview-img.ngx-gallery-grab { cursor: grab; cursor: -webkit-grab; } .ngx-gallery-icon.ngx-gallery-spinner { font-size: 50px; left: 0; display: inline-block; } :host /deep/ .ngx-gallery-preview-top { position: absolute; width: 100%; user-select: none; } :host /deep/ .ngx-gallery-preview-icons { float: right; } :host /deep/ .ngx-gallery-preview-icons .ngx-gallery-icon { position: relative; margin-right: 10px; margin-top: 10px; font-size: 25px; cursor: pointer; } :host /deep/ .ngx-gallery-preview-icons .ngx-gallery-icon.ngx-gallery-icon-disabled { cursor: default; opacity: 0.4; } .ngx-spinner-wrapper { width: 50px; height: 50px; display: none; } .ngx-spinner-wrapper.ngx-gallery-active { display: inline-block; } .ngx-gallery-center { position: absolute; left: 0; right: 0; bottom: 0; margin: auto; top: 0; } .ngx-gallery-preview-text { width: 100%; background: rgba(0, 0, 0, 0.7); padding: 10px; text-align: center; color: white; font-size: 16px; flex: 0 1 auto; z-index: 10; } .ngx-gallery-preview-wrapper { width: 100%; height: 100%; display: flex; flex-flow: column; } .ngx-gallery-preview-img-wrapper { flex: 1 1 auto; position: relative; } "]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryPreviewComponent.ctorParameters = function () { return [
+        { type: platformBrowser.DomSanitizer, },
+        { type: core.ElementRef, },
+        { type: NgxGalleryHelperService, },
+    ]; };
+    NgxGalleryPreviewComponent.propDecorators = {
+        'images': [{ type: core.Input },],
+        'descriptions': [{ type: core.Input },],
+        'showDescription': [{ type: core.Input },],
+        'swipe': [{ type: core.Input },],
+        'fullscreen': [{ type: core.Input },],
+        'forceFullscreen': [{ type: core.Input },],
+        'closeOnClick': [{ type: core.Input },],
+        'closeOnEsc': [{ type: core.Input },],
+        'keyboardNavigation': [{ type: core.Input },],
+        'arrowPrevIcon': [{ type: core.Input },],
+        'arrowNextIcon': [{ type: core.Input },],
+        'closeIcon': [{ type: core.Input },],
+        'fullscreenIcon': [{ type: core.Input },],
+        'spinnerIcon': [{ type: core.Input },],
+        'autoPlay': [{ type: core.Input },],
+        'autoPlayInterval': [{ type: core.Input },],
+        'autoPlayPauseOnHover': [{ type: core.Input },],
+        'infinityMove': [{ type: core.Input },],
+        'zoom': [{ type: core.Input },],
+        'zoomStep': [{ type: core.Input },],
+        'zoomMax': [{ type: core.Input },],
+        'zoomMin': [{ type: core.Input },],
+        'zoomInIcon': [{ type: core.Input },],
+        'zoomOutIcon': [{ type: core.Input },],
+        'animation': [{ type: core.Input },],
+        'actions': [{ type: core.Input },],
+        'rotate': [{ type: core.Input },],
+        'rotateLeftIcon': [{ type: core.Input },],
+        'rotateRightIcon': [{ type: core.Input },],
+        'onOpen': [{ type: core.Output },],
+        'onClose': [{ type: core.Output },],
+        'onActiveChange': [{ type: core.Output },],
+        'previewImage': [{ type: core.ViewChild, args: ['previewImage',] },],
+        'onKeyDown': [{ type: core.HostListener, args: ['window:keydown', ['$event'],] },],
+    };
+    return NgxGalleryPreviewComponent;
+}());
+
+var NgxGalleryImageSize = /** @class */ (function () {
+    function NgxGalleryImageSize() {
+    }
+    NgxGalleryImageSize.Cover = 'cover';
+    NgxGalleryImageSize.Contain = 'contain';
+    return NgxGalleryImageSize;
+}());
+
+var NgxGalleryLayout = /** @class */ (function () {
+    function NgxGalleryLayout() {
+    }
+    NgxGalleryLayout.ThumbnailsTop = 'thumbnails-top';
+    NgxGalleryLayout.ThumbnailsBottom = 'thumbnails-bottom';
+    return NgxGalleryLayout;
+}());
+
+var NgxGalleryAction = /** @class */ (function () {
+    /**
+     * @param {?} action
+     */
+    function NgxGalleryAction(action) {
+        this.icon = action.icon;
+        this.disabled = action.disabled ? action.disabled : false;
+        this.titleText = action.titleText ? action.titleText : '';
+        this.onClick = action.onClick;
+    }
+    return NgxGalleryAction;
+}());
+
+var NgxGalleryOptions = /** @class */ (function () {
+    /**
+     * @param {?} obj
+     */
+    function NgxGalleryOptions(obj) {
+        var preventDefaults = obj.breakpoint === undefined ? false : true;
+        function use(source, defaultValue) {
+            return obj && (source !== undefined || preventDefaults) ? source : defaultValue;
+        }
+        this.breakpoint = use(obj.breakpoint, undefined);
+        this.width = use(obj.width, '500px');
+        this.height = use(obj.height, '400px');
+        this.fullWidth = use(obj.fullWidth, false);
+        this.layout = use(obj.layout, NgxGalleryLayout.ThumbnailsBottom);
+        this.startIndex = use(obj.startIndex, 0);
+        this.linkTarget = use(obj.linkTarget, '_blank');
+        this.lazyLoading = use(obj.lazyLoading, true);
+        this.image = use(obj.image, true);
+        this.imagePercent = use(obj.imagePercent, 75);
+        this.imageArrows = use(obj.imageArrows, true);
+        this.imageArrowsAutoHide = use(obj.imageArrowsAutoHide, false);
+        this.imageSwipe = use(obj.imageSwipe, false);
+        this.imageAnimation = use(obj.imageAnimation, NgxGalleryAnimation.Fade);
+        this.imageSize = use(obj.imageSize, NgxGalleryImageSize.Cover);
+        this.imageAutoPlay = use(obj.imageAutoPlay, false);
+        this.imageAutoPlayInterval = use(obj.imageAutoPlayInterval, 2000);
+        this.imageAutoPlayPauseOnHover = use(obj.imageAutoPlayPauseOnHover, false);
+        this.imageInfinityMove = use(obj.imageInfinityMove, false);
+        if (obj && obj.imageActions && obj.imageActions.length) {
+            obj.imageActions = obj.imageActions.map(function (action) { return new NgxGalleryAction(action); });
+        }
+        this.imageActions = use(obj.imageActions, []);
+        this.imageDescription = use(obj.imageDescription, false);
+        this.thumbnails = use(obj.thumbnails, true);
+        this.thumbnailsColumns = use(obj.thumbnailsColumns, 4);
+        this.thumbnailsRows = use(obj.thumbnailsRows, 1);
+        this.thumbnailsPercent = use(obj.thumbnailsPercent, 25);
+        this.thumbnailsMargin = use(obj.thumbnailsMargin, 10);
+        this.thumbnailsArrows = use(obj.thumbnailsArrows, true);
+        this.thumbnailsArrowsAutoHide = use(obj.thumbnailsArrowsAutoHide, false);
+        this.thumbnailsSwipe = use(obj.thumbnailsSwipe, false);
+        this.thumbnailsMoveSize = use(obj.thumbnailsMoveSize, 1);
+        this.thumbnailsOrder = use(obj.thumbnailsOrder, NgxGalleryOrder.Column);
+        this.thumbnailsRemainingCount = use(obj.thumbnailsRemainingCount, false);
+        this.thumbnailsAsLinks = use(obj.thumbnailsAsLinks, false);
+        this.thumbnailMargin = use(obj.thumbnailMargin, 10);
+        this.thumbnailSize = use(obj.thumbnailSize, NgxGalleryImageSize.Cover);
+        if (obj && obj.thumbnailActions && obj.thumbnailActions.length) {
+            obj.thumbnailActions = obj.thumbnailActions.map(function (action) { return new NgxGalleryAction(action); });
+        }
+        this.thumbnailActions = use(obj.thumbnailActions, []);
+        this.preview = use(obj.preview, true);
+        this.previewDescription = use(obj.previewDescription, true);
+        this.previewSwipe = use(obj.previewSwipe, false);
+        this.previewFullscreen = use(obj.previewFullscreen, false);
+        this.previewForceFullscreen = use(obj.previewForceFullscreen, false);
+        this.previewCloseOnClick = use(obj.previewCloseOnClick, false);
+        this.previewCloseOnEsc = use(obj.previewCloseOnEsc, false);
+        this.previewKeyboardNavigation = use(obj.previewKeyboardNavigation, false);
+        this.previewAnimation = use(obj.previewAnimation, true);
+        this.previewAutoPlay = use(obj.previewAutoPlay, false);
+        this.previewAutoPlayInterval = use(obj.previewAutoPlayInterval, 2000);
+        this.previewAutoPlayPauseOnHover = use(obj.previewAutoPlayPauseOnHover, false);
+        this.previewInfinityMove = use(obj.previewInfinityMove, false);
+        this.previewZoom = use(obj.previewZoom, false);
+        this.previewZoomStep = use(obj.previewZoomStep, 0.1);
+        this.previewZoomMax = use(obj.previewZoomMax, 2);
+        this.previewZoomMin = use(obj.previewZoomMin, 0.5);
+        this.previewRotate = use(obj.previewRotate, false);
+        this.arrowPrevIcon = use(obj.arrowPrevIcon, 'fa fa-arrow-circle-left');
+        this.arrowNextIcon = use(obj.arrowNextIcon, 'fa fa-arrow-circle-right');
+        this.closeIcon = use(obj.closeIcon, 'fa fa-times-circle');
+        this.fullscreenIcon = use(obj.fullscreenIcon, 'fa fa-arrows-alt');
+        this.spinnerIcon = use(obj.spinnerIcon, 'fa fa-spinner fa-pulse fa-3x fa-fw');
+        this.zoomInIcon = use(obj.zoomInIcon, 'fa fa-search-plus');
+        this.zoomOutIcon = use(obj.zoomOutIcon, 'fa fa-search-minus');
+        this.rotateLeftIcon = use(obj.rotateLeftIcon, 'fa fa-undo');
+        this.rotateRightIcon = use(obj.rotateRightIcon, 'fa fa-repeat');
+        if (obj && obj.actions && obj.actions.length) {
+            obj.actions = obj.actions.map(function (action) { return new NgxGalleryAction(action); });
+        }
+        this.actions = use(obj.actions, []);
+    }
+    return NgxGalleryOptions;
+}());
+
+var NgxGalleryOrderedImage = /** @class */ (function () {
+    /**
+     * @param {?} obj
+     */
+    function NgxGalleryOrderedImage(obj) {
+        this.src = obj.src;
+        this.index = obj.index;
+    }
+    return NgxGalleryOrderedImage;
+}());
+
+var NgxGalleryComponent = /** @class */ (function () {
+    /**
+     * @param {?} myElement
+     */
+    function NgxGalleryComponent(myElement) {
+        this.myElement = myElement;
+        this.imagesReady = new core.EventEmitter();
+        this.change = new core.EventEmitter();
+        this.previewOpen = new core.EventEmitter();
+        this.previewClose = new core.EventEmitter();
+        this.previewChange = new core.EventEmitter();
+        this.oldImagesLength = 0;
+        this.selectedIndex = 0;
+        this.breakpoint = undefined;
+        this.prevBreakpoint = undefined;
+    }
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.ngOnInit = function () {
+        this.options = this.options.map(function (opt) { return new NgxGalleryOptions(opt); });
+        this.sortOptions();
+        this.setBreakpoint();
+        this.setOptions();
+        this.checkFullWidth();
+        if (this.currentOptions) {
+            this.selectedIndex = /** @type {?} */ (this.currentOptions.startIndex);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.ngDoCheck = function () {
+        if (this.images !== undefined && (this.images.length !== this.oldImagesLength)
+            || (this.images !== this.oldImages)) {
+            this.oldImagesLength = this.images.length;
+            this.oldImages = this.images;
+            this.setImages();
+            if (this.images && this.images.length) {
+                this.imagesReady.emit();
+            }
+            if (this.image) {
+                this.image.reset(/** @type {?} */ (this.currentOptions.startIndex));
+            }
+            this.resetThumbnails();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.ngAfterViewInit = function () {
+        this.checkFullWidth();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.onResize = function () {
+        var _this = this;
+        this.setBreakpoint();
+        if (this.prevBreakpoint !== this.breakpoint) {
+            this.setOptions();
+            this.resetThumbnails();
+        }
+        if (this.currentOptions && this.currentOptions.fullWidth) {
+            if (this.fullWidthTimeout) {
+                clearTimeout(this.fullWidthTimeout);
+            }
+            this.fullWidthTimeout = setTimeout(function () {
+                _this.checkFullWidth();
+            }, 200);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.getImageHeight = function () {
+        return (this.currentOptions && this.currentOptions.thumbnails) ?
+            this.currentOptions.imagePercent + '%' : '100%';
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.getThumbnailsHeight = function () {
+        if (this.currentOptions && this.currentOptions.image) {
+            return 'calc(' + this.currentOptions.thumbnailsPercent + '% - '
+                + this.currentOptions.thumbnailsMargin + 'px)';
+        }
+        else {
+            return '100%';
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.getThumbnailsMarginTop = function () {
+        if (this.currentOptions && this.currentOptions.layout === NgxGalleryLayout.ThumbnailsBottom) {
+            return this.currentOptions.thumbnailsMargin + 'px';
+        }
+        else {
+            return '0px';
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.getThumbnailsMarginBottom = function () {
+        if (this.currentOptions && this.currentOptions.layout === NgxGalleryLayout.ThumbnailsTop) {
+            return this.currentOptions.thumbnailsMargin + 'px';
+        }
+        else {
+            return '0px';
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.openPreview = function (index) {
+        this.previewEnabled = true;
+        this.preview.open(index);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.onPreviewOpen = function () {
+        this.previewOpen.emit();
+        if (this.image && this.image.autoPlay) {
+            this.image.stopAutoPlay();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.onPreviewClose = function () {
+        this.previewEnabled = false;
+        this.previewClose.emit();
+        if (this.image && this.image.autoPlay) {
+            this.image.startAutoPlay();
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.selectFromImage = function (index) {
+        this.select(index);
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.selectFromThumbnails = function (index) {
+        this.select(index);
+        if (this.currentOptions && this.currentOptions.thumbnails && this.currentOptions.preview
+            && (!this.currentOptions.image || this.currentOptions.thumbnailsRemainingCount)) {
+            this.openPreview(this.selectedIndex);
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.show = function (index) {
+        this.select(index);
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.showNext = function () {
+        this.image.showNext();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.showPrev = function () {
+        this.image.showPrev();
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.canShowNext = function () {
+        if (this.images && this.currentOptions) {
+            return (this.currentOptions.imageInfinityMove || this.selectedIndex < this.images.length - 1)
+                ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.canShowPrev = function () {
+        if (this.images && this.currentOptions) {
+            return (this.currentOptions.imageInfinityMove || this.selectedIndex > 0) ? true : false;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.previewSelect = function (index) {
+        this.previewChange.emit({ index: index, image: this.images[index] });
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.resetThumbnails = function () {
+        if (this.thubmnails) {
+            this.thubmnails.reset(/** @type {?} */ (this.currentOptions.startIndex));
+        }
+    };
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.select = function (index) {
+        this.selectedIndex = index;
+        this.change.emit({
+            index: index,
+            image: this.images[index]
+        });
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.checkFullWidth = function () {
+        if (this.currentOptions && this.currentOptions.fullWidth) {
+            this.width = document.body.clientWidth + 'px';
+            this.left = (-(document.body.clientWidth -
+                this.myElement.nativeElement.parentNode.innerWidth) / 2) + 'px';
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.setImages = function () {
+        this.smallImages = this.images.map(function (img) { /** @type {?} */ return (img.small); });
+        this.mediumImages = this.images.map(function (img, i) { return new NgxGalleryOrderedImage({
+            src: img.medium,
+            index: i
+        }); });
+        this.bigImages = this.images.map(function (img) { /** @type {?} */ return (img.big); });
+        this.descriptions = this.images.map(function (img) { /** @type {?} */ return (img.description); });
+        this.links = this.images.map(function (img) { /** @type {?} */ return (img.url); });
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.setBreakpoint = function () {
+        this.prevBreakpoint = this.breakpoint;
+        var /** @type {?} */ breakpoints;
+        if (typeof window !== 'undefined') {
+            breakpoints = this.options.filter(function (opt) { return opt.breakpoint >= window.innerWidth; })
+                .map(function (opt) { return opt.breakpoint; });
+        }
+        if (breakpoints && breakpoints.length) {
+            this.breakpoint = breakpoints.pop();
+        }
+        else {
+            this.breakpoint = undefined;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.sortOptions = function () {
+        this.options = this.options.filter(function (a) { return a.breakpoint === undefined; }).concat(this.options
+            .filter(function (a) { return a.breakpoint !== undefined; })
+            .sort(function (a, b) { return b.breakpoint - a.breakpoint; }));
+    };
+    /**
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.setOptions = function () {
+        var _this = this;
+        this.currentOptions = new NgxGalleryOptions({});
+        this.options
+            .filter(function (opt) { return opt.breakpoint === undefined || opt.breakpoint >= _this.breakpoint; })
+            .map(function (opt) { return _this.combineOptions(_this.currentOptions, opt); });
+        this.width = /** @type {?} */ (this.currentOptions.width);
+        this.height = /** @type {?} */ (this.currentOptions.height);
+    };
+    /**
+     * @param {?} first
+     * @param {?} second
+     * @return {?}
+     */
+    NgxGalleryComponent.prototype.combineOptions = function (first, second) {
+        Object.keys(second).map(function (val) { return first[val] = second[val] !== undefined ? second[val] : first[val]; });
+    };
+    NgxGalleryComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'ngx-gallery',
+                    template: "\n    <div class=\"ngx-gallery-layout {{currentOptions?.layout}}\">\n        <ngx-gallery-image *ngIf=\"currentOptions?.image\" [style.height]=\"getImageHeight()\" [images]=\"mediumImages\" [clickable]=\"currentOptions?.preview\" [selectedIndex]=\"selectedIndex\" [arrows]=\"currentOptions?.imageArrows\" [arrowsAutoHide]=\"currentOptions?.imageArrowsAutoHide\" [arrowPrevIcon]=\"currentOptions?.arrowPrevIcon\" [arrowNextIcon]=\"currentOptions?.arrowNextIcon\" [swipe]=\"currentOptions?.imageSwipe\" [animation]=\"currentOptions?.imageAnimation\" [size]=\"currentOptions?.imageSize\" [autoPlay]=\"currentOptions?.imageAutoPlay\" [autoPlayInterval]=\"currentOptions?.imageAutoPlayInterval\" [autoPlayPauseOnHover]=\"currentOptions?.imageAutoPlayPauseOnHover\" [infinityMove]=\"currentOptions?.imageInfinityMove\"  [lazyLoading]=\"currentOptions?.lazyLoading\" [actions]=\"currentOptions?.imageActions\" [descriptions]=\"descriptions\" [showDescription]=\"currentOptions?.imageDescription\" (onClick)=\"openPreview($event)\" (onActiveChange)=\"selectFromImage($event)\"></ngx-gallery-image>\n\n        <ngx-gallery-thumbnails *ngIf=\"currentOptions?.thumbnails\" [style.marginTop]=\"getThumbnailsMarginTop()\" [style.marginBottom]=\"getThumbnailsMarginBottom()\" [style.height]=\"getThumbnailsHeight()\" [images]=\"smallImages\" [links]=\"currentOptions?.thumbnailsAsLinks ? links : []\" [linkTarget]=\"currentOptions?.linkTarget\" [selectedIndex]=\"selectedIndex\" [columns]=\"currentOptions?.thumbnailsColumns\" [rows]=\"currentOptions?.thumbnailsRows\" [margin]=\"currentOptions?.thumbnailMargin\" [arrows]=\"currentOptions?.thumbnailsArrows\" [arrowsAutoHide]=\"currentOptions?.thumbnailsArrowsAutoHide\" [arrowPrevIcon]=\"currentOptions?.arrowPrevIcon\" [arrowNextIcon]=\"currentOptions?.arrowNextIcon\" [clickable]=\"currentOptions?.image || currentOptions?.preview\" [swipe]=\"currentOptions?.thumbnailsSwipe\" [size]=\"currentOptions?.thumbnailSize\" [moveSize]=\"currentOptions?.thumbnailsMoveSize\" [order]=\"currentOptions?.thumbnailsOrder\" [remainingCount]=\"currentOptions?.thumbnailsRemainingCount\" [lazyLoading]=\"currentOptions?.lazyLoading\" [actions]=\"currentOptions?.thumbnailActions\"  (onActiveChange)=\"selectFromThumbnails($event)\"></ngx-gallery-thumbnails>\n\n        <ngx-gallery-preview [images]=\"bigImages\" [descriptions]=\"descriptions\" [showDescription]=\"currentOptions?.previewDescription\" [arrowPrevIcon]=\"currentOptions?.arrowPrevIcon\" [arrowNextIcon]=\"currentOptions?.arrowNextIcon\" [closeIcon]=\"currentOptions?.closeIcon\" [fullscreenIcon]=\"currentOptions?.fullscreenIcon\" [spinnerIcon]=\"currentOptions?.spinnerIcon\" [swipe]=\"currentOptions?.previewSwipe\" [fullscreen]=\"currentOptions?.previewFullscreen\" [forceFullscreen]=\"currentOptions?.previewForceFullscreen\" [closeOnClick]=\"currentOptions?.previewCloseOnClick\" [closeOnEsc]=\"currentOptions?.previewCloseOnEsc\" [keyboardNavigation]=\"currentOptions?.previewKeyboardNavigation\" [animation]=\"currentOptions?.previewAnimation\" [autoPlay]=\"currentOptions?.previewAutoPlay\" [autoPlayInterval]=\"currentOptions?.previewAutoPlayInterval\" [autoPlayPauseOnHover]=\"currentOptions?.previewAutoPlayPauseOnHover\" [infinityMove]=\"currentOptions?.previewInfinityMove\" [zoom]=\"currentOptions?.previewZoom\" [zoomStep]=\"currentOptions?.previewZoomStep\" [zoomMax]=\"currentOptions?.previewZoomMax\" [zoomMin]=\"currentOptions?.previewZoomMin\" [zoomInIcon]=\"currentOptions?.zoomInIcon\" [zoomOutIcon]=\"currentOptions?.zoomOutIcon\" [actions]=\"currentOptions?.actions\" [rotate]=\"currentOptions?.previewRotate\" [rotateLeftIcon]=\"currentOptions?.rotateLeftIcon\" [rotateRightIcon]=\"currentOptions?.rotateRightIcon\"  (onClose)=\"onPreviewClose()\" (onOpen)=\"onPreviewOpen()\" (onActiveChange)=\"previewSelect($event)\" [class.ngx-gallery-active]=\"previewEnabled\"></ngx-gallery-preview>\n    </div>\n    ",
+                    styles: [":host { display: inline-block; } :host > * { float: left; } :host /deep/ * { box-sizing: border-box; } :host /deep/ .ngx-gallery-icon { color: white; font-size: 25px; position: absolute; z-index: 2000; display: inline-block; } :host /deep/ .ngx-gallery-icon .ngx-gallery-icon-content { display: block; } :host /deep/ .ngx-gallery-clickable { cursor: pointer; } :host /deep/ .ngx-gallery-icons-wrapper .ngx-gallery-icon { position: relative; margin-right: 5px; margin-top: 5px; font-size: 20px; cursor: pointer; } :host /deep/ .ngx-gallery-icons-wrapper { float: right; } :host .ngx-gallery-layout { width: 100%; height: 100%; display: flex; flex-direction: column; } :host .ngx-gallery-layout.thumbnails-top ngx-gallery-image { order: 2; } :host .ngx-gallery-layout.thumbnails-top ngx-gallery-thumbnails { order: 1; } :host .ngx-gallery-layout.thumbnails-bottom ngx-gallery-image { order: 1; } :host .ngx-gallery-layout.thumbnails-bottom ngx-gallery-thumbnails { order: 2; } "],
+                    providers: [NgxGalleryHelperService]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryComponent.ctorParameters = function () { return [
+        { type: core.ElementRef, },
+    ]; };
+    NgxGalleryComponent.propDecorators = {
+        'options': [{ type: core.Input },],
+        'images': [{ type: core.Input },],
+        'imagesReady': [{ type: core.Output },],
+        'change': [{ type: core.Output },],
+        'previewOpen': [{ type: core.Output },],
+        'previewClose': [{ type: core.Output },],
+        'previewChange': [{ type: core.Output },],
+        'preview': [{ type: core.ViewChild, args: [NgxGalleryPreviewComponent,] },],
+        'image': [{ type: core.ViewChild, args: [NgxGalleryImageComponent,] },],
+        'thubmnails': [{ type: core.ViewChild, args: [NgxGalleryThumbnailsComponent,] },],
+        'width': [{ type: core.HostBinding, args: ['style.width',] },],
+        'height': [{ type: core.HostBinding, args: ['style.height',] },],
+        'left': [{ type: core.HostBinding, args: ['style.left',] },],
+        'onResize': [{ type: core.HostListener, args: ['window:resize',] },],
+    };
+    return NgxGalleryComponent;
+}());
+
+var NgxGalleryImage = /** @class */ (function () {
+    /**
+     * @param {?} obj
+     */
+    function NgxGalleryImage(obj) {
+        this.small = obj.small;
+        this.medium = obj.medium;
+        this.big = obj.big;
+        this.description = obj.description;
+        this.url = obj.url;
+    }
+    return NgxGalleryImage;
+}());
+
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var CustomHammerConfig = /** @class */ (function (_super) {
+    __extends(CustomHammerConfig, _super);
+    function CustomHammerConfig() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.overrides = ({
+            'pinch': { enable: false },
+            'rotate': { enable: false }
+        });
+        return _this;
+    }
+    return CustomHammerConfig;
+}(platformBrowser.HammerGestureConfig));
+var NgxGalleryModule = /** @class */ (function () {
+    function NgxGalleryModule() {
+    }
+    NgxGalleryModule.decorators = [
+        { type: core.NgModule, args: [{
+                    imports: [
+                        common.CommonModule
+                    ],
+                    declarations: [
+                        NgxGalleryActionComponent,
+                        NgxGalleryArrowsComponent,
+                        NgxGalleryImageComponent,
+                        NgxGalleryThumbnailsComponent,
+                        NgxGalleryPreviewComponent,
+                        NgxGalleryComponent
+                    ],
+                    exports: [
+                        NgxGalleryComponent
+                    ],
+                    providers: [
+                        { provide: platformBrowser.HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
+                    ]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    NgxGalleryModule.ctorParameters = function () { return []; };
+    return NgxGalleryModule;
+}());
+
+exports.CustomHammerConfig = CustomHammerConfig;
+exports.NgxGalleryModule = NgxGalleryModule;
+exports.NgxGalleryComponent = NgxGalleryComponent;
+exports.NgxGalleryActionComponent = NgxGalleryActionComponent;
+exports.NgxGalleryImageComponent = NgxGalleryImageComponent;
+exports.NgxGalleryThumbnailsComponent = NgxGalleryThumbnailsComponent;
+exports.NgxGalleryPreviewComponent = NgxGalleryPreviewComponent;
+exports.NgxGalleryArrowsComponent = NgxGalleryArrowsComponent;
+exports.NgxGalleryOptions = NgxGalleryOptions;
+exports.NgxGalleryImage = NgxGalleryImage;
+exports.NgxGalleryAnimation = NgxGalleryAnimation;
+exports.NgxGalleryHelperService = NgxGalleryHelperService;
+exports.NgxGalleryImageSize = NgxGalleryImageSize;
+exports.NgxGalleryLayout = NgxGalleryLayout;
+exports.NgxGalleryOrder = NgxGalleryOrder;
+exports.NgxGalleryOrderedImage = NgxGalleryOrderedImage;
+exports.NgxGalleryAction = NgxGalleryAction;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
+
+/***/ }),
+
 /***/ "./node_modules/rxjs/_esm5/index.js":
 /*!******************************************!*\
   !*** ./node_modules/rxjs/_esm5/index.js ***!

@@ -1,0 +1,59 @@
+.bg_grad1{
+    color: #fff;
+    background-image: radial-gradient(circle at 47% 9%, #3e825f, #1a4172);
+}
+
+.bg_grad2{
+    color:#445D6E;
+    background-image: radial-gradient(circle, #1280e1 0%, #002069 100%);
+}
+
+.bg_grad3{
+    color:#fff;
+    background-image: radial-gradient(circle at 47% 9%, #414141, #000000);
+}
+
+.bg-phone{
+    color:#fff;
+    background-image: url(../../../assets/images/phone_bg.jpg);
+    background-position: 50% center;
+    background-size: cover;
+}
+
+.bg-coin{
+    color: #fff;
+    background: url(../../../assets/images/coin.png), radial-gradient(circle at 47% 9%, #3e825f, #1a4172);
+    background-position: 50% center;
+    background-size: contain;
+}
+
+.banner{
+    padding-top:150px;
+    padding-bottom:100px;
+}
+
+.background-gray-30{
+    background:rgba(0,0,0,0.3);
+}
+
+
+.sub-banner{
+    margin-left: -15px;
+    margin-right:-15px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.pad-bottom-50{
+    padding-bottom:50px;
+}
+
+.pad-left-10{
+    padding-left: 10px;
+}
+
+.transform-bg{
+    background-image: url(../../../assets/images/secure_bg_image.png);
+    background-position: 50% center;
+    background-size: cover;
+}

@@ -1,0 +1,24 @@
+.footer {
+    padding: 50px 0 0 0;
+}
+
+.footer .row {
+    margin-bottom: 100px;
+}
+
+.footer_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_links li {
+    display: block!important;    
+    margin-bottom: 10px;
+}
+
+.footer_links li a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #637986;
+}
