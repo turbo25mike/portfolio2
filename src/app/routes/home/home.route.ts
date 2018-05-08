@@ -15,6 +15,9 @@ export class HomeRoute {
  
         this.galleryOptions = [
             {
+                thumbnailsSwipe: true,
+                previewSwipe: true,
+                imageSwipe: true,
                 width: '600px',
                 height: '400px',
                 thumbnailsColumns: 4,

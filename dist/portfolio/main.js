@@ -391,6 +391,9 @@ var HomeRoute = /** @class */ (function () {
     HomeRoute.prototype.ngOnInit = function () {
         this.galleryOptions = [
             {
+                thumbnailsSwipe: true,
+                previewSwipe: true,
+                imageSwipe: true,
                 width: '600px',
                 height: '400px',
                 thumbnailsColumns: 4,
