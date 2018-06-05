@@ -43,34 +43,19 @@ export class HomeRoute {
  
         this.galleryImages = [
             {
-                small: this.cloudinaryRoot + 'v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
+                small: this.cloudinaryRoot + 'v1505323891/Capture_o7oxuo.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/Capture_o7oxuo.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/Capture_o7oxuo.jpg'
             },
             {
-                small: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
+                small: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg'
             },
             {
-                small: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                medium: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png',
-                big: this.cloudinaryRoot + '/v1505323891/icon_zp0s0k.png'
+                small: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg'
             }
         ];
     }
