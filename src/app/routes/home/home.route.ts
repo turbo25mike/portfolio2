@@ -56,6 +56,41 @@ export class HomeRoute {
                 small: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
                 medium: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
                 big: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg'
+            },
+            {
+                small: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg',
+                medium: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg',
+                big: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg'
             }
         ];
     }
