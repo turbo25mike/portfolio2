@@ -181,7 +181,7 @@ var ROUTES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".footer{\r\n    margin-top:10px;\r\n}\r\n\r\n.footer_sub_nav {\r\n    float: right;\r\n}\r\n\r\n.footer_sub_nav ul {\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.footer_sub_nav ul li {\r\n    float: left;\r\n    padding-bottom: 6px;\r\n}\r\n\r\n.footer_sub_nav ul li+li {\r\n    margin-left: 10px;\r\n}\r\n\r\n.footer_sub_nav ul li a {\r\n    font-size: 12px;\r\n    line-height: 17px;\r\n    color: #637986;\r\n}\r\n\r\n.bottom_footer {\r\n    clear: both;\r\n    padding: 30px 0 50px 0;\r\n    border-top: 1px solid #E0E4E7;\r\n}\r\n\r\n.footer-copyright p {\r\n    font-size: 12px;\r\n    line-height: 17px;\r\n    color: #637986;\r\n    margin-bottom: 0;\r\n}\r\n\r\n.footer_social_nav {\r\n    float: right;\r\n}\r\n\r\n.footer_social_nav ul{\r\n    list-style: none;\r\n    padding:0px;\r\n    margin: 0px;\r\n}\r\n\r\n.footer_social_nav ul li {\r\n    float: left;\r\n    position: relative;\r\n}\r\n\r\n.footer_social_nav ul li+li {\r\n    margin-left: 10px;\r\n}\r\n\r\n.footer_social_nav ul li a {\r\n    width: 32px;\r\n    height: 32px;\r\n    background-color: #82949E;\r\n    opacity: 0.5;\r\n    border-radius: 50px;\r\n    color: #fff;\r\n    display: block;\r\n    text-indent: 9999px;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n\r\n.footer_social_nav ul li a:before {\r\n    color: #fff;\r\n    position: absolute;\r\n    top: 10px;\r\n    left: 10px;\r\n    text-indent: 0;\r\n}"
+module.exports = ".footer{\r\n    margin-top:10px;\r\n}\r\n\r\n.footer_sub_nav {\r\n    float: right;\r\n}\r\n\r\n.footer_sub_nav ul {\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.footer_sub_nav ul li {\r\n    float: left;\r\n    padding-bottom: 6px;\r\n}\r\n\r\n.footer_sub_nav ul li+li {\r\n    margin-left: 10px;\r\n}\r\n\r\n.footer_sub_nav ul li a {\r\n    font-size: 12px;\r\n    line-height: 17px;\r\n    color: #637986;\r\n}\r\n\r\n.bottom_footer {\r\n    clear: both;\r\n    padding: 30px 0 50px 0;\r\n    border-top: 1px solid #E0E4E7;\r\n}\r\n\r\n.footer-copyright p {\r\n    font-size: 12px;\r\n    line-height: 17px;\r\n    color: #637986;\r\n    margin-bottom: 0;\r\n}"
 
 /***/ }),
 
@@ -192,7 +192,7 @@ module.exports = ".footer{\r\n    margin-top:10px;\r\n}\r\n\r\n.footer_sub_nav {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <div class=\"footer-nav\">\r\n      <nav class=\"footer_sub_nav\">\r\n        <ul class=\"menu\">\r\n          <li>\r\n            <a href=\"/status\">Design</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/security\">Develop</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/legal\">Devops</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/contact\">Contact</a>\r\n          </li>\r\n        </ul>\r\n      </nav>\r\n    </div>\r\n    <div class=\"bottom_footer\">\r\n      <div class=\"footer-copyright\">\r\n        <p class=\"copyright\">\r\n          Copyright © 2018 Jeff Johnson. All rights reserved. </p>\r\n      </div>\r\n      <div class=\"footer_social_nav\">\r\n        <ul class=\"nav-social\">\r\n          <li class=\"leaf\">\r\n            <a href=\"https://www.linkedin.com/in/jeff-johnson-b5898295/\" class=\"fa fa-linkedin\">Linkedin</a>\r\n          </li>\r\n          <li class=\"leaf\">\r\n            <a href=\"https://www.facebook.com/jeff.johnson.37625843\" class=\"fa fa-facebook\">Facebook</a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>"
+module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <div class=\"footer-nav\">\r\n      <nav class=\"footer_sub_nav\">\r\n        <ul class=\"menu\">\r\n          <li>\r\n            <a href=\"/status\">Design</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/security\">Develop</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/legal\">Devops</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"/contact\">Contact</a>\r\n          </li>\r\n        </ul>\r\n      </nav>\r\n    </div>\r\n    <div class=\"bottom_footer\">\r\n      <div class=\"footer-copyright\">\r\n        <p class=\"copyright\">\r\n          Copyright © 2018 Jeff Johnson. All rights reserved. </p>\r\n      </div>\r\n      <div class=\"social_nav\">\r\n        <ul>\r\n          <li>\r\n            <a href=\"https://www.linkedin.com/in/jeff-johnson-b5898295/\" class=\"fa fa-linkedin\">Linkedin</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"https://www.facebook.com/jeff.johnson.37625843\" class=\"fa fa-facebook\">Facebook</a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>"
 
 /***/ }),
 
@@ -295,7 +295,7 @@ var NavFooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar sticky-top navbar-expand-lg navbar-dark\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\r\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"toggleCollapse()\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <a class=\"navbar-brand\" href=\"#\">johnson | portfolio</a>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" [ngClass]=\"{'d-inline': !isCollapsed}\">\r\n    <ul class=\"navbar-nav mr-auto\"  [ngClass]=\"{'animated slideInDown': !isCollapsed}\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#devops\" pageScroll>Devops</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#design\" pageScroll>Design</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#development\" pageScroll>Development</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#contact\" pageScroll>Let's Chat</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>"
+module.exports = "<nav class=\"navbar sticky-top navbar-expand-lg navbar-dark\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\r\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"toggleCollapse()\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <a class=\"navbar-brand\" href=\"#\">johnson | portfolio</a>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" [ngClass]=\"{'d-inline': !isCollapsed}\">\r\n    <ul class=\"navbar-nav mr-auto\" [ngClass]=\"{'animated slideInDown': !isCollapsed}\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#devops\" pageScroll>Devops</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#design\" pageScroll>Design</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#development\" pageScroll>Development</a>\r\n      </li>\r\n    </ul>\r\n    <div class=\"w-100 order-3\">\r\n      <div class=\"social_nav social_nav-white navbar-nav ml-auto\">\r\n        <ul>\r\n          <li>\r\n            <a href=\"https://www.linkedin.com/in/jeff-johnson-b5898295/\" class=\"fa fa-linkedin\">Linkedin</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"https://www.facebook.com/jeff.johnson.37625843\" class=\"fa fa-facebook\">Facebook</a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</nav>"
 
 /***/ }),
 
@@ -348,7 +348,7 @@ var NavMenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".bg_grad1{\r\n    color: #fff;\r\n    background-image: radial-gradient(circle at 47% 9%, #3e825f, #1a4172);\r\n}\r\n\r\n.bg_grad2{\r\n    color:#445D6E;\r\n    background-image: radial-gradient(circle, #1280e1 0%, #002069 100%);\r\n}\r\n\r\n.bg_grad3{\r\n    color:#fff;\r\n    background-image: radial-gradient(circle at 47% 9%, #414141, #000000);\r\n}\r\n\r\n.bg-phone{\r\n    color:#fff;\r\n    background-image: url('phone_bg.jpg');\r\n    background-position: 50% center;\r\n    background-size: cover;\r\n}\r\n\r\n.bg-coin{\r\n    color: #fff;\r\n    background: url('coin.png'), radial-gradient(circle at 47% 9%, #3e825f, #1a4172);\r\n    background-position: 50% center;\r\n    background-size: contain;\r\n}\r\n\r\n.banner{\r\n    padding-top:150px;\r\n    padding-bottom:100px;\r\n}\r\n\r\n.background-gray-30{\r\n    background:rgba(0,0,0,0.3);\r\n}\r\n\r\n.sub-banner{\r\n    margin-left: -15px;\r\n    margin-right:-15px;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\r\n}\r\n\r\n.pad-bottom-50{\r\n    padding-bottom:50px;\r\n}\r\n\r\n.pad-left-10{\r\n    padding-left: 10px;\r\n}\r\n\r\n.transform-bg{\r\n    background-image: url('secure_bg_image.png');\r\n    background-position: 50% center;\r\n    background-size: cover;\r\n}"
+module.exports = ".bg_grad1{\r\n    color: #fff;\r\n    background-image: radial-gradient(circle at 47% 9%, #3e825f, #1a4172);\r\n}\r\n\r\n.bg_grad2{\r\n    color:#445D6E;\r\n    background-image: radial-gradient(circle, #1280e1 0%, #002069 100%);\r\n}\r\n\r\n.bg_grad3{\r\n    color:#fff;\r\n    background-image: radial-gradient(circle at 47% 9%, #414141, #000000);\r\n}\r\n\r\n.bg-phone{\r\n    color:#fff;\r\n    background-image: url('phone_bg.jpg');\r\n    background-position: 50% center;\r\n    background-size: cover;\r\n}\r\n\r\n.bg-portland{\r\n    color: #fff;\r\n    background: url('http://res.cloudinary.com/doboseecr/image/upload/v1529017664/portland_grjmel.jpg');\r\n    background-size: cover;\r\n}\r\n\r\n.banner{\r\n    padding-top:150px;\r\n    padding-bottom:100px;\r\n}\r\n\r\n.background-gray-30{\r\n    background:rgba(0,0,0,0.3);\r\n}\r\n\r\n.sub-banner{\r\n    margin-left: -15px;\r\n    margin-right:-15px;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\r\n}\r\n\r\n.design{\r\n    margin-left:-15px;\r\n    margin-right:-15px;\r\n    position: relative;\r\n}\r\n\r\n.design .gallery{\r\n    \r\n}\r\n\r\n.design .header{\r\n    position: absolute;\r\n    top: 0px;\r\n    bottom: 0px;\r\n    left: 20px;\r\n    z-index: 9000;\r\n    background: black;\r\n    color:white;\r\n    width: 80px;\r\n    font-size: 4em;\r\n    text-align: center;\r\n    font-family: 'Permanent Marker', cursive;\r\n}\r\n\r\n.pad-bottom-50{\r\n    padding-bottom:50px;\r\n}\r\n\r\n.pad-left-10{\r\n    padding-left: 10px;\r\n}\r\n\r\n.transform-bg{\r\n    background-image: url('secure_bg_image.png');\r\n    background-position: 50% center;\r\n    background-size: cover;\r\n}"
 
 /***/ }),
 
@@ -359,7 +359,7 @@ module.exports = ".bg_grad1{\r\n    color: #fff;\r\n    background-image: radial
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row banner bg_grad3\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12 col-sm-4 animated fadeInLeft\">\r\n                <h1>Not your common developer.</h1>\r\n                <p>Battle Hardened, Test Driven, User Focused, Peer Revieved, Test Driven, and Freak'n Awesome!</p>\r\n                <p>Hey it's my website so I can say what I want! Seriously though I have worked 6 years in the US Army as graphic\r\n                    designer, 7 years at Intel Corp as a Developer (tech lead), and I have worked in smaller marketing groups.\r\n                    I even designed magazine ads, newspaper ads and billboards.</p>\r\n                <p>I love to learn new things and have tried out a lot of technology stacks. I'm currently enjoying Angular\r\n                    6, Bootstrap 4 and .Net Core Web Api.</p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-7\">\r\n                <ngx-gallery [options]=\"galleryOptions\" [images]=\"galleryImages\"></ngx-gallery>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"flox-row bg-phone sub-banner animated fadeInUp\">\r\n    <div class=\"container background-gray-30\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:30px;\">\r\n                <h1>Mobile First Design</h1> \r\n                <p class=\"text-justify\">\r\n                    I don't like writing code twice and so when it comes to mobile apps and websites my first priority is User Experience and\r\n                    Frameworks. For web based solutions I have gravitated towards React and Angular for client side scripting\r\n                    and seperating out my API's into there own solutions. It not only makes it easier for multiple developers\r\n                    but it also breaks out the seperation of duties and creates a clear objective for both the client and\r\n                    the server.\r\n                </p>\r\n                <p class=\"text-justify\">\r\n                    For mobile app development my go to has been Xamarin. Not only because of the great ability to develop in C# but also due\r\n                    to the fact that I can share my code across Android and iOS. For mobile web applications my go to has\r\n                    been Angular 6 with Bootstrap 4.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"devops\" class=\"row sub-banner\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding-left:10px;\">\r\n                <h1>Devops</h1>\r\n                <img src=\"../../assets/images/flow.png\" alt=\"flow\" width=\"100%\" />\r\n            </div>\r\n\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Version Control</h3>\r\n                <p class=\"text-justify\">I have worked in many warehouses now including Visual Studio Online (both TFS and Git), Git\r\n                </p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Continuous Integration</h3>\r\n                <p class=\"text-justify\">\r\n                    Docker Container Repositories (AWS, Docker Cloud, Google Cloud), TeamCity, and Visual Studio Team Services are a few tools I use to keep development moving forward.  I don't like gated development and I don't like manual processes.  It just slows everyone down!\r\n                </p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Continuous Delivery</h3>\r\n                <p class=\"text-justify\">\r\n                    My newest tool is Kubernetes and I love it!  Auto scaling, deployments and simple management make things so much easier.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row banner transform-bg\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:10px;\">\r\n                <h1>Agile Development</h1>\r\n                <p class=\"text-justify\">\r\n                    Let's face it Agile is done a little bit different for company. I have worked in groups where there is no project manager\r\n                    to groups that have the system analysts do quality assurance. Because of this I don't have a preference\r\n                    as long as we have short cycles where progress is being given back to the customers then I'm pretty happy.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"contact\" class=\"row  sub-banner bg_grad1\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:10px;\">\r\n                <div class=\"justify-content-center\">\r\n                    <h1>Let's Chat</h1>\r\n                </div>\r\n                <div class=\"justify-content-center pad-bottom-50\" style=\"padding-left:10px; padding-right:10px; font-size: 1.5em;\">\r\n                    <p>Look I could put a pretty form up but let's face it you didn't get here on accident; so if you want to\r\n                        chat jump on\r\n                        <a href=\"https://www.linkedin.com/in/jeff-johnson-b5898295/\" target=\"_blank\" class=\"text-white\" style=\"text-decoration: underline;\">Linked\r\n                            <span class=\"linkedIn\">\r\n                                <i class=\"fa fa-linkedin\"></i>\r\n                            </span>\r\n                        </a> and send me message.</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row banner bg_grad3\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12 col-sm-4 animated fadeInLeft\">\r\n                <h1>Battle Hardened<br />Test Driven<br />User Focused<br />Peer Reviewed<br />Test Driven<br />Freak'n Awesome</h1>\r\n                <p>Hey it's my website so I can say what I want! Seriously though I have worked 6 years in the US Army as graphic\r\n                    designer, 7 years at Intel Corp as a Developer (tech lead), and I have worked in smaller marketing groups.\r\n                    I even designed magazine ads, newspaper ads and billboards.</p>\r\n                <p>I love to learn new things and have tried out a lot of technology stacks. I'm currently enjoying Angular\r\n                    6, Bootstrap 4 and .Net Core Web Api.</p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-7\">\r\n                <ngx-gallery [options]=\"galleryOptions\" [images]=\"galleryImages\"></ngx-gallery>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"flox-row bg-phone sub-banner animated fadeInUp\">\r\n    <div class=\"container background-gray-30\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:30px;\">\r\n                <h1>Mobile First Design</h1> \r\n                <p class=\"text-justify\">\r\n                    I don't like writing code twice and so when it comes to mobile apps and websites my first priority is User Experience and\r\n                    Frameworks. For web based solutions I have gravitated towards React and Angular for client side scripting\r\n                    and seperating out my API's into there own solutions. It not only makes it easier for multiple developers\r\n                    but it also breaks out the seperation of duties and creates a clear objective for both the client and\r\n                    the server.\r\n                </p>\r\n                <p class=\"text-justify\">\r\n                    For mobile app development my go to has been Xamarin. Not only because of the great ability to develop in C# but also due\r\n                    to the fact that I can share my code across Android and iOS. For mobile web applications my go to has\r\n                    been Angular 6 with Bootstrap 4.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"design\" class=\"design\">\r\n    <ngx-gallery class=\"gallery\" [options]=\"designGalleryOptions\" [images]=\"designGalleryImages\"></ngx-gallery>\r\n    <div class=\"header\">\r\n        D<br />E<br />S<br />I<br />G<br />N<br />S\r\n    </div>\r\n</div>\r\n<div id=\"devops\" class=\"row sub-banner\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding-left:10px;\">\r\n                <h1>Devops</h1>\r\n                <img src=\"../../assets/images/flow.png\" alt=\"flow\" width=\"100%\" />\r\n            </div>\r\n\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Version Control</h3>\r\n                <p class=\"text-justify\">I have worked in many warehouses now including Visual Studio Online (both TFS and Git), Git\r\n                </p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Continuous Integration</h3>\r\n                <p class=\"text-justify\">\r\n                    Docker Container Repositories (AWS, Docker Cloud, Google Cloud), TeamCity, and Visual Studio Team Services are a few tools I use to keep development moving forward.  I don't like gated development and I don't like manual processes.  It just slows everyone down!\r\n                </p>\r\n            </div>\r\n            <div class=\"col-xs-12 col-sm-4 pad-bottom-50\">\r\n                <h3>Continuous Delivery</h3>\r\n                <p class=\"text-justify\">\r\n                    My newest tool is Kubernetes and I love it!  Auto scaling, deployments and simple management make things so much easier.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row banner transform-bg\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:10px;\">\r\n                <h1>Agile Development</h1>\r\n                <p class=\"text-justify\">\r\n                    Let's face it Agile is done a little bit different for company. I have worked in groups where there is no project manager\r\n                    to groups that have the system analysts do quality assurance. Because of this I don't have a preference\r\n                    as long as we have short cycles where progress is being given back to the customers then I'm pretty happy.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"contact\" class=\"row  sub-banner bg-portland\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-12\" style=\"padding:10px;\">\r\n                <div class=\"justify-content-center\">\r\n                    <h1>Let's Chat</h1>\r\n                </div>\r\n                <div class=\"justify-content-center pad-bottom-50 background-gray-30\" style=\"padding-left:10px; padding-right:10px; font-size: 1.5em;\">\r\n                    <p>Look I could put a pretty form up but let's face it you didn't get here on accident; so if you want to\r\n                        chat jump on\r\n                        <a href=\"https://www.linkedin.com/in/jeff-johnson-b5898295/\" target=\"_blank\" class=\"text-white\" style=\"text-decoration: underline;\">Linked<span class=\"linkedIn\"><i class=\"fa fa-linkedin\"></i></span>\r\n                        </a> and send me message.</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -386,9 +386,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var HomeRoute = /** @class */ (function () {
     function HomeRoute() {
-        this.cloudinaryRoot = "http://res.cloudinary.com/doboseecr/image/upload/";
-    }
-    HomeRoute.prototype.ngOnInit = function () {
         this.galleryOptions = [
             {
                 thumbnailsSwipe: true,
@@ -404,7 +401,7 @@ var HomeRoute = /** @class */ (function () {
             {
                 breakpoint: 800,
                 width: '100%',
-                height: '600px',
+                height: '400px',
                 imagePercent: 80,
                 thumbnailsPercent: 20,
                 thumbnailsMargin: 20,
@@ -416,58 +413,62 @@ var HomeRoute = /** @class */ (function () {
                 preview: false
             }
         ];
-        this.galleryImages = [
+        this.galleryImages = [];
+        this.designGalleryOptions = [
             {
-                small: this.cloudinaryRoot + 'v1505323891/Capture_o7oxuo.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/Capture_o7oxuo.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/Capture_o7oxuo.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/Intel_o7g6at.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/nato_gkwvfs.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/ext_mhoc4e.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/0_wwgpjm.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/ext_4_cggxou.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/ext_3_gjaund.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/ext_5_r322sj.jpg'
-            },
-            {
-                small: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg',
-                medium: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg',
-                big: this.cloudinaryRoot + '/v1505323891/ext_2_q2aoar.jpg'
+                previewSwipe: true,
+                imageSwipe: true,
+                width: '110%',
+                height: '700px',
+                thumbnails: false,
+                imageAnimation: ngx_gallery__WEBPACK_IMPORTED_MODULE_1__["NgxGalleryAnimation"].Fade,
+                imageAutoPlayInterval: 5000,
+                imageAutoPlay: true,
+                imageArrows: false
             }
         ];
+        this.designGalleryImages = [];
+        this.cloudinaryRoot = "http://res.cloudinary.com/doboseecr/image/upload/v1505323891/";
+        this.logoGallery = [
+            'design_zyq6u1',
+            'Capture_o7oxuo',
+            'Intel_o7g6at',
+            'nato_gkwvfs',
+            'ext_mhoc4e',
+            'marjoni_logo_bkvlln'
+        ];
+        this.designGallery = [
+            'belgium_htmnse',
+            '0_wwgpjm',
+            'ext_3_gjaund',
+            'ext_5_r322sj',
+            'ext_2_q2aoar',
+            'remember_g35rcw',
+            'pamphlet_e1fqfp',
+            'moon_jszsdb',
+            'reedsx_k1htf5',
+            'wi2_ij5gev',
+            'NWbeauty3_ggfmkc',
+            'man_nbmfuq',
+            'cmack2_nikrbj'
+        ];
+    }
+    HomeRoute.prototype.ngOnInit = function () {
+        var _this = this;
+        this.logoGallery.forEach(function (x) {
+            _this.galleryImages.push({
+                small: _this.cloudinaryRoot + x + '.jpg',
+                medium: _this.cloudinaryRoot + x + '.jpg',
+                big: _this.cloudinaryRoot + x + '.jpg'
+            });
+        });
+        this.designGallery.forEach(function (x) {
+            _this.designGalleryImages.push({
+                small: _this.cloudinaryRoot + x + '.jpg',
+                medium: _this.cloudinaryRoot + x + '.jpg',
+                big: _this.cloudinaryRoot + x + '.jpg'
+            });
+        });
     };
     HomeRoute = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

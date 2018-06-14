@@ -20,11 +20,10 @@
     background-size: cover;
 }
 
-.bg-coin{
+.bg-portland{
     color: #fff;
-    background: url(../../../assets/images/coin.png), radial-gradient(circle at 47% 9%, #3e825f, #1a4172);
-    background-position: 50% center;
-    background-size: contain;
+    background: url('http://res.cloudinary.com/doboseecr/image/upload/v1529017664/portland_grjmel.jpg');
+    background-size: cover;
 }
 
 .banner{
@@ -36,12 +35,36 @@
     background:rgba(0,0,0,0.3);
 }
 
-
 .sub-banner{
     margin-left: -15px;
     margin-right:-15px;
     padding-top:50px;
     padding-bottom:50px;
+}
+
+.design{
+    margin-left:-15px;
+    margin-right:-15px;
+    position: relative;
+}
+
+.design .gallery{
+    
+}
+
+
+.design .header{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 20px;
+    z-index: 9000;
+    background: black;
+    color:white;
+    width: 80px;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .pad-bottom-50{

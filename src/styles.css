@@ -214,3 +214,62 @@ section {
     background: #4CAF50;
     cursor: pointer;
 }
+
+
+
+.social_nav {
+    float: right;
+}
+
+.social_nav ul{
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+}
+
+.social_nav ul li {
+    float: left;
+    position: relative;
+}
+
+.social_nav ul li+li {
+    margin-left: 10px;
+}
+
+.social_nav ul li a {
+    width: 32px;
+    height: 32px;
+    background-color: #82949E;
+    opacity: 0.5;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    text-indent: 9999px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.social_nav ul li a:before {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-indent: 0;
+}
+
+.social_nav-white  ul li a{
+    background-color: black;
+    opacity: 1;
+}
+
+.social_nav-white  ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.social_nav-white  ul li a:hover:before{
+    background-color: white;
+    color: black;
+}
